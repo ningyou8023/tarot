@@ -1,0 +1,273 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f9fa" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682B4"/>
+      <stop offset="30%" stop-color="#5F9EA0"/>
+      <stop offset="70%" stop-color="#87CEEB"/>
+      <stop offset="100%" stop-color="#B0E0E6"/>
+    </linearGradient>
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="50%" stop-color="#D2B48C"/>
+      <stop offset="100%" stop-color="#BC9A6A"/>
+    </linearGradient>
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B0000"/>
+      <stop offset="50%" stop-color="#DC143C"/>
+      <stop offset="100%" stop-color="#B22222"/>
+    </linearGradient>
+    <linearGradient id="throneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2F4F4F"/>
+      <stop offset="50%" stop-color="#696969"/>
+      <stop offset="100%" stop-color="#808080"/>
+    </linearGradient>
+    <linearGradient id="swordGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E6E6FA"/>
+      <stop offset="50%" stop-color="#C0C0C0"/>
+      <stop offset="100%" stop-color="#A9A9A9"/>
+    </linearGradient>
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F0F8FF"/>
+      <stop offset="100%" stop-color="#E6E6FA"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="15" y="15" width="270" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- 风暴云朵 -->
+  <g opacity="0.8">
+    <ellipse cx="60" cy="80" rx="25" ry="15" fill="#696969"/>
+    <ellipse cx="40" cy="85" rx="18" ry="10" fill="#696969"/>
+    <ellipse cx="80" cy="85" rx="22" ry="12" fill="#696969"/>
+    
+    <ellipse cx="220" cy="100" rx="30" ry="18" fill="#696969"/>
+    <ellipse cx="195" cy="105" rx="20" ry="12" fill="#696969"/>
+    <ellipse cx="245" cy="105" rx="25" ry="15" fill="#696969"/>
+    
+    <ellipse cx="150" cy="60" rx="28" ry="16" fill="#696969"/>
+    <ellipse cx="125" cy="65" rx="20" ry="11" fill="#696969"/>
+    <ellipse cx="175" cy="65" rx="23" ry="13" fill="#696969"/>
+  </g>
+  
+  <!-- 闪电 (权威的象征) -->
+  <g stroke="#FFD700" stroke-width="3" fill="#FFFF00" opacity="0.7">
+    <path d="M80 120 L85 140 L75 145 L80 165 L70 150 L75 135 Z"/>
+    <path d="M210 130 L215 150 L205 155 L210 175 L200 160 L205 145 Z"/>
+  </g>
+  
+  <!-- 远山 -->
+  <path d="M15 300 Q80 280 150 290 Q220 285 285 300 L285 350 L15 350 Z" fill="#2F4F4F" opacity="0.8"/>
+  <path d="M15 320 Q100 300 180 310 Q250 305 285 320 L285 370 L15 370 Z" fill="#1C1C1C" opacity="0.6"/>
+  
+  <!-- 地面/平台 -->
+  <rect x="15" y="350" width="270" height="135" fill="#2F4F4F"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.4">
+    <path d="M15 370 Q50 365 85 370 Q120 375 155 370 Q190 365 225 370 Q260 375 285 370" stroke="#696969" stroke-width="1" fill="none"/>
+    <path d="M15 390 Q50 385 85 390 Q120 395 155 390 Q190 385 225 390 Q260 395 285 390" stroke="#696969" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- 宝座 -->
+  <g transform="translate(150, 320)">
+    <!-- 宝座底座 -->
+    <rect x="-35" y="40" width="70" height="25" fill="url(#throneGradient)"/>
+    <rect x="-30" y="35" width="60" height="30" fill="#2F4F4F"/>
+    
+    <!-- 宝座靠背 -->
+    <rect x="-30" y="-25" width="60" height="70" fill="url(#throneGradient)"/>
+    <rect x="-25" y="-20" width="50" height="60" fill="#2F4F4F"/>
+    
+    <!-- 宝座扶手 -->
+    <rect x="-35" y="10" width="10" height="35" fill="url(#throneGradient)"/>
+    <rect x="25" y="10" width="10" height="35" fill="url(#throneGradient)"/>
+    
+    <!-- 宝座装饰 -->
+    <circle cx="0" cy="0" r="6" fill="#FFD700"/>
+    <path d="M-20 -15 Q0 -20 20 -15" stroke="#FFD700" stroke-width="3" fill="none"/>
+    <path d="M-20 15 Q0 10 20 15" stroke="#FFD700" stroke-width="3" fill="none"/>
+    
+    <!-- 宝座顶部装饰 -->
+    <path d="M-25 -25 L-12 -35 L0 -30 L12 -35 L25 -25" fill="#FFD700"/>
+    <circle cx="0" cy="-30" r="4" fill="#8B0000"/>
+    
+    <!-- 鹰的装饰 (权威的象征) -->
+    <g transform="translate(0, -10)">
+      <ellipse cx="0" cy="0" rx="8" ry="4" fill="#8B4513"/>
+      <path d="M-6 -2 L-10 -4 L-8 0 L-6 2" fill="#654321"/>
+      <path d="M6 -2 L10 -4 L8 0 L6 2" fill="#654321"/>
+      <circle cx="-2" cy="-1" r="1" fill="#FFD700"/>
+      <circle cx="2" cy="-1" r="1" fill="#FFD700"/>
+      <path d="M0 1 L1 3 L0 2 L-1 3 Z" fill="#FF8C00"/>
+    </g>
+  </g>
+  
+  <!-- 国王 -->
+  <g transform="translate(150, 270)">
+    <!-- 身体/长袍 -->
+    <ellipse cx="0" cy="35" rx="25" ry="40" fill="url(#robeGradient)"/>
+    <path d="M-23 0 Q0 -8 23 0 Q28 40 20 75 Q0 80 -20 75 Q-28 40 -23 0" fill="url(#robeGradient)"/>
+    
+    <!-- 长袍装饰 -->
+    <path d="M-20 20 Q0 18 20 20" stroke="#FFD700" stroke-width="3" fill="none"/>
+    <path d="M-18 35 Q0 33 18 35" stroke="#FFD700" stroke-width="2" fill="none"/>
+    <path d="M-15 50 Q0 48 15 50" stroke="#FFD700" stroke-width="2" fill="none"/>
+    
+    <!-- 长袍边缘装饰 -->
+    <path d="M-23 70 Q-12 75 0 70 Q12 75 23 70" stroke="#C0C0C0" stroke-width="2" fill="none"/>
+    
+    <!-- 胸甲 -->
+    <ellipse cx="0" cy="25" rx="18" ry="25" fill="#C0C0C0"/>
+    <path d="M-15 10 Q0 8 15 10 Q18 35 15 50 Q0 52 -15 50 Q-18 35 -15 10" fill="#A9A9A9"/>
+    
+    <!-- 胸甲装饰 -->
+    <circle cx="0" cy="20" r="4" fill="#FFD700"/>
+    <path d="M-12 15 Q0 12 12 15" stroke="#8B4513" stroke-width="1.5" fill="none"/>
+    <path d="M-10 30 Q0 28 10 30" stroke="#8B4513" stroke-width="1.5" fill="none"/>
+    <path d="M-8 40 Q0 38 8 40" stroke="#8B4513" stroke-width="1.5" fill="none"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-15" r="14" fill="url(#figureGradient)"/>
+    
+    <!-- 头发和胡须 -->
+    <path d="M-12 -25 Q0 -30 12 -25 Q14 -12 12 0 Q0 5 -12 0 Q-14 -12 -12 -25" fill="#696969"/>
+    <path d="M-10 -27 Q0 -29 10 -27" stroke="#2F4F4F" stroke-width="1" fill="none"/>
+    
+    <!-- 胡须 -->
+    <path d="M-8 -5 Q0 -2 8 -5 Q10 5 8 12 Q0 15 -8 12 Q-10 5 -8 -5" fill="#696969"/>
+    <path d="M-6 0 Q0 2 6 0" stroke="#2F4F4F" stroke-width="0.5" fill="none"/>
+    <path d="M-6 6 Q0 8 6 6" stroke="#2F4F4F" stroke-width="0.5" fill="none"/>
+    
+    <!-- 王冠 -->
+    <path d="M-12 -25 L-6 -35 L-2 -30 L2 -35 L6 -30 L12 -25" fill="#FFD700"/>
+    <circle cx="-6" cy="-35" r="2" fill="#8B0000"/>
+    <circle cx="0" cy="-32" r="2.5" fill="#8B0000"/>
+    <circle cx="6" cy="-35" r="2" fill="#8B0000"/>
+    
+    <!-- 王冠宝石 -->
+    <circle cx="0" cy="-28" r="1.5" fill="#4169E1"/>
+    <circle cx="-5" cy="-30" r="1" fill="#DC143C"/>
+    <circle cx="5" cy="-30" r="1" fill="#32CD32"/>
+    
+    <!-- 眼睛 (威严的表情) -->
+    <circle cx="-5" cy="-16" r="2" fill="#000"/>
+    <circle cx="5" cy="-16" r="2" fill="#000"/>
+    <circle cx="-5" cy="-16.5" r="0.7" fill="#FFF"/>
+    <circle cx="5" cy="-16.5" r="0.7" fill="#FFF"/>
+    
+    <!-- 眉毛 (严厉的表情) -->
+    <path d="M-8 -20 Q-5 -22 -2 -20" stroke="#2F4F4F" stroke-width="1.5" fill="none"/>
+    <path d="M2 -20 Q5 -22 8 -20" stroke="#2F4F4F" stroke-width="1.5" fill="none"/>
+    
+    <!-- 鼻子 -->
+    <path d="M0 -12 L1.5 -9 L0 -8" stroke="#BC9A6A" stroke-width="1" fill="none"/>
+    
+    <!-- 嘴巴 (严肃威严) -->
+    <path d="M-4 -3 Q0 -4 4 -3" stroke="#8B4513" stroke-width="1.5" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="-20" cy="25" rx="6" ry="25" fill="url(#robeGradient)"/>
+    <ellipse cx="20" cy="25" rx="6" ry="25" fill="url(#robeGradient)"/>
+    
+    <!-- 手 -->
+    <circle cx="-25" cy="50" r="5" fill="url(#figureGradient)"/>
+    <circle cx="25" cy="50" r="5" fill="url(#figureGradient)"/>
+  </g>
+  
+  <!-- 国王手持的宝剑 -->
+  <g transform="translate(175, 230) rotate(20)">
+    <!-- 剑身 -->
+    <rect x="-4" y="0" width="8" height="100" fill="url(#swordGradient)"/>
+    <path d="M-2 5 L2 5 L2 95 L-2 95 Z" fill="#E6E6FA"/>
+    
+    <!-- 剑尖 -->
+    <path d="M-4 0 L0 -15 L4 0" fill="url(#swordGradient)"/>
+    
+    <!-- 剑身中央线 -->
+    <path d="M0 0 L0 100" stroke="#B0C4DE" stroke-width="1.5" fill="none"/>
+    
+    <!-- 护手 -->
+    <rect x="-12" y="98" width="24" height="5" fill="#8B4513"/>
+    <ellipse cx="-12" cy="100" rx="4" ry="5" fill="#FFD700"/>
+    <ellipse cx="12" cy="100" rx="4" ry="5" fill="#FFD700"/>
+    
+    <!-- 剑柄 -->
+    <rect x="-3" y="103" width="6" height="25" fill="#654321"/>
+    <path d="M-2.5 107 L2.5 107" stroke="#8B4513" stroke-width="0.8"/>
+    <path d="M-2.5 113 L2.5 113" stroke="#8B4513" stroke-width="0.8"/>
+    <path d="M-2.5 119 L2.5 119" stroke="#8B4513" stroke-width="0.8"/>
+    
+    <!-- 剑柄装饰 -->
+    <circle cx="0" cy="108" r="2" fill="#FFD700"/>
+    <circle cx="0" cy="115" r="2" fill="#FFD700"/>
+    <circle cx="0" cy="122" r="2" fill="#FFD700"/>
+    
+    <!-- 剑柄底部 -->
+    <circle cx="0" cy="128" r="5" fill="#8B4513"/>
+    <circle cx="0" cy="128" r="4" fill="#FFD700"/>
+    <circle cx="0" cy="128" r="2" fill="#4169E1"/>
+  </g>
+  
+  <!-- 权杖 (在左手) -->
+  <g transform="translate(125, 270)">
+    <!-- 权杖杆 -->
+    <rect x="-2" y="0" width="4" height="40" fill="#8B4513"/>
+    <path d="M-1 5 L1 5" stroke="#654321" stroke-width="0.5"/>
+    <path d="M-1 15 L1 15" stroke="#654321" stroke-width="0.5"/>
+    <path d="M-1 25 L1 25" stroke="#654321" stroke-width="0.5"/>
+    <path d="M-1 35 L1 35" stroke="#654321" stroke-width="0.5"/>
+    
+    <!-- 权杖顶部 -->
+    <circle cx="0" cy="0" r="5" fill="#FFD700"/>
+    <circle cx="0" cy="0" r="3" fill="#8B0000"/>
+    <circle cx="0" cy="0" r="1.5" fill="#FFD700"/>
+    
+    <!-- 权杖装饰 -->
+    <path d="M-3 -3 L3 3" stroke="#4169E1" stroke-width="1"/>
+    <path d="M3 -3 L-3 3" stroke="#4169E1" stroke-width="1"/>
+  </g>
+  
+  <!-- 权威的光芒 -->
+  <g opacity="0.5">
+    <circle cx="150" cy="240" r="80" fill="none" stroke="#FFD700" stroke-width="2"/>
+    <circle cx="150" cy="240" r="100" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+    <circle cx="150" cy="240" r="120" fill="none" stroke="#FFD700" stroke-width="1"/>
+  </g>
+  
+  <!-- 地面装饰 -->
+  <g>
+    <!-- 权威之花 -->
+    <circle cx="60" cy="420" r="4" fill="#8B0000"/>
+    <circle cx="57" cy="416" r="2" fill="#DC143C"/>
+    <circle cx="63" cy="416" r="2" fill="#DC143C"/>
+    <circle cx="57" cy="424" r="2" fill="#DC143C"/>
+    <circle cx="63" cy="424" r="2" fill="DC143C"/>
+    
+    <circle cx="240" cy="430" r="4" fill="#8B0000"/>
+    <circle cx="237" cy="426" r="2" fill="#DC143C"/>
+    <circle cx="243" cy="426" r="2" fill="#DC143C"/>
+    <circle cx="237" cy="434" r="2" fill="#DC143C"/>
+    <circle cx="243" cy="434" r="2" fill="#DC143C"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">KING OF SWORDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">宝剑国王</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8B4513" stroke-width="1" fill="none">
+    <path d="M25 25 L35 25 L35 35"/>
+    <path d="M275 25 L265 25 L265 35"/>
+    <path d="M25 475 L35 475 L35 465"/>
+    <path d="M275 475 L265 475 L265 465"/>
+  </g>
+</svg>

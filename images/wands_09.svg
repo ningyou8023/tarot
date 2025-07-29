@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#f0e68c"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 权杖渐变 -->
+    <linearGradient id="wandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="50%" stop-color="#a0522d"/>
+      <stop offset="100%" stop-color="#8b4513"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="200" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,180 80,120 150,140 220,110 290,160 290,210 10,210" fill="#696969" opacity="0.6"/>
+  
+  <!-- 地面 -->
+  <rect x="10" y="350" width="280" height="140" fill="#daa520"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="20" y1="360" x2="280" y2="365" stroke="#8b4513" stroke-width="1"/>
+    <line x1="15" y1="380" x2="285" y2="385" stroke="#8b4513" stroke-width="1"/>
+    <line x1="25" y1="400" x2="275" y2="405" stroke="#8b4513" stroke-width="1"/>
+  </g>
+  
+  <!-- 背景的八根权杖（防御墙） -->
+  <g id="backgroundWands">
+    <!-- 从左到右排列的八根权杖 -->
+    <rect x="38" y="200" width="4" height="120" fill="url(#wandGradient)"/>
+    <circle cx="40" cy="195" r="4" fill="#ffd700"/>
+    <ellipse cx="37" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(-10 37 205)"/>
+    <ellipse cx="43" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(10 43 205)"/>
+    
+    <rect x="68" y="200" width="4" height="120" fill="url(#wandGradient)"/>
+    <circle cx="70" cy="195" r="4" fill="#ffd700"/>
+    <ellipse cx="67" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(-10 67 205)"/>
+    <ellipse cx="73" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(10 73 205)"/>
+    
+    <rect x="98" y="200" width="4" height="120" fill="url(#wandGradient)"/>
+    <circle cx="100" cy="195" r="4" fill="#ffd700"/>
+    <ellipse cx="97" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(-10 97 205)"/>
+    <ellipse cx="103" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(10 103 205)"/>
+    
+    <rect x="128" y="200" width="4" height="120" fill="url(#wandGradient)"/>
+    <circle cx="130" cy="195" r="4" fill="#ffd700"/>
+    <ellipse cx="127" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(-10 127 205)"/>
+    <ellipse cx="133" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(10 133 205)"/>
+    
+    <rect x="168" y="200" width="4" height="120" fill="url(#wandGradient)"/>
+    <circle cx="170" cy="195" r="4" fill="#ffd700"/>
+    <ellipse cx="167" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(-10 167 205)"/>
+    <ellipse cx="173" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(10 173 205)"/>
+    
+    <rect x="198" y="200" width="4" height="120" fill="url(#wandGradient)"/>
+    <circle cx="200" cy="195" r="4" fill="#ffd700"/>
+    <ellipse cx="197" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(-10 197 205)"/>
+    <ellipse cx="203" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(10 203 205)"/>
+    
+    <rect x="228" y="200" width="4" height="120" fill="url(#wandGradient)"/>
+    <circle cx="230" cy="195" r="4" fill="#ffd700"/>
+    <ellipse cx="227" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(-10 227 205)"/>
+    <ellipse cx="233" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(10 233 205)"/>
+    
+    <rect x="258" y="200" width="4" height="120" fill="url(#wandGradient)"/>
+    <circle cx="260" cy="195" r="4" fill="#ffd700"/>
+    <ellipse cx="257" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(-10 257 205)"/>
+    <ellipse cx="263" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(10 263 205)"/>
+  </g>
+  
+  <!-- 受伤的守卫者 -->
+  <g id="wounded_guard">
+    <!-- 身体（略微弯曲，显示疲惫） -->
+    <ellipse cx="150" cy="290" rx="20" ry="35" fill="url(#personGradient)" transform="rotate(5 150 290)"/>
+    
+    <!-- 头部 -->
+    <circle cx="150" cy="240" r="15" fill="url(#personGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M135 235 Q150 225 165 235 Q160 230 150 230 Q140 230 135 235" fill="#8b4513"/>
+    
+    <!-- 头部绷带（受伤标志） -->
+    <rect x="140" y="235" width="20" height="4" fill="#ffffff" opacity="0.8"/>
+    
+    <!-- 眼睛（疲惫的表情） -->
+    <circle cx="145" cy="238" r="2" fill="#000"/>
+    <circle cx="155" cy="238" r="2" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <line x1="150" y1="240" x2="150" y2="245" stroke="#000" stroke-width="1"/>
+    
+    <!-- 嘴巴（痛苦的表情） -->
+    <path d="M147 248 Q150 246 153 248" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂（一只手扶着权杖支撑） -->
+    <ellipse cx="125" cy="270" rx="8" ry="25" fill="url(#personGradient)" transform="rotate(-20 125 270)"/>
+    <ellipse cx="175" cy="270" rx="8" ry="25" fill="url(#personGradient)" transform="rotate(10 175 270)"/>
+    
+    <!-- 手 -->
+    <circle cx="115" cy="290" r="5" fill="url(#personGradient)"/>
+    <circle cx="185" cy="285" r="5" fill="url(#personGradient)"/>
+    
+    <!-- 腿部（一条腿受伤，姿态不稳） -->
+    <ellipse cx="140" cy="330" rx="8" ry="25" fill="url(#personGradient)" transform="rotate(-5 140 330)"/>
+    <ellipse cx="160" cy="330" rx="8" ry="25" fill="url(#personGradient)" transform="rotate(10 160 330)"/>
+    
+    <!-- 脚 -->
+    <ellipse cx="135" cy="360" rx="6" ry="8" fill="#8b4513"/>
+    <ellipse cx="165" cy="360" rx="6" ry="8" fill="#8b4513"/>
+  </g>
+  
+  <!-- 支撑的权杖（第九根） -->
+  <g id="supportWand">
+    <rect x="113" y="220" width="4" height="100" fill="url(#wandGradient)" transform="rotate(-10 115 270)"/>
+    <!-- 顶部装饰 -->
+    <circle cx="108" cy="215" r="5" fill="#ffd700"/>
+    <circle cx="108" cy="215" r="2" fill="#ff6347"/>
+    <!-- 新芽 -->
+    <ellipse cx="105" cy="225" rx="2" ry="6" fill="#228b22" transform="rotate(-40 105 225)"/>
+    <ellipse cx="111" cy="225" rx="2" ry="6" fill="#228b22" transform="rotate(-10 111 225)"/>
+  </g>
+  
+  <!-- 地面上的血迹或汗水（暗示战斗） -->
+  <g opacity="0.4">
+    <ellipse cx="145" cy="365" rx="3" ry="2" fill="#8b0000"/>
+    <ellipse cx="155" cy="368" rx="2" ry="1" fill="#8b0000"/>
+  </g>
+  
+  <!-- 地面装饰 -->
+  <g opacity="0.6">
+    <circle cx="50" cy="380" r="3" fill="#8b4513"/>
+    <circle cx="250" cy="390" r="2" fill="#8b4513"/>
+    <circle cx="100" cy="400" r="2" fill="#8b4513"/>
+    <circle cx="200" cy="410" r="3" fill="#8b4513"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">IX - NINE OF WANDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">权杖九</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8b4513" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

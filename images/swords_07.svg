@@ -1,0 +1,210 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f9fa" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2F4F4F"/>
+      <stop offset="30%" stop-color="#696969"/>
+      <stop offset="70%" stop-color="#778899"/>
+      <stop offset="100%" stop-color="#DCDCDC"/>
+    </linearGradient>
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="50%" stop-color="#D2B48C"/>
+      <stop offset="100%" stop-color="#BC9A6A"/>
+    </linearGradient>
+    <linearGradient id="cloakGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B0000"/>
+      <stop offset="50%" stop-color="#A0522D"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+    <linearGradient id="swordGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E6E6FA"/>
+      <stop offset="50%" stop-color="#C0C0C0"/>
+      <stop offset="100%" stop-color="#A9A9A9"/>
+    </linearGradient>
+    <linearGradient id="tentGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5DEB3"/>
+      <stop offset="50%" stop-color="#DEB887"/>
+      <stop offset="100%" stop-color="#D2B48C"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 远山 -->
+  <path d="M15 300 Q80 280 150 290 Q220 285 285 300 L285 350 L15 350 Z" fill="#483D8B" opacity="0.6"/>
+  <path d="M15 320 Q100 300 180 310 Q250 305 285 320 L285 370 L15 370 Z" fill="#2F4F4F" opacity="0.4"/>
+  
+  <!-- 地面 -->
+  <rect x="15" y="350" width="270" height="135" fill="#8FBC8F"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <path d="M15 370 Q50 365 85 370 Q120 375 155 370 Q190 365 225 370 Q260 375 285 370" stroke="#556B2F" stroke-width="1" fill="none"/>
+    <path d="M15 390 Q50 385 85 390 Q120 395 155 390 Q190 385 225 390 Q260 395 285 390" stroke="#556B2F" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- 帐篷营地 -->
+  <g transform="translate(200, 320)">
+    <!-- 帐篷主体 -->
+    <path d="M-25 30 Q0 10 25 30 L20 50 L-20 50 Z" fill="url(#tentGradient)"/>
+    <path d="M-20 30 Q0 15 20 30" stroke="#8B4513" stroke-width="1" fill="none"/>
+    
+    <!-- 帐篷支柱 -->
+    <rect x="-1" y="30" width="2" height="20" fill="#654321"/>
+    
+    <!-- 帐篷装饰 -->
+    <path d="M-15 40 L15 40" stroke="#8B4513" stroke-width="1"/>
+    <circle cx="0" cy="20" r="2" fill="#FFD700"/>
+  </g>
+  
+  <!-- 偷剑的人物 -->
+  <g transform="translate(120, 300)">
+    <!-- 身体/斗篷 -->
+    <ellipse cx="0" cy="20" rx="15" ry="25" fill="url(#cloakGradient)"/>
+    <path d="M-12 0 Q0 -5 12 0 Q15 25 10 45 Q0 50 -10 45 Q-15 25 -12 0" fill="url(#cloakGradient)"/>
+    
+    <!-- 斗篷装饰 -->
+    <path d="M-10 10 Q0 8 10 10" stroke="#8B4513" stroke-width="1" fill="none"/>
+    <path d="M-8 25 Q0 23 8 25" stroke="#8B4513" stroke-width="1" fill="none"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-5" r="10" fill="url(#figureGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M-8 -12 Q0 -18 8 -12 Q10 -5 8 2 Q0 5 -8 2 Q-10 -5 -8 -12" fill="#654321"/>
+    
+    <!-- 眼睛 (狡猾的表情) -->
+    <ellipse cx="-3" cy="-6" rx="1.5" ry="1" fill="#000"/>
+    <ellipse cx="3" cy="-6" rx="1.5" ry="1" fill="#000"/>
+    <path d="M-4 -8 L-2 -7" stroke="#654321" stroke-width="0.8"/>
+    <path d="M2 -7 L4 -8" stroke="#654321" stroke-width="0.8"/>
+    
+    <!-- 鼻子 -->
+    <path d="M0 -3 L1 -1 L0 0" stroke="#BC9A6A" stroke-width="0.5" fill="none"/>
+    
+    <!-- 嘴巴 (狡猾的微笑) -->
+    <path d="M-3 2 Q0 4 3 2" stroke="#8B4513" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="-10" cy="15" rx="4" ry="15" fill="url(#cloakGradient)" transform="rotate(-30)"/>
+    <ellipse cx="10" cy="15" rx="4" ry="15" fill="url(#cloakGradient)" transform="rotate(30)"/>
+    
+    <!-- 手 -->
+    <circle cx="-15" cy="5" r="4" fill="url(#figureGradient)"/>
+    <circle cx="15" cy="5" r="4" fill="url(#figureGradient)"/>
+    
+    <!-- 腿部 -->
+    <ellipse cx="-5" cy="40" rx="4" ry="12" fill="url(#cloakGradient)"/>
+    <ellipse cx="5" cy="40" rx="4" ry="12" fill="url(#cloakGradient)"/>
+    
+    <!-- 脚 -->
+    <ellipse cx="-5" cy="52" rx="3" ry="6" fill="#654321"/>
+    <ellipse cx="5" cy="52" rx="3" ry="6" fill="#654321"/>
+  </g>
+  
+  <!-- 七把宝剑 -->
+  <!-- 剑1 (被偷的剑，在人物手中) -->
+  <g transform="translate(105, 280) rotate(-20)">
+    <rect x="-1.5" y="0" width="3" height="40" fill="url(#swordGradient)"/>
+    <path d="M-1.5 0 L0 -6 L1.5 0" fill="url(#swordGradient)"/>
+    <rect x="-4" y="38" width="8" height="2" fill="#8B4513"/>
+    <rect x="-2" y="40" width="4" height="6" fill="#654321"/>
+    <circle cx="0" cy="46" r="1.5" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑2 (被偷的剑，在人物手中) -->
+  <g transform="translate(135, 285) rotate(10)">
+    <rect x="-1.5" y="0" width="3" height="35" fill="url(#swordGradient)"/>
+    <path d="M-1.5 0 L0 -6 L1.5 0" fill="url(#swordGradient)"/>
+    <rect x="-4" y="33" width="8" height="2" fill="#8B4513"/>
+    <rect x="-2" y="35" width="4" height="6" fill="#654321"/>
+    <circle cx="0" cy="41" r="1.5" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑3 (营地中的剑) -->
+  <g transform="translate(180, 350) rotate(45)">
+    <rect x="-2" y="0" width="4" height="50" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="48" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="50" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="58" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑4 (营地中的剑) -->
+  <g transform="translate(220, 360) rotate(-30)">
+    <rect x="-2" y="0" width="4" height="45" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="43" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="45" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="53" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑5 (营地中的剑) -->
+  <g transform="translate(240, 340) rotate(60)">
+    <rect x="-2" y="0" width="4" height="40" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="38" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="40" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="48" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑6 (营地中的剑) -->
+  <g transform="translate(200, 370) rotate(-60)">
+    <rect x="-2" y="0" width="4" height="35" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="33" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="35" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="43" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑7 (营地中的剑) -->
+  <g transform="translate(160, 365) rotate(15)">
+    <rect x="-2" y="0" width="4" height="30" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="28" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="30" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="38" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 脚印痕迹 -->
+  <g opacity="0.4">
+    <ellipse cx="100" cy="380" rx="3" ry="6" fill="#654321" transform="rotate(-20)"/>
+    <ellipse cx="110" cy="385" rx="3" ry="6" fill="#654321" transform="rotate(-15)"/>
+    <ellipse cx="120" cy="390" rx="3" ry="6" fill="#654321" transform="rotate(-10)"/>
+    <ellipse cx="130" cy="395" rx="3" ry="6" fill="#654321" transform="rotate(-5)"/>
+  </g>
+  
+  <!-- 月光 -->
+  <circle cx="80" cy="80" r="25" fill="#F5F5DC" opacity="0.8"/>
+  <circle cx="80" cy="80" r="20" fill="#FFFACD" opacity="0.6"/>
+  
+  <!-- 月光光束 -->
+  <g opacity="0.3">
+    <path d="M80 105 L110 300" stroke="#F5F5DC" stroke-width="2"/>
+    <path d="M80 105 L120 320" stroke="#F5F5DC" stroke-width="1.5"/>
+    <path d="M80 105 L130 340" stroke="#F5F5DC" stroke-width="1"/>
+  </g>
+  
+  <!-- 阴影效果 -->
+  <g opacity="0.2">
+    <ellipse cx="125" cy="360" rx="20" ry="8" fill="#000"/>
+    <ellipse cx="200" cy="380" rx="30" ry="10" fill="#000"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">VII - SEVEN OF SWORDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">宝剑七</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8B4513" stroke-width="1" fill="none">
+    <path d="M25 25 L35 25 L35 35"/>
+    <path d="M275 25 L265 25 L265 35"/>
+    <path d="M25 475 L35 475 L35 465"/>
+    <path d="M275 475 L265 475 L265 465"/>
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+<svg width="200" height="350" viewBox="0 0 200 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="200" height="350" fill="#f8f4e6" stroke="#8b4513" stroke-width="3" rx="10"/>
+  
+  <!-- 天空渐变 -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f6ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffb347;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="180" height="150" fill="url(#skyGradient)" rx="5"/>
+  
+  <!-- 太阳 -->
+  <circle cx="160" cy="40" r="20" fill="url(#sunGradient)"/>
+  <g stroke="#ffd700" stroke-width="2">
+    <line x1="160" y1="15" x2="160" y2="5"/>
+    <line x1="160" y1="75" x2="160" y2="85"/>
+    <line x1="135" y1="40" x2="125" y2="40"/>
+    <line x1="185" y1="40" x2="195" y2="40"/>
+    <line x1="142" y1="22" x2="135" y2="15"/>
+    <line x1="178" y1="58" x2="185" y2="65"/>
+    <line x1="178" y1="22" x2="185" y2="15"/>
+    <line x1="142" y1="58" x2="135" y2="65"/>
+  </g>
+  
+  <!-- 山峰 -->
+  <polygon points="10,160 60,100 110,160" fill="#8fbc8f"/>
+  <polygon points="90,160 140,110 190,160" fill="#9acd32"/>
+  
+  <!-- 愚者人物 -->
+  <!-- 头部 -->
+  <circle cx="100" cy="180" r="15" fill="#fdbcb4"/>
+  
+  <!-- 帽子 -->
+  <path d="M85 170 Q100 160 115 170 Q110 165 100 165 Q90 165 85 170" fill="#ff6b6b"/>
+  <circle cx="110" cy="165" r="3" fill="#ffd700"/>
+  
+  <!-- 身体 -->
+  <rect x="90" y="195" width="20" height="40" fill="#4169e1" rx="3"/>
+  
+  <!-- 手臂 -->
+  <rect x="75" y="200" width="15" height="25" fill="#4169e1" rx="3"/>
+  <rect x="110" y="200" width="15" height="25" fill="#4169e1" rx="3"/>
+  
+  <!-- 手 -->
+  <circle cx="82" cy="230" r="5" fill="#fdbcb4"/>
+  <circle cx="118" cy="230" r="5" fill="#fdbcb4"/>
+  
+  <!-- 腿 -->
+  <rect x="92" y="235" width="8" height="30" fill="#228b22" rx="2"/>
+  <rect x="100" y="235" width="8" height="30" fill="#228b22" rx="2"/>
+  
+  <!-- 脚 -->
+  <ellipse cx="96" cy="270" rx="6" ry="4" fill="#8b4513"/>
+  <ellipse cx="104" cy="270" rx="6" ry="4" fill="#8b4513"/>
+  
+  <!-- 背包 -->
+  <rect x="75" y="190" width="12" height="15" fill="#8b4513" rx="2"/>
+  <line x1="81" y1="190" x2="81" y2="180" stroke="#8b4513" stroke-width="2"/>
+  
+  <!-- 花朵 -->
+  <g transform="translate(118, 225)">
+    <circle cx="0" cy="0" r="3" fill="#ff69b4"/>
+    <circle cx="-3" cy="-2" r="2" fill="#ffb6c1"/>
+    <circle cx="3" cy="-2" r="2" fill="#ffb6c1"/>
+    <circle cx="-2" cy="3" r="2" fill="#ffb6c1"/>
+    <circle cx="2" cy="3" r="2" fill="#ffb6c1"/>
+    <line x1="0" y1="3" x2="0" y2="8" stroke="#228b22" stroke-width="1"/>
+  </g>
+  
+  <!-- 小狗 -->
+  <g transform="translate(130, 260)">
+    <ellipse cx="0" cy="0" rx="8" ry="5" fill="#daa520"/>
+    <circle cx="-5" cy="-3" r="3" fill="#daa520"/>
+    <circle cx="-7" cy="-5" r="1" fill="#000"/>
+    <path d="M-8 -3 Q-10 -1 -8 -1" fill="#000"/>
+    <line x1="-3" y1="3" x2="-1" y2="8" stroke="#daa520" stroke-width="2"/>
+    <line x1="1" y1="3" x2="3" y2="8" stroke="#daa520" stroke-width="2"/>
+    <line x1="5" y1="-1" x2="8" y2="-1" stroke="#daa520" stroke-width="2"/>
+  </g>
+  
+  <!-- 悬崖边缘 -->
+  <rect x="10" y="275" width="180" height="5" fill="#8b4513"/>
+  
+  <!-- 卡片标题 -->
+  <text x="100" y="300" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513"> - THE FOOL</text>
+  <text x="100" y="320" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">愚者</text>
+</svg>

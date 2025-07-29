@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#4682b4" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#696969"/>
+      <stop offset="50%" stop-color="#808080"/>
+      <stop offset="100%" stop-color="#2f2f2f"/>
+    </linearGradient>
+    
+    <!-- 剑身渐变 -->
+    <linearGradient id="swordGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c0c0c0"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c0c0c0"/>
+    </linearGradient>
+    
+    <!-- 剑柄渐变 -->
+    <linearGradient id="hiltGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 胜利者渐变 -->
+    <linearGradient id="victorGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 失败者渐变 -->
+    <linearGradient id="defeatedGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d2b48c"/>
+      <stop offset="100%" stop-color="#bc9a6a"/>
+    </linearGradient>
+    
+    <!-- 胜利者长袍渐变 -->
+    <linearGradient id="victorRobeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dc143c"/>
+      <stop offset="100%" stop-color="#8b0000"/>
+    </linearGradient>
+    
+    <!-- 失败者长袍渐变 -->
+    <linearGradient id="defeatedRobeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682b4"/>
+      <stop offset="100%" stop-color="#2f4f4f"/>
+    </linearGradient>
+    
+    <!-- 云朵渐变 -->
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d3d3d3"/>
+      <stop offset="100%" stop-color="#a9a9a9"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 阴暗天空 -->
+  <rect x="10" y="10" width="280" height="250" fill="#696969" opacity="0.8"/>
+  
+  <!-- 战争云朵 -->
+  <g opacity="0.6">
+    <ellipse cx="70" cy="80" rx="35" ry="20" fill="url(#cloudGradient)"/>
+    <ellipse cx="110" cy="70" rx="30" ry="18" fill="url(#cloudGradient)"/>
+    <ellipse cx="150" cy="75" rx="40" ry="25" fill="url(#cloudGradient)"/>
+    <ellipse cx="190" cy="85" rx="35" ry="20" fill="url(#cloudGradient)"/>
+    <ellipse cx="230" cy="90" rx="30" ry="18" fill="url(#cloudGradient)"/>
+    
+    <ellipse cx="50" cy="120" rx="25" ry="15" fill="url(#cloudGradient)"/>
+    <ellipse cx="250" cy="130" rx="25" ry="15" fill="url(#cloudGradient)"/>
+  </g>
+  
+  <!-- 远山 -->
+  <polygon points="10,200 60,150 120,170 180,140 240,160 290,190 290,260 10,260" fill="#2f2f2f" opacity="0.5"/>
+  
+  <!-- 战场地面 -->
+  <rect x="10" y="260" width="280" height="230" fill="#2f2f2f" opacity="0.7"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="10" y1="270" x2="290" y2="275" stroke="#696969" stroke-width="1"/>
+    <line x1="15" y1="290" x2="285" y2="295" stroke="#696969" stroke-width="1"/>
+    <line x1="20" y1="310" x2="280" y2="315" stroke="#696969" stroke-width="1"/>
+  </g>
+  
+  <!-- 胜利者（中央人物） -->
+  <g id="victor">
+    <!-- 身体/长袍 -->
+    <ellipse cx="150" cy="320" rx="20" ry="35" fill="url(#victorRobeGradient)"/>
+    
+    <!-- 长袍装饰 -->
+    <circle cx="145" cy="310" r="2" fill="#ffd700"/>
+    <circle cx="155" cy="310" r="2" fill="#ffd700"/>
+    <circle cx="150" cy="320" r="1.5" fill="#ffd700"/>
+    <circle cx="140" cy="330" r="1.5" fill="#ffd700"/>
+    <circle cx="160" cy="330" r="1.5" fill="#ffd700"/>
+    
+    <!-- 头部 -->
+    <circle cx="150" cy="280" r="12" fill="url(#victorGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M138 270 Q143 265 148 270 Q153 265 158 270 Q163 265 168 270" stroke="#8b4513" stroke-width="4" fill="none"/>
+    <path d="M140 275 Q145 270 150 275 Q155 270 160 275 Q165 270 170 275" stroke="#8b4513" stroke-width="3" fill="none"/>
+    
+    <!-- 眼睛（冷酷的表情） -->
+    <ellipse cx="145" cy="278" rx="2" ry="1" fill="#000"/>
+    <ellipse cx="155" cy="278" rx="2" ry="1" fill="#000"/>
+    <circle cx="146" cy="277" r="0.5" fill="#ffffff"/>
+    <circle cx="156" cy="277" r="0.5" fill="#ffffff"/>
+    
+    <!-- 眉毛（皱眉） -->
+    <path d="M143 275 Q146 273 149 275" stroke="#8b4513" stroke-width="1" fill="none"/>
+    <path d="M151 275 Q154 273 157 275" stroke="#8b4513" stroke-width="1" fill="none"/>
+    
+    <!-- 鼻子 -->
+    <ellipse cx="150" cy="282" rx="1" ry="2" fill="url(#victorGradient)" opacity="0.8"/>
+    
+    <!-- 嘴巴（严肃） -->
+    <path d="M147 286 Q150 285 153 286" stroke="#8b0000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="125" cy="300" rx="8" ry="18" fill="url(#victorGradient)" transform="rotate(-20 125 300)"/>
+    <ellipse cx="175" cy="300" rx="8" ry="18" fill="url(#victorGradient)" transform="rotate(20 175 300)"/>
+    
+    <!-- 手 -->
+    <circle cx="120" cy="315" r="4" fill="url(#victorGradient)"/>
+    <circle cx="180" cy="315" r="4" fill="url(#victorGradient)"/>
+    
+    <!-- 腿部 -->
+    <ellipse cx="145" cy="355" rx="6" ry="20" fill="url(#victorGradient)"/>
+    <ellipse cx="155" cy="355" rx="6" ry="20" fill="url(#victorGradient)"/>
+    
+    <!-- 脚 -->
+    <ellipse cx="145" cy="375" rx="4" ry="8" fill="#8b4513"/>
+    <ellipse cx="155" cy="375" rx="4" ry="8" fill="#8b4513"/>
+  </g>
+  
+  <!-- 胜利者手持的两把剑 -->
+  <!-- 左手剑 -->
+  <g id="victorSword1">
+    <rect x="118" y="250" width="3" height="65" fill="url(#swordGradient)" transform="rotate(-15 120 282)"/>
+    <polygon points="118,250 119.5,245 121,250" fill="url(#swordGradient)" transform="rotate(-15 120 282)"/>
+    <line x1="119.5" y1="250" x2="119.5" y2="315" stroke="#e6e6e6" stroke-width="0.5" transform="rotate(-15 120 282)"/>
+    <rect x="110" y="313" width="18" height="3" fill="url(#hiltGradient)" transform="rotate(-15 120 315)"/>
+    <rect x="117" y="317" width="4" height="12" fill="url(#hiltGradient)" transform="rotate(-15 120 323)"/>
+    <circle cx="119" cy="323" r="1" fill="#ff69b4" transform="rotate(-15 120 323)"/>
+    <circle cx="119" cy="329" r="2" fill="url(#hiltGradient)" transform="rotate(-15 120 329)"/>
+  </g>
+  
+  <!-- 右手剑 -->
+  <g id="victorSword2">
+    <rect x="178" y="250" width="3" height="65" fill="url(#swordGradient)" transform="rotate(15 180 282)"/>
+    <polygon points="178,250 179.5,245 181,250" fill="url(#swordGradient)" transform="rotate(15 180 282)"/>
+    <line x1="179.5" y1="250" x2="179.5" y2="315" stroke="#e6e6e6" stroke-width="0.5" transform="rotate(15 180 282)"/>
+    <rect x="170" y="313" width="18" height="3" fill="url(#hiltGradient)" transform="rotate(15 180 315)"/>
+    <rect x="177" y="317" width="4" height="12" fill="url(#hiltGradient)" transform="rotate(15 180 323)"/>
+    <circle cx="179" cy="323" r="1" fill="#ff69b4" transform="rotate(15 180 323)"/>
+    <circle cx="179" cy="329" r="2" fill="url(#hiltGradient)" transform="rotate(15 180 329)"/>
+  </g>
+  
+  <!-- 左侧失败者 -->
+  <g id="defeated1">
+    <!-- 身体（倒下） -->
+    <ellipse cx="80" cy="380" rx="15" ry="25" fill="url(#defeatedRobeGradient)" transform="rotate(-30 80 380)"/>
+    
+    <!-- 头部 -->
+    <circle cx="70" cy="360" r="8" fill="url(#defeatedGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M62 352 Q67 347 72 352 Q77 347 82 352" stroke="#654321" stroke-width="3" fill="none"/>
+    
+    <!-- 眼睛（痛苦表情） -->
+    <path d="M67 358 Q69 360 71 358" stroke="#000" stroke-width="1" fill="none"/>
+    <path d="M73 358 Q75 360 77 358" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 嘴巴（痛苦） -->
+    <path d="M68 364 Q70 366 72 364" stroke="#8b0000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂（防御姿势） -->
+    <ellipse cx="60" cy="370" rx="5" ry="12" fill="url(#defeatedGradient)" transform="rotate(-45 60 370)"/>
+    <ellipse cx="90" cy="375" rx="5" ry="12" fill="url(#defeatedGradient)" transform="rotate(30 90 375)"/>
+    
+    <!-- 手 -->
+    <circle cx="55" cy="365" r="3" fill="url(#defeatedGradient)"/>
+    <circle cx="95" cy="385" r="3" fill="url(#defeatedGradient)"/>
+  </g>
+  
+  <!-- 右侧失败者 -->
+  <g id="defeated2">
+    <!-- 身体（倒下） -->
+    <ellipse cx="220" cy="385" rx="15" ry="25" fill="url(#defeatedRobeGradient)" transform="rotate(20 220 385)"/>
+    
+    <!-- 头部 -->
+    <circle cx="235" cy="365" r="8" fill="url(#defeatedGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M227 357 Q232 352 237 357 Q242 352 247 357" stroke="#654321" stroke-width="3" fill="none"/>
+    
+    <!-- 眼睛（痛苦表情） -->
+    <path d="M232 363 Q234 365 236 363" stroke="#000" stroke-width="1" fill="none"/>
+    <path d="M238 363 Q240 365 242 363" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 嘴巴（痛苦） -->
+    <path d="M233 369 Q235 371 237 369" stroke="#8b0000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂（倒下姿势） -->
+    <ellipse cx="210" cy="375" rx="5" ry="12" fill="url(#defeatedGradient)" transform="rotate(-30 210 375)"/>
+    <ellipse cx="245" cy="380" rx="5" ry="12" fill="url(#defeatedGradient)" transform="rotate(45 245 380)"/>
+    
+    <!-- 手 -->
+    <circle cx="205" cy="370" r="3" fill="url(#defeatedGradient)"/>
+    <circle cx="250" cy="390" r="3" fill="url(#defeatedGradient)"/>
+  </g>
+  
+  <!-- 散落的剑 -->
+  <!-- 失败者的剑1 -->
+  <g id="fallenSword1">
+    <rect x="48" y="390" width="2" height="40" fill="url(#swordGradient)" transform="rotate(45 50 410)"/>
+    <polygon points="48,390 49,387 50,390" fill="url(#swordGradient)" transform="rotate(45 50 410)"/>
+    <rect x="45" y="428" width="10" height="2" fill="url(#hiltGradient)" transform="rotate(45 50 430)"/>
+    <rect x="48" y="431" width="2" height="8" fill="url(#hiltGradient)" transform="rotate(45 50 435)"/>
+    <circle cx="49" cy="439" r="1.5" fill="url(#hiltGradient)" transform="rotate(45 50 439)"/>
+  </g>
+  
+  <!-- 失败者的剑2 -->
+  <g id="fallenSword2">
+    <rect x="248" y="400" width="2" height="35" fill="url(#swordGradient)" transform="rotate(-30 250 417)"/>
+    <polygon points="248,400 249,397 250,400" fill="url(#swordGradient)" transform="rotate(-30 250 417)"/>
+    <rect x="245" y="433" width="10" height="2" fill="url(#hiltGradient)" transform="rotate(-30 250 435)"/>
+    <rect x="248" y="436" width="2" height="8" fill="url(#hiltGradient)" transform="rotate(-30 250 440)"/>
+    <circle cx="249" cy="444" r="1.5" fill="url(#hiltGradient)" transform="rotate(-30 250 444)"/>
+  </g>
+  
+  <!-- 战斗痕迹 -->
+  <g opacity="0.4">
+    <!-- 地面划痕 -->
+    <line x1="60" y1="420" x2="90" y2="430" stroke="#696969" stroke-width="2"/>
+    <line x1="210" y1="425" x2="240" y2="415" stroke="#696969" stroke-width="2"/>
+    <line x1="120" y1="400" x2="180" y2="410" stroke="#696969" stroke-width="1"/>
+    
+    <!-- 石块 -->
+    <ellipse cx="100" cy="440" rx="4" ry="2" fill="#696969"/>
+    <ellipse cx="200" cy="450" rx="3" ry="2" fill="#696969"/>
+    <ellipse cx="150" cy="430" rx="2" ry="1" fill="#696969"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">V - FIVE OF SWORDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">宝剑五</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#4682b4" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

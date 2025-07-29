@@ -1,0 +1,228 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#f0e68c"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <linearGradient id="pentacleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#ffed4e"/>
+      <stop offset="100%" stop-color="#ffa500"/>
+    </linearGradient>
+    
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="50%" stop-color="#a0522d"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+    
+    <linearGradient id="throneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#daa520"/>
+      <stop offset="50%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#8b7355"/>
+    </linearGradient>
+    
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4b0082"/>
+      <stop offset="50%" stop-color="#6a5acd"/>
+      <stop offset="100%" stop-color="#483d8b"/>
+    </linearGradient>
+    
+    <linearGradient id="capeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b0000"/>
+      <stop offset="50%" stop-color="#dc143c"/>
+      <stop offset="100%" stop-color="#b22222"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#skyGradient)"/>
+  
+  <!-- 城堡背景 -->
+  <rect x="15" y="250" width="270" height="220" fill="#d2b48c"/>
+  
+  <!-- 城堡塔楼 -->
+  <rect x="200" y="200" width="40" height="150" fill="#daa520"/>
+  <rect x="210" y="190" width="20" height="20" fill="#daa520"/>
+  <polygon points="220,190 210,180 230,180" fill="#b8860b"/>
+  
+  <rect x="60" y="220" width="35" height="130" fill="#daa520"/>
+  <rect x="67" y="210" width="21" height="20" fill="#daa520"/>
+  <polygon points="77,210 67,200 87,200" fill="#b8860b"/>
+  
+  <!-- 城堡窗户 -->
+  <rect x="215" y="220" width="10" height="15" fill="#000" opacity="0.6"/>
+  <rect x="215" y="250" width="10" height="15" fill="#000" opacity="0.6"/>
+  <rect x="72" y="240" width="8" height="12" fill="#000" opacity="0.6"/>
+  <rect x="72" y="270" width="8" height="12" fill="#000" opacity="0.6"/>
+  
+  <!-- 地面/平台 -->
+  <rect x="15" y="350" width="270" height="120" fill="#8fbc8f"/>
+  
+  <!-- 地面纹理 -->
+  <circle cx="40" cy="380" r="3" fill="#228b22" opacity="0.6"/>
+  <circle cx="80" cy="390" r="2" fill="#228b22" opacity="0.6"/>
+  <circle cx="120" cy="385" r="3" fill="#228b22" opacity="0.6"/>
+  <circle cx="200" cy="395" r="2" fill="#228b22" opacity="0.6"/>
+  <circle cx="250" cy="380" r="3" fill="#228b22" opacity="0.6"/>
+  
+  <!-- 华丽宝座 -->
+  <!-- 底座 -->
+  <rect x="115" y="380" width="70" height="20" fill="url(#throneGradient)"/>
+  
+  <!-- 靠背 -->
+  <rect x="120" y="270" width="60" height="110" fill="url(#throneGradient)"/>
+  
+  <!-- 扶手 -->
+  <rect x="105" y="320" width="20" height="50" fill="url(#throneGradient)"/>
+  <rect x="175" y="320" width="20" height="50" fill="url(#throneGradient)"/>
+  
+  <!-- 宝座装饰 -->
+  <rect x="125" y="275" width="50" height="4" fill="#ffd700"/>
+  <rect x="125" y="295" width="50" height="3" fill="#ffd700"/>
+  <rect x="125" y="315" width="50" height="3" fill="#ffd700"/>
+  <rect x="125" y="335" width="50" height="3" fill="#ffd700"/>
+  <rect x="125" y="355" width="50" height="3" fill="#ffd700"/>
+  
+  <!-- 宝座顶部装饰 -->
+  <polygon points="150,270 135,255 165,255" fill="#ffd700"/>
+  <circle cx="150" cy="260" r="5" fill="#ff1493"/>
+  
+  <!-- 公牛头装饰（财富的象征） -->
+  <ellipse cx="135" cy="285" rx="6" ry="8" fill="#8b4513"/>
+  <polygon points="135,280 130,275 140,275" fill="#654321"/>
+  <circle cx="133" cy="283" r="1" fill="#000"/>
+  <circle cx="137" cy="283" r="1" fill="#000"/>
+  <ellipse cx="130" cy="278" rx="1" ry="3" fill="#654321"/>
+  <ellipse cx="140" cy="278" rx="1" ry="3" fill="#654321"/>
+  
+  <ellipse cx="165" cy="285" rx="6" ry="8" fill="#8b4513"/>
+  <polygon points="165,280 160,275 170,275" fill="#654321"/>
+  <circle cx="163" cy="283" r="1" fill="#000"/>
+  <circle cx="167" cy="283" r="1" fill="#000"/>
+  <ellipse cx="160" cy="278" rx="1" ry="3" fill="#654321"/>
+  <ellipse cx="170" cy="278" rx="1" ry="3" fill="#654321"/>
+  
+  <!-- 国王 -->
+  <!-- 身体/长袍 -->
+  <ellipse cx="150" cy="340" rx="35" ry="55" fill="url(#robeGradient)"/>
+  
+  <!-- 长袍装饰 -->
+  <rect x="125" y="305" width="50" height="4" fill="#ffd700"/>
+  <rect x="125" y="325" width="50" height="3" fill="#ffd700"/>
+  <rect x="125" y="345" width="50" height="3" fill="#ffd700"/>
+  <rect x="125" y="365" width="50" height="3" fill="#ffd700"/>
+  <rect x="125" y="385" width="50" height="3" fill="#ffd700"/>
+  
+  <!-- 长袍边缘装饰 -->
+  <path d="M 115 395 Q 150 390 185 395" stroke="#ffd700" stroke-width="4" fill="none"/>
+  
+  <!-- 斗篷 -->
+  <path d="M 115 310 Q 100 330 110 360 Q 125 350 130 330" fill="url(#capeGradient)"/>
+  <path d="M 185 310 Q 200 330 190 360 Q 175 350 170 330" fill="url(#capeGradient)"/>
+  
+  <!-- 斗篷装饰 -->
+  <circle cx="120" cy="325" r="3" fill="#ffd700"/>
+  <circle cx="180" cy="325" r="3" fill="#ffd700"/>
+  
+  <!-- 头部 -->
+  <circle cx="150" cy="260" r="22" fill="url(#figureGradient)"/>
+  
+  <!-- 头发 -->
+  <path d="M 128 250 Q 150 235 172 250 Q 170 265 150 265 Q 130 265 128 250" fill="#654321"/>
+  
+  <!-- 胡须 -->
+  <path d="M 135 270 Q 150 275 165 270 Q 162 280 150 280 Q 138 280 135 270" fill="#654321"/>
+  
+  <!-- 王冠 -->
+  <ellipse cx="150" cy="240" rx="28" ry="10" fill="#ffd700"/>
+  <polygon points="150,235 142,225 158,225" fill="#ffd700"/>
+  <polygon points="135,237 127,227 143,227" fill="#ffd700"/>
+  <polygon points="165,237 157,227 173,227" fill="#ffd700"/>
+  <polygon points="125,240 117,230 133,230" fill="#ffd700"/>
+  <polygon points="175,240 167,230 183,230" fill="#ffd700"/>
+  
+  <!-- 王冠宝石 -->
+  <circle cx="150" cy="230" r="4" fill="#ff1493"/>
+  <circle cx="135" cy="232" r="3" fill="#00ced1"/>
+  <circle cx="165" cy="232" r="3" fill="#00ced1"/>
+  <circle cx="125" cy="235" r="2" fill="#32cd32"/>
+  <circle cx="175" cy="235" r="2" fill="#32cd32"/>
+  
+  <!-- 眼睛（威严智慧） -->
+  <circle cx="145" cy="258" r="2" fill="#000"/>
+  <circle cx="155" cy="258" r="2" fill="#000"/>
+  
+  <!-- 眉毛 -->
+  <path d="M 142 254 Q 145 252 148 254" stroke="#654321" stroke-width="1" fill="none"/>
+  <path d="M 152 254 Q 155 252 158 254" stroke="#654321" stroke-width="1" fill="none"/>
+  
+  <!-- 鼻子 -->
+  <path d="M 150 260 L 148 265 L 152 265 Z" fill="#a0522d"/>
+  
+  <!-- 嘴巴（威严） -->
+  <path d="M 147 268 Q 150 267 153 268" stroke="#654321" stroke-width="1" fill="none"/>
+  
+  <!-- 手臂 -->
+  <ellipse cx="115" cy="320" rx="12" ry="30" fill="url(#robeGradient)" transform="rotate(-15 115 320)"/>
+  <ellipse cx="185" cy="320" rx="12" ry="30" fill="url(#robeGradient)" transform="rotate(15 185 320)"/>
+  
+  <!-- 手 -->
+  <circle cx="110" cy="295" r="8" fill="url(#figureGradient)"/>
+  <circle cx="190" cy="295" r="8" fill="url(#figureGradient)"/>
+  
+  <!-- 国王手持的星币 -->
+  <circle cx="190" cy="290" r="28" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="3"/>
+  <polygon points="190,267 197,281 211,281 199,292 203,306 190,297 177,306 181,292 169,281 183,281" fill="#8b4513"/>
+  <circle cx="190" cy="290" r="11" fill="none" stroke="#8b4513" stroke-width="2"/>
+  
+  <!-- 星币装饰 -->
+  <circle cx="184" cy="284" r="2" fill="#8b4513"/>
+  <circle cx="196" cy="284" r="2" fill="#8b4513"/>
+  <circle cx="190" cy="278" r="2" fill="#8b4513"/>
+  <circle cx="190" cy="302" r="2" fill="#8b4513"/>
+  
+  <!-- 权杖（在左手） -->
+  <rect x="105" y="270" width="4" height="40" fill="#8b4513"/>
+  
+  <!-- 权杖顶部 -->
+  <circle cx="107" cy="268" r="6" fill="#ffd700"/>
+  <circle cx="107" cy="268" r="3" fill="#ff1493"/>
+  
+  <!-- 权杖装饰 -->
+  <rect x="105" y="285" width="4" height="2" fill="#ffd700"/>
+  <rect x="105" y="295" width="4" height="2" fill="#ffd700"/>
+  
+  <!-- 财富的光芒 -->
+  <circle cx="150" cy="340" r="60" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.4"/>
+  <circle cx="150" cy="340" r="80" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.3"/>
+  <circle cx="150" cy="340" r="100" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.2"/>
+  
+  <!-- 金币散落 -->
+  <circle cx="70" cy="400" r="4" fill="#ffd700" opacity="0.8"/>
+  <circle cx="230" cy="410" r="4" fill="#ffd700" opacity="0.8"/>
+  <circle cx="100" cy="420" r="3" fill="#ffd700" opacity="0.8"/>
+  <circle cx="200" cy="430" r="3" fill="#ffd700" opacity="0.8"/>
+  
+  <!-- 地面装饰（财富之花） -->
+  <circle cx="80" cy="440" r="5" fill="#ff69b4"/>
+  <circle cx="220" cy="450" r="5" fill="#ff69b4"/>
+  <circle cx="150" cy="460" r="5" fill="#ff69b4"/>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">KING OF PENTACLES</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">星币国王</text>
+  
+  <!-- 装饰边角 -->
+  <circle cx="30" cy="30" r="3" fill="#ffd700"/>
+  <circle cx="270" cy="30" r="3" fill="#ffd700"/>
+  <circle cx="30" cy="470" r="3" fill="#ffd700"/>
+  <circle cx="270" cy="470" r="3" fill="#ffd700"/>
+</svg>

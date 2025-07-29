@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#4682b4" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="50%" stop-color="#b0c4de"/>
+      <stop offset="100%" stop-color="#778899"/>
+    </linearGradient>
+    
+    <!-- 剑身渐变 -->
+    <linearGradient id="swordGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c0c0c0"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c0c0c0"/>
+    </linearGradient>
+    
+    <!-- 剑柄渐变 -->
+    <linearGradient id="hiltGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 手部渐变 -->
+    <linearGradient id="handGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 云朵渐变 -->
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f0f0"/>
+    </linearGradient>
+    
+    <!-- 光芒渐变 -->
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="300" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,250 60,200 120,220 180,190 240,210 290,240 290,310 10,310" fill="#696969" opacity="0.4"/>
+  <polygon points="20,270 80,230 140,250 200,220 260,240 290,260 290,310 20,310" fill="#808080" opacity="0.3"/>
+  
+  <!-- 地面 -->
+  <rect x="10" y="310" width="280" height="180" fill="#90ee90" opacity="0.6"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="10" y1="320" x2="290" y2="325" stroke="#228b22" stroke-width="1"/>
+    <line x1="15" y1="340" x2="285" y2="345" stroke="#228b22" stroke-width="1"/>
+    <line x1="20" y1="360" x2="280" y2="365" stroke="#228b22" stroke-width="1"/>
+  </g>
+  
+  <!-- 云朵群 -->
+  <g id="clouds">
+    <!-- 主云朵 -->
+    <ellipse cx="150" cy="180" rx="60" ry="30" fill="url(#cloudGradient)" opacity="0.9"/>
+    <ellipse cx="120" cy="170" rx="40" ry="25" fill="url(#cloudGradient)" opacity="0.9"/>
+    <ellipse cx="180" cy="170" rx="45" ry="28" fill="url(#cloudGradient)" opacity="0.9"/>
+    <ellipse cx="150" cy="150" rx="35" ry="20" fill="url(#cloudGradient)" opacity="0.9"/>
+    
+    <!-- 周围小云朵 -->
+    <ellipse cx="80" cy="120" rx="25" ry="15" fill="url(#cloudGradient)" opacity="0.7"/>
+    <ellipse cx="95" cy="115" rx="20" ry="12" fill="url(#cloudGradient)" opacity="0.7"/>
+    
+    <ellipse cx="220" cy="110" rx="30" ry="18" fill="url(#cloudGradient)" opacity="0.7"/>
+    <ellipse cx="240" cy="105" rx="25" ry="15" fill="url(#cloudGradient)" opacity="0.7"/>
+    
+    <ellipse cx="60" cy="200" rx="20" ry="12" fill="url(#cloudGradient)" opacity="0.6"/>
+    <ellipse cx="250" cy="190" rx="25" ry="15" fill="url(#cloudGradient)" opacity="0.6"/>
+  </g>
+  
+  <!-- 神圣光芒 -->
+  <circle cx="150" cy="150" r="80" fill="url(#glowGradient)"/>
+  
+  <!-- 光线 -->
+  <g opacity="0.6">
+    <line x1="150" y1="70" x2="150" y2="50" stroke="#ffd700" stroke-width="3"/>
+    <line x1="200" y1="100" x2="215" y2="85" stroke="#ffd700" stroke-width="2"/>
+    <line x1="220" y1="150" x2="240" y2="150" stroke="#ffd700" stroke-width="2"/>
+    <line x1="200" y1="200" x2="215" y2="215" stroke="#ffd700" stroke-width="2"/>
+    <line x1="100" y1="200" x2="85" y2="215" stroke="#ffd700" stroke-width="2"/>
+    <line x1="80" y1="150" x2="60" y2="150" stroke="#ffd700" stroke-width="2"/>
+    <line x1="100" y1="100" x2="85" y2="85" stroke="#ffd700" stroke-width="2"/>
+    <line x1="150" y1="230" x2="150" y2="250" stroke="#ffd700" stroke-width="3"/>
+  </g>
+  
+  <!-- 手臂从云中伸出 -->
+  <g id="arm">
+    <!-- 手臂 -->
+    <ellipse cx="150" cy="200" rx="12" ry="35" fill="url(#handGradient)" transform="rotate(10 150 200)"/>
+    
+    <!-- 袖子 -->
+    <ellipse cx="150" cy="220" rx="15" ry="25" fill="#ffffff" opacity="0.8" transform="rotate(10 150 220)"/>
+    <path d="M135 235 Q140 230 145 235 Q150 230 155 235 Q160 230 165 235" stroke="#ddd" stroke-width="2" fill="none" transform="rotate(10 150 235)"/>
+    
+    <!-- 手 -->
+    <ellipse cx="150" cy="170" rx="8" ry="12" fill="url(#handGradient)" transform="rotate(10 150 170)"/>
+    
+    <!-- 手指 -->
+    <ellipse cx="145" cy="160" rx="2" ry="8" fill="url(#handGradient)" transform="rotate(5 145 160)"/>
+    <ellipse cx="150" cy="158" rx="2" ry="9" fill="url(#handGradient)" transform="rotate(0 150 158)"/>
+    <ellipse cx="155" cy="160" rx="2" ry="8" fill="url(#handGradient)" transform="rotate(-5 155 160)"/>
+    <ellipse cx="160" cy="163" rx="2" ry="7" fill="url(#handGradient)" transform="rotate(-10 160 163)"/>
+    
+    <!-- 拇指 -->
+    <ellipse cx="142" cy="168" rx="2" ry="6" fill="url(#handGradient)" transform="rotate(45 142 168)"/>
+  </g>
+  
+  <!-- 宝剑 -->
+  <g id="sword">
+    <!-- 剑身 -->
+    <rect x="148" y="80" width="4" height="90" fill="url(#swordGradient)"/>
+    <polygon points="148,80 150,70 152,80" fill="url(#swordGradient)"/>
+    
+    <!-- 剑身中央线 -->
+    <line x1="150" y1="80" x2="150" y2="170" stroke="#e6e6e6" stroke-width="1"/>
+    
+    <!-- 护手 -->
+    <rect x="135" y="168" width="30" height="4" fill="url(#hiltGradient)"/>
+    <circle cx="140" cy="170" r="2" fill="#ff69b4"/>
+    <circle cx="160" cy="170" r="2" fill="#ff69b4"/>
+    
+    <!-- 剑柄 -->
+    <rect x="147" y="172" width="6" height="20" fill="url(#hiltGradient)"/>
+    
+    <!-- 剑柄装饰 -->
+    <circle cx="150" cy="177" r="1" fill="#ff69b4"/>
+    <circle cx="150" cy="182" r="1" fill="#ff69b4"/>
+    <circle cx="150" cy="187" r="1" fill="#ff69b4"/>
+    
+    <!-- 剑柄底部 -->
+    <circle cx="150" cy="192" r="4" fill="url(#hiltGradient)"/>
+    <circle cx="150" cy="192" r="2" fill="#ff69b4"/>
+  </g>
+  
+  <!-- 王冠装饰 -->
+  <g id="crown" opacity="0.8">
+    <polygon points="140,65 145,55 150,50 155,55 160,65" fill="#ffd700"/>
+    <circle cx="150" cy="58" r="2" fill="#ff69b4"/>
+    <circle cx="145" cy="62" r="1" fill="#4169e1"/>
+    <circle cx="155" cy="62" r="1" fill="#4169e1"/>
+  </g>
+  
+  <!-- 橄榄枝装饰 -->
+  <g opacity="0.7">
+    <!-- 左侧橄榄枝 -->
+    <path d="M120 140 Q110 135 105 140 Q110 145 120 140" stroke="#228b22" stroke-width="2" fill="none"/>
+    <ellipse cx="115" cy="138" rx="3" ry="1.5" fill="#228b22" transform="rotate(-20 115 138)"/>
+    <ellipse cx="112" cy="142" rx="3" ry="1.5" fill="#228b22" transform="rotate(20 112 142)"/>
+    <ellipse cx="108" cy="140" rx="2" ry="1" fill="#228b22"/>
+    
+    <!-- 右侧橄榄枝 -->
+    <path d="M180 140 Q190 135 195 140 Q190 145 180 140" stroke="#228b22" stroke-width="2" fill="none"/>
+    <ellipse cx="185" cy="138" rx="3" ry="1.5" fill="#228b22" transform="rotate(20 185 138)"/>
+    <ellipse cx="188" cy="142" rx="3" ry="1.5" fill="#228b22" transform="rotate(-20 188 142)"/>
+    <ellipse cx="192" cy="140" rx="2" ry="1" fill="#228b22"/>
+  </g>
+  
+  <!-- 地面装饰 -->
+  <g opacity="0.6">
+    <!-- 花朵 -->
+    <circle cx="80" cy="380" r="4" fill="#ff69b4"/>
+    <circle cx="77" cy="377" r="1" fill="#ffffff"/>
+    <circle cx="83" cy="377" r="1" fill="#ffffff"/>
+    <circle cx="77" cy="383" r="1" fill="#ffffff"/>
+    <circle cx="83" cy="383" r="1" fill="#ffffff"/>
+    <circle cx="80" cy="380" r="1" fill="#ffd700"/>
+    
+    <circle cx="220" cy="370" r="3" fill="#ff1493"/>
+    <circle cx="218" cy="368" r="0.8" fill="#ffffff"/>
+    <circle cx="222" cy="368" r="0.8" fill="#ffffff"/>
+    <circle cx="218" cy="372" r="0.8" fill="#ffffff"/>
+    <circle cx="222" cy="372" r="0.8" fill="#ffffff"/>
+    <circle cx="220" cy="370" r="0.8" fill="#ffd700"/>
+    
+    <!-- 草 -->
+    <line x1="60" y1="390" x2="62" y2="370" stroke="#228b22" stroke-width="2"/>
+    <line x1="65" y1="395" x2="67" y2="375" stroke="#228b22" stroke-width="2"/>
+    <line x1="240" y1="385" x2="242" y2="365" stroke="#228b22" stroke-width="2"/>
+    <line x1="245" y1="390" x2="247" y2="370" stroke="#228b22" stroke-width="2"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">ACE OF SWORDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">宝剑王牌</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#4682b4" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

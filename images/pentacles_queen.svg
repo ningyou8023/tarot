@@ -1,0 +1,197 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#98fb98"/>
+      <stop offset="100%" stop-color="#90ee90"/>
+    </linearGradient>
+    
+    <linearGradient id="pentacleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#ffed4e"/>
+      <stop offset="100%" stop-color="#ffa500"/>
+    </linearGradient>
+    
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="50%" stop-color="#a0522d"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+    
+    <linearGradient id="throneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#daa520"/>
+      <stop offset="50%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#8b7355"/>
+    </linearGradient>
+    
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b0000"/>
+      <stop offset="50%" stop-color="#dc143c"/>
+      <stop offset="100%" stop-color="#b22222"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#skyGradient)"/>
+  
+  <!-- 云朵 -->
+  <ellipse cx="60" cy="40" rx="25" ry="12" fill="white" opacity="0.8"/>
+  <ellipse cx="75" cy="35" rx="20" ry="10" fill="white" opacity="0.8"/>
+  <ellipse cx="220" cy="50" rx="30" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="240" cy="45" rx="25" ry="12" fill="white" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="15,350 80,280 120,300 160,270 200,290 240,260 285,320 285,470 15,470" fill="#9370db" opacity="0.6"/>
+  
+  <!-- 地面 -->
+  <rect x="15" y="350" width="270" height="120" fill="#8fbc8f"/>
+  
+  <!-- 地面纹理 -->
+  <circle cx="40" cy="380" r="3" fill="#228b22" opacity="0.6"/>
+  <circle cx="80" cy="390" r="2" fill="#228b22" opacity="0.6"/>
+  <circle cx="120" cy="385" r="3" fill="#228b22" opacity="0.6"/>
+  <circle cx="200" cy="395" r="2" fill="#228b22" opacity="0.6"/>
+  <circle cx="250" cy="380" r="3" fill="#228b22" opacity="0.6"/>
+  
+  <!-- 宝座 -->
+  <!-- 底座 -->
+  <rect x="120" y="380" width="60" height="15" fill="url(#throneGradient)"/>
+  
+  <!-- 靠背 -->
+  <rect x="125" y="280" width="50" height="100" fill="url(#throneGradient)"/>
+  
+  <!-- 扶手 -->
+  <rect x="115" y="320" width="15" height="40" fill="url(#throneGradient)"/>
+  <rect x="170" y="320" width="15" height="40" fill="url(#throneGradient)"/>
+  
+  <!-- 宝座装饰 -->
+  <rect x="130" y="285" width="40" height="3" fill="#ffd700"/>
+  <rect x="130" y="300" width="40" height="2" fill="#ffd700"/>
+  <rect x="130" y="320" width="40" height="2" fill="#ffd700"/>
+  <rect x="130" y="340" width="40" height="2" fill="#ffd700"/>
+  
+  <!-- 宝座顶部装饰 -->
+  <polygon points="150,280 140,270 160,270" fill="#ffd700"/>
+  
+  <!-- 兔子装饰（丰饶的象征） -->
+  <ellipse cx="140" cy="290" rx="4" ry="6" fill="#8b4513"/>
+  <circle cx="140" cy="287" r="2" fill="#8b4513"/>
+  <ellipse cx="138" cy="285" rx="1" ry="2" fill="#8b4513"/>
+  <ellipse cx="142" cy="285" rx="1" ry="2" fill="#8b4513"/>
+  <circle cx="139" cy="286" r="0.5" fill="#000"/>
+  
+  <ellipse cx="160" cy="290" rx="4" ry="6" fill="#8b4513"/>
+  <circle cx="160" cy="287" r="2" fill="#8b4513"/>
+  <ellipse cx="158" cy="285" rx="1" ry="2" fill="#8b4513"/>
+  <ellipse cx="162" cy="285" rx="1" ry="2" fill="#8b4513"/>
+  <circle cx="161" cy="286" r="0.5" fill="#000"/>
+  
+  <!-- 王后 -->
+  <!-- 身体/长袍 -->
+  <ellipse cx="150" cy="340" rx="30" ry="50" fill="url(#robeGradient)"/>
+  
+  <!-- 长袍装饰 -->
+  <rect x="130" y="310" width="40" height="3" fill="#ffd700"/>
+  <rect x="130" y="330" width="40" height="2" fill="#ffd700"/>
+  <rect x="130" y="350" width="40" height="2" fill="#ffd700"/>
+  <rect x="130" y="370" width="40" height="2" fill="#ffd700"/>
+  
+  <!-- 长袍边缘装饰 -->
+  <path d="M 120 390 Q 150 385 180 390" stroke="#ffd700" stroke-width="3" fill="none"/>
+  
+  <!-- 头部 -->
+  <circle cx="150" cy="270" r="20" fill="url(#figureGradient)"/>
+  
+  <!-- 头发 -->
+  <path d="M 130 260 Q 150 245 170 260 Q 168 270 150 270 Q 132 270 130 260" fill="#8b4513"/>
+  
+  <!-- 王冠 -->
+  <ellipse cx="150" cy="250" rx="25" ry="8" fill="#ffd700"/>
+  <polygon points="150,245 145,240 155,240" fill="#ffd700"/>
+  <polygon points="140,247 135,242 145,242" fill="#ffd700"/>
+  <polygon points="160,247 155,242 165,242" fill="#ffd700"/>
+  
+  <!-- 王冠宝石 -->
+  <circle cx="150" cy="245" r="3" fill="#ff1493"/>
+  <circle cx="140" cy="247" r="2" fill="#00ced1"/>
+  <circle cx="160" cy="247" r="2" fill="#00ced1"/>
+  
+  <!-- 眼睛（慈祥智慧） -->
+  <circle cx="145" cy="268" r="2" fill="#000"/>
+  <circle cx="155" cy="268" r="2" fill="#000"/>
+  
+  <!-- 眉毛 -->
+  <path d="M 142 264 Q 145 262 148 264" stroke="#654321" stroke-width="1" fill="none"/>
+  <path d="M 152 264 Q 155 262 158 264" stroke="#654321" stroke-width="1" fill="none"/>
+  
+  <!-- 鼻子 -->
+  <path d="M 150 270 L 148 275 L 152 275 Z" fill="#a0522d"/>
+  
+  <!-- 嘴巴（慈祥的微笑） -->
+  <path d="M 147 278 Q 150 280 153 278" stroke="#654321" stroke-width="1" fill="none"/>
+  
+  <!-- 手臂 -->
+  <ellipse cx="120" cy="320" rx="10" ry="25" fill="url(#robeGradient)" transform="rotate(-15 120 320)"/>
+  <ellipse cx="180" cy="320" rx="10" ry="25" fill="url(#robeGradient)" transform="rotate(15 180 320)"/>
+  
+  <!-- 手 -->
+  <circle cx="115" cy="305" r="7" fill="url(#figureGradient)"/>
+  <circle cx="185" cy="305" r="7" fill="url(#figureGradient)"/>
+  
+  <!-- 王后手持的星币 -->
+  <circle cx="185" cy="300" r="25" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="3"/>
+  <polygon points="185,280 191,292 203,292 193,301 197,313 185,306 173,313 177,301 167,292 179,292" fill="#8b4513"/>
+  <circle cx="185" cy="300" r="10" fill="none" stroke="#8b4513" stroke-width="2"/>
+  
+  <!-- 星币装饰 -->
+  <circle cx="180" cy="295" r="2" fill="#8b4513"/>
+  <circle cx="190" cy="295" r="2" fill="#8b4513"/>
+  <circle cx="185" cy="290" r="2" fill="#8b4513"/>
+  <circle cx="185" cy="310" r="2" fill="#8b4513"/>
+  
+  <!-- 花朵（在左手，象征自然的丰饶） -->
+  <circle cx="115" cy="300" r="5" fill="#ff69b4"/>
+  <circle cx="112" cy="297" r="3" fill="#ff1493"/>
+  <circle cx="118" cy="297" r="3" fill="#ff1493"/>
+  <circle cx="115" cy="294" r="3" fill="#ff1493"/>
+  <circle cx="115" cy="306" r="3" fill="#ff1493"/>
+  <line x1="115" y1="305" x2="115" y2="315" stroke="#228b22" stroke-width="2"/>
+  
+  <!-- 丰饶的光芒 -->
+  <circle cx="150" cy="340" r="50" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.4"/>
+  <circle cx="150" cy="340" r="70" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.3"/>
+  <circle cx="150" cy="340" r="90" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.2"/>
+  
+  <!-- 飞舞的花瓣 -->
+  <ellipse cx="70" cy="150" rx="2" ry="4" fill="#ff69b4" transform="rotate(45 70 150)" opacity="0.7"/>
+  <ellipse cx="230" cy="180" rx="2" ry="4" fill="#ff69b4" transform="rotate(-30 230 180)" opacity="0.7"/>
+  <ellipse cx="90" cy="200" rx="2" ry="4" fill="#ff69b4" transform="rotate(60 90 200)" opacity="0.7"/>
+  <ellipse cx="210" cy="220" rx="2" ry="4" fill="#ff69b4" transform="rotate(-45 210 220)" opacity="0.7"/>
+  
+  <!-- 地面装饰（丰饶之花） -->
+  <circle cx="70" cy="420" r="5" fill="#ff69b4"/>
+  <circle cx="100" cy="430" r="4" fill="#ff1493"/>
+  <circle cx="200" cy="425" r="5" fill="#ff69b4"/>
+  <circle cx="230" cy="435" r="4" fill="#ff1493"/>
+  <circle cx="150" cy="440" r="5" fill="#ff69b4"/>
+  
+  <!-- 果实（丰收的象征） -->
+  <circle cx="50" cy="400" r="3" fill="#ff4500"/>
+  <circle cx="250" cy="410" r="3" fill="#ff4500"/>
+  <circle cx="180" cy="450" r="3" fill="#ff4500"/>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">QUEEN OF PENTACLES</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">星币王后</text>
+  
+  <!-- 装饰边角 -->
+  <circle cx="30" cy="30" r="3" fill="#ffd700"/>
+  <circle cx="270" cy="30" r="3" fill="#ffd700"/>
+  <circle cx="30" cy="470" r="3" fill="#ffd700"/>
+  <circle cx="270" cy="470" r="3" fill="#ffd700"/>
+</svg>

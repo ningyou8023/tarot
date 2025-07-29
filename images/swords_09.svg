@@ -1,0 +1,240 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f9fa" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#191970"/>
+      <stop offset="30%" stop-color="#2F4F4F"/>
+      <stop offset="70%" stop-color="#483D8B"/>
+      <stop offset="100%" stop-color="#696969"/>
+    </linearGradient>
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="50%" stop-color="#D2B48C"/>
+      <stop offset="100%" stop-color="#BC9A6A"/>
+    </linearGradient>
+    <linearGradient id="nightgownGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5F5DC"/>
+      <stop offset="50%" stop-color="#FFFACD"/>
+      <stop offset="100%" stop-color="#F0E68C"/>
+    </linearGradient>
+    <linearGradient id="swordGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E6E6FA"/>
+      <stop offset="50%" stop-color="#C0C0C0"/>
+      <stop offset="100%" stop-color="#A9A9A9"/>
+    </linearGradient>
+    <linearGradient id="bedGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B4513"/>
+      <stop offset="50%" stop-color="#A0522D"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 夜晚的窗户 -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="40" height="60" fill="#000" stroke="#8B4513" stroke-width="2"/>
+    <rect x="2" y="2" width="36" height="56" fill="#191970"/>
+    <path d="M20 2 L20 58" stroke="#8B4513" stroke-width="1"/>
+    <path d="M2 30 L38 30" stroke="#8B4513" stroke-width="1"/>
+    
+    <!-- 星星透过窗户 -->
+    <circle cx="10" cy="15" r="1" fill="#FFFACD"/>
+    <circle cx="30" cy="20" r="0.8" fill="#FFFACD"/>
+    <circle cx="15" cy="45" r="0.6" fill="#FFFACD"/>
+  </g>
+  
+  <!-- 床 -->
+  <g transform="translate(80, 350)">
+    <!-- 床架 -->
+    <rect x="0" y="0" width="140" height="80" fill="url(#bedGradient)"/>
+    <rect x="5" y="5" width="130" height="70" fill="#8B4513"/>
+    
+    <!-- 床头板 -->
+    <rect x="0" y="-20" width="10" height="100" fill="url(#bedGradient)"/>
+    <rect x="130" y="-20" width="10" height="100" fill="url(#bedGradient)"/>
+    
+    <!-- 床单 -->
+    <rect x="10" y="10" width="120" height="60" fill="#F5F5DC"/>
+    <path d="M10 10 Q70 5 130 10 Q130 40 130 70 Q70 75 10 70 Z" fill="#FFFACD"/>
+    
+    <!-- 枕头 -->
+    <ellipse cx="70" cy="25" rx="25" ry="10" fill="#F0E68C"/>
+    <ellipse cx="70" cy="23" rx="23" ry="8" fill="#FFFACD"/>
+  </g>
+  
+  <!-- 坐在床上的痛苦人物 -->
+  <g transform="translate(150, 320)">
+    <!-- 身体/睡衣 -->
+    <ellipse cx="0" cy="20" rx="15" ry="25" fill="url(#nightgownGradient)"/>
+    <path d="M-12 0 Q0 -3 12 0 Q15 25 10 45 Q0 50 -10 45 Q-15 25 -12 0" fill="url(#nightgownGradient)"/>
+    
+    <!-- 睡衣装饰 -->
+    <path d="M-10 10 Q0 8 10 10" stroke="#DDA0DD" stroke-width="1" fill="none"/>
+    <path d="M-8 25 Q0 23 8 25" stroke="#DDA0DD" stroke-width="1" fill="none"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-5" r="10" fill="url(#figureGradient)"/>
+    
+    <!-- 头发 (凌乱) -->
+    <path d="M-8 -12 Q0 -18 8 -12 Q10 -5 8 3 Q0 6 -8 3 Q-10 -5 -8 -12" fill="#654321"/>
+    <path d="M-6 -15 Q-2 -20 2 -15" stroke="#654321" stroke-width="2" fill="none"/>
+    <path d="M6 -15 Q10 -18 12 -12" stroke="#654321" stroke-width="2" fill="none"/>
+    
+    <!-- 痛苦的眼睛 (闭着，眉头紧锁) -->
+    <path d="M-4 -7 Q-3 -8 -2 -7" stroke="#000" stroke-width="1.5" fill="none"/>
+    <path d="M2 -7 Q3 -8 4 -7" stroke="#000" stroke-width="1.5" fill="none"/>
+    <path d="M-5 -9 L-1 -8" stroke="#654321" stroke-width="1" fill="none"/>
+    <path d="M1 -8 L5 -9" stroke="#654321" stroke-width="1" fill="none"/>
+    
+    <!-- 鼻子 -->
+    <path d="M0 -3 L1 -1 L0 0" stroke="#BC9A6A" stroke-width="0.5" fill="none"/>
+    
+    <!-- 嘴巴 (痛苦的表情) -->
+    <path d="M-3 2 Q0 0 3 2" stroke="#8B4513" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 (抱头姿势) -->
+    <ellipse cx="-8" cy="5" rx="3" ry="12" fill="url(#nightgownGradient)" transform="rotate(-45)"/>
+    <ellipse cx="8" cy="5" rx="3" ry="12" fill="url(#nightgownGradient)" transform="rotate(45)"/>
+    
+    <!-- 手 (抱头) -->
+    <circle cx="-8" cy="-8" r="3" fill="url(#figureGradient)"/>
+    <circle cx="8" cy="-8" r="3" fill="url(#figureGradient)"/>
+    
+    <!-- 腿部 -->
+    <ellipse cx="-5" cy="40" rx="4" ry="12" fill="url(#nightgownGradient)"/>
+    <ellipse cx="5" cy="40" rx="4" ry="12" fill="url(#nightgownGradient)"/>
+    
+    <!-- 脚 -->
+    <ellipse cx="-5" cy="52" rx="3" ry="6" fill="url(#figureGradient)"/>
+    <ellipse cx="5" cy="52" rx="3" ry="6" fill="url(#figureGradient)"/>
+  </g>
+  
+  <!-- 九把宝剑悬挂在墙上 -->
+  <!-- 第一排 (3把剑) -->
+  <!-- 剑1 -->
+  <g transform="translate(60, 150)">
+    <rect x="-2" y="0" width="4" height="70" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="68" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="70" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="78" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑2 -->
+  <g transform="translate(120, 150)">
+    <rect x="-2" y="0" width="4" height="70" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="68" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="70" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="78" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑3 -->
+  <g transform="translate(180, 150)">
+    <rect x="-2" y="0" width="4" height="70" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="68" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="70" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="78" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 第二排 (3把剑) -->
+  <!-- 剑4 -->
+  <g transform="translate(80, 200)">
+    <rect x="-2" y="0" width="4" height="65" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="63" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="65" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="73" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑5 -->
+  <g transform="translate(140, 200)">
+    <rect x="-2" y="0" width="4" height="65" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="63" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="65" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="73" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑6 -->
+  <g transform="translate(200, 200)">
+    <rect x="-2" y="0" width="4" height="65" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="63" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="65" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="73" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 第三排 (3把剑) -->
+  <!-- 剑7 -->
+  <g transform="translate(100, 250)">
+    <rect x="-2" y="0" width="4" height="60" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="58" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="60" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="68" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑8 -->
+  <g transform="translate(160, 250)">
+    <rect x="-2" y="0" width="4" height="60" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="58" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="60" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="68" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑9 -->
+  <g transform="translate(220, 250)">
+    <rect x="-2" y="0" width="4" height="60" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-5" y="58" width="10" height="2" fill="#8B4513"/>
+    <rect x="-2.5" y="60" width="5" height="8" fill="#654321"/>
+    <circle cx="0" cy="68" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 墙壁装饰 -->
+  <g opacity="0.3">
+    <rect x="40" y="120" width="200" height="200" fill="none" stroke="#8B4513" stroke-width="1"/>
+    <path d="M40 170 L240 170" stroke="#8B4513" stroke-width="0.5"/>
+    <path d="M40 220 L240 220" stroke="#8B4513" stroke-width="0.5"/>
+  </g>
+  
+  <!-- 噩梦的阴影 -->
+  <g opacity="0.4">
+    <circle cx="100" cy="100" r="20" fill="#000"/>
+    <circle cx="200" cy="120" r="15" fill="#000"/>
+    <circle cx="250" cy="80" r="12" fill="#000"/>
+  </g>
+  
+  <!-- 月光从窗户洒入 -->
+  <g opacity="0.3">
+    <path d="M70 80 L140 300" stroke="#FFFACD" stroke-width="3"/>
+    <path d="M70 100 L130 320" stroke="#FFFACD" stroke-width="2"/>
+    <path d="M70 120 L120 340" stroke="#FFFACD" stroke-width="1"/>
+  </g>
+  
+  <!-- 眼泪 -->
+  <g>
+    <ellipse cx="145" cy="315" rx="1" ry="3" fill="#87CEEB" opacity="0.8"/>
+    <ellipse cx="155" cy="318" rx="1" ry="3" fill="#87CEEB" opacity="0.8"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">IX - NINE OF SWORDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">宝剑九</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8B4513" stroke-width="1" fill="none">
+    <path d="M25 25 L35 25 L35 35"/>
+    <path d="M275 25 L265 25 L265 35"/>
+    <path d="M25 475 L35 475 L35 465"/>
+    <path d="M275 475 L265 475 L265 465"/>
+  </g>
+</svg>

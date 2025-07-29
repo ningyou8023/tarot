@@ -1,0 +1,206 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="stormGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2f2f2f"/>
+      <stop offset="50%" stop-color="#4a4a4a"/>
+      <stop offset="100%" stop-color="#696969"/>
+    </linearGradient>
+    <linearGradient id="towerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d3d3d3"/>
+      <stop offset="50%" stop-color="#a9a9a9"/>
+      <stop offset="100%" stop-color="#808080"/>
+    </linearGradient>
+    <linearGradient id="fireGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffff00"/>
+      <stop offset="50%" stop-color="#ff4500"/>
+      <stop offset="100%" stop-color="#dc143c"/>
+    </linearGradient>
+    <radialGradient id="explosionGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffff00" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ff4500" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#dc143c" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- 暴风雨天空 -->
+  <rect x="10" y="10" width="280" height="300" fill="url(#stormGradient)"/>
+  
+  <!-- 乌云 -->
+  <g fill="#2f2f2f" opacity="0.8">
+    <ellipse cx="60" cy="40" rx="30" ry="12"/>
+    <ellipse cx="90" cy="35" rx="25" ry="10"/>
+    <ellipse cx="180" cy="50" rx="35" ry="15"/>
+    <ellipse cx="220" cy="45" rx="28" ry="12"/>
+    <ellipse cx="250" cy="60" rx="20" ry="8"/>
+  </g>
+  
+  <!-- 闪电 -->
+  <g fill="#ffff00">
+    <polygon points="80,30 85,50 82,50 87,80 75,60 78,60 73,40 80,30"/>
+    <polygon points="200,25 205,45 202,45 207,75 195,55 198,55 193,35 200,25"/>
+  </g>
+  
+  <!-- 塔的主体 -->
+  <g transform="translate(150,200)">
+    <!-- 塔身 -->
+    <rect x="-30" y="50" width="60" height="150" fill="url(#towerGradient)"/>
+    
+    <!-- 塔身石块纹理 -->
+    <g stroke="#696969" stroke-width="1" fill="none">
+      <line x1="-30" y1="70" x2="30" y2="70"/>
+      <line x1="-30" y1="90" x2="30" y2="90"/>
+      <line x1="-30" y1="110" x2="30" y2="110"/>
+      <line x1="-30" y1="130" x2="30" y2="130"/>
+      <line x1="-30" y1="150" x2="30" y2="150"/>
+      <line x1="-30" y1="170" x2="30" y2="170"/>
+      <line x1="-30" y1="190" x2="30" y2="190"/>
+      
+      <line x1="-15" y1="50" x2="-15" y2="200"/>
+      <line x1="0" y1="50" x2="0" y2="200"/>
+      <line x1="15" y1="50" x2="15" y2="200"/>
+    </g>
+    
+    <!-- 塔顶（被摧毁前的部分） -->
+    <rect x="-25" y="30" width="50" height="25" fill="url(#towerGradient)"/>
+    
+    <!-- 塔顶装饰 -->
+    <rect x="-30" y="25" width="60" height="10" fill="#b8860b"/>
+    
+    <!-- 王冠（被闪电击中） -->
+    <g transform="translate(0,20)">
+      <rect x="-20" y="0" width="40" height="8" fill="#ffd700"/>
+      <polygon points="-15,0 -12,-8 -9,0" fill="#ffd700"/>
+      <polygon points="-5,0 -2,-10 1,0" fill="#ffd700"/>
+      <polygon points="5,0 8,-8 11,0" fill="#ffd700"/>
+    </g>
+    
+    <!-- 爆炸效果 -->
+    <circle cx="0" cy="15" r="25" fill="url(#explosionGradient)"/>
+    
+    <!-- 火焰 -->
+    <g fill="url(#fireGradient)">
+      <path d="M -20,10 Q -25,0 -15,5 Q -10,-5 -5,10 Q 0,0 5,10 Q 10,-5 15,5 Q 25,0 20,10"/>
+      <path d="M -15,20 Q -20,15 -10,18 Q -5,10 0,20 Q 5,15 10,18 Q 20,15 15,20"/>
+    </g>
+    
+    <!-- 窗户 -->
+    <g fill="#333">
+      <rect x="-20" y="80" width="8" height="12" rx="4"/>
+      <rect x="12" y="80" width="8" height="12" rx="4"/>
+      <rect x="-20" y="120" width="8" height="12" rx="4"/>
+      <rect x="12" y="120" width="8" height="12" rx="4"/>
+      <rect x="-20" y="160" width="8" height="12" rx="4"/>
+      <rect x="12" y="160" width="8" height="12" rx="4"/>
+    </g>
+    
+    <!-- 门 -->
+    <rect x="-8" y="180" width="16" height="20" fill="#8b4513" rx="8"/>
+    <circle cx="5" cy="190" r="1" fill="#333"/>
+  </g>
+  
+  <!-- 掉落的人物 -->
+  <!-- 左侧掉落的人 -->
+  <g transform="translate(80,280) rotate(-30)">
+    <!-- 身体 -->
+    <rect x="-4" y="5" width="8" height="15" fill="#4b0082" rx="2"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="0" r="4" fill="#fdbcb4"/>
+    
+    <!-- 王冠 -->
+    <rect x="-3" y="-3" width="6" height="2" fill="#ffd700"/>
+    <polygon points="-2,-3 0,-6 2,-3" fill="#ffd700"/>
+    
+    <!-- 五官 -->
+    <circle cx="-1" cy="-1" r="0.3" fill="#333"/>
+    <circle cx="1" cy="-1" r="0.3" fill="#333"/>
+    
+    <!-- 手臂 -->
+    <rect x="-8" y="8" width="4" height="8" fill="#fdbcb4" rx="2"/>
+    <rect x="4" y="8" width="4" height="8" fill="#fdbcb4" rx="2"/>
+    
+    <!-- 腿部 -->
+    <rect x="-2" y="20" width="2" height="10" fill="#4b0082" rx="1"/>
+    <rect x="0" y="20" width="2" height="10" fill="#4b0082" rx="1"/>
+  </g>
+  
+  <!-- 右侧掉落的人 -->
+  <g transform="translate(220,290) rotate(45)">
+    <!-- 身体 -->
+    <rect x="-4" y="5" width="8" height="15" fill="#8b0000" rx="2"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="0" r="4" fill="#fdbcb4"/>
+    
+    <!-- 头发 -->
+    <path d="M -3,-2 Q 0,-5 3,-2 Q 2,0 0,-1 Q -2,0 -3,-2" fill="#8b4513"/>
+    
+    <!-- 五官 -->
+    <circle cx="-1" cy="-1" r="0.3" fill="#333"/>
+    <circle cx="1" cy="-1" r="0.3" fill="#333"/>
+    
+    <!-- 手臂 -->
+    <rect x="-8" y="8" width="4" height="8" fill="#fdbcb4" rx="2"/>
+    <rect x="4" y="8" width="4" height="8" fill="#fdbcb4" rx="2"/>
+    
+    <!-- 腿部 -->
+    <rect x="-2" y="20" width="2" height="10" fill="#8b0000" rx="1"/>
+    <rect x="0" y="20" width="2" height="10" fill="#8b0000" rx="1"/>
+  </g>
+  
+  <!-- 掉落的碎片 -->
+  <g fill="#a9a9a9">
+    <rect x="60" y="250" width="4" height="6" transform="rotate(45 62 253)"/>
+    <rect x="100" y="270" width="3" height="5" transform="rotate(-30 101.5 272.5)"/>
+    <rect x="180" y="260" width="5" height="4" transform="rotate(60 182.5 262)"/>
+    <rect x="230" y="280" width="3" height="4" transform="rotate(-45 231.5 282)"/>
+    <rect x="120" y="290" width="4" height="3" transform="rotate(30 122 291.5)"/>
+    <rect x="200" y="300" width="3" height="5" transform="rotate(-60 201.5 302.5)"/>
+  </g>
+  
+  <!-- 掉落的火花 -->
+  <g fill="#ff4500">
+    <circle cx="90" cy="240" r="1.5"/>
+    <circle cx="130" cy="260" r="1"/>
+    <circle cx="170" cy="250" r="1.5"/>
+    <circle cx="210" cy="270" r="1"/>
+    <circle cx="110" cy="280" r="1.5"/>
+    <circle cx="190" cy="290" r="1"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="380" width="280" height="30" fill="#654321"/>
+  
+  <!-- 地面裂缝 -->
+  <g stroke="#333" stroke-width="2" fill="none">
+    <path d="M 30,380 Q 50,390 70,380"/>
+    <path d="M 120,380 Q 140,385 160,380"/>
+    <path d="M 200,380 Q 220,390 240,380"/>
+  </g>
+  
+  <!-- 地面碎石 -->
+  <g fill="#8b7355">
+    <ellipse cx="40" cy="385" rx="3" ry="2"/>
+    <ellipse cx="80" cy="390" rx="2" ry="3"/>
+    <ellipse cx="140" cy="385" rx="4" ry="2"/>
+    <ellipse cx="180" cy="390" rx="2" ry="2"/>
+    <ellipse cx="220" cy="385" rx="3" ry="3"/>
+    <ellipse cx="260" cy="390" rx="2" ry="2"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="440" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">XVI - THE TOWER</text>
+  <text x="150" y="455" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">塔</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#daa520" stroke-width="2" fill="none">
+    <path d="M 15,15 L 25,15 L 25,25"/>
+    <path d="M 275,15 L 285,15 L 285,25"/>
+    <path d="M 15,485 L 25,485 L 25,475"/>
+    <path d="M 275,485 L 285,485 L 285,475"/>
+  </g>
+</svg>

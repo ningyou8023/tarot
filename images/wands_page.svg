@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#f0e68c"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 权杖渐变 -->
+    <linearGradient id="wandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="50%" stop-color="#a0522d"/>
+      <stop offset="100%" stop-color="#8b4513"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 服装渐变 -->
+    <linearGradient id="clothingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6347"/>
+      <stop offset="100%" stop-color="#dc143c"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="200" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,180 80,120 150,140 220,110 290,160 290,210 10,210" fill="#696969" opacity="0.6"/>
+  
+  <!-- 沙漠地面 -->
+  <rect x="10" y="350" width="280" height="140" fill="#daa520"/>
+  
+  <!-- 沙丘 -->
+  <ellipse cx="80" cy="380" rx="40" ry="15" fill="#cd853f" opacity="0.7"/>
+  <ellipse cx="220" cy="390" rx="35" ry="12" fill="#cd853f" opacity="0.7"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="20" y1="360" x2="280" y2="365" stroke="#8b4513" stroke-width="1"/>
+    <line x1="15" y1="380" x2="285" y2="385" stroke="#8b4513" stroke-width="1"/>
+    <line x1="25" y1="400" x2="275" y2="405" stroke="#8b4513" stroke-width="1"/>
+  </g>
+  
+  <!-- 年轻的侍从 -->
+  <g id="page">
+    <!-- 身体 -->
+    <ellipse cx="150" cy="280" rx="25" ry="45" fill="url(#clothingGradient)"/>
+    
+    <!-- 头部 -->
+    <circle cx="150" cy="200" r="18" fill="url(#personGradient)"/>
+    
+    <!-- 头发（年轻人的卷发） -->
+    <path d="M132 190 Q150 175 168 190 Q165 185 150 180 Q135 185 132 190" fill="#daa520"/>
+    <circle cx="140" cy="185" r="3" fill="#daa520" opacity="0.8"/>
+    <circle cx="160" cy="185" r="3" fill="#daa520" opacity="0.8"/>
+    <circle cx="150" cy="180" r="2" fill="#daa520" opacity="0.8"/>
+    
+    <!-- 眼睛（好奇的表情） -->
+    <circle cx="145" cy="198" r="2" fill="#000"/>
+    <circle cx="155" cy="198" r="2" fill="#000"/>
+    <circle cx="145" cy="197" r="1" fill="#fff"/>
+    <circle cx="155" cy="197" r="1" fill="#fff"/>
+    
+    <!-- 鼻子 -->
+    <line x1="150" y1="200" x2="150" y2="205" stroke="#000" stroke-width="1"/>
+    
+    <!-- 嘴巴（微笑） -->
+    <path d="M147 208 Q150 210 153 208" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 帽子（侍从的帽子） -->
+    <ellipse cx="150" cy="185" rx="20" ry="8" fill="#ff6347"/>
+    <rect x="140" y="175" width="20" height="15" fill="#ff6347"/>
+    <circle cx="160" cy="175" r="3" fill="#ffd700"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="125" cy="250" rx="10" ry="30" fill="url(#personGradient)" transform="rotate(-10 125 250)"/>
+    <ellipse cx="175" cy="250" rx="10" ry="30" fill="url(#personGradient)" transform="rotate(10 175 250)"/>
+    
+    <!-- 手 -->
+    <circle cx="120" cy="275" r="6" fill="url(#personGradient)"/>
+    <circle cx="180" cy="275" r="6" fill="url(#personGradient)"/>
+    
+    <!-- 腿部 -->
+    <ellipse cx="140" cy="340" rx="10" ry="30" fill="url(#personGradient)"/>
+    <ellipse cx="160" cy="340" rx="10" ry="30" fill="url(#personGradient)"/>
+    
+    <!-- 靴子 -->
+    <ellipse cx="140" cy="375" rx="8" ry="10" fill="#8b4513"/>
+    <ellipse cx="160" cy="375" rx="8" ry="10" fill="#8b4513"/>
+    
+    <!-- 腰带 -->
+    <rect x="125" y="270" width="50" height="6" fill="#8b4513"/>
+    <circle cx="150" cy="273" r="4" fill="#ffd700"/>
+  </g>
+  
+  <!-- 权杖（侍从手持） -->
+  <g id="pageWand">
+    <rect x="118" y="150" width="4" height="140" fill="url(#wandGradient)"/>
+    <!-- 顶部装饰 -->
+    <circle cx="120" cy="145" r="6" fill="#ffd700"/>
+    <circle cx="120" cy="145" r="3" fill="#ff6347"/>
+    <!-- 新芽（生命力旺盛） -->
+    <ellipse cx="115" cy="155" rx="3" ry="8" fill="#228b22" transform="rotate(-30 115 155)"/>
+    <ellipse cx="125" cy="155" rx="3" ry="8" fill="#228b22" transform="rotate(30 125 155)"/>
+    <ellipse cx="120" cy="150" rx="2" ry="6" fill="#32cd32"/>
+  </g>
+  
+  <!-- 权杖顶部的火焰 -->
+  <g opacity="0.8">
+    <ellipse cx="120" cy="140" rx="4" ry="8" fill="#ff4500" transform="rotate(-10 120 140)"/>
+    <ellipse cx="118" cy="135" rx="3" ry="6" fill="#ffd700" transform="rotate(10 118 135)"/>
+    <ellipse cx="122" cy="135" rx="3" ry="6" fill="#ffd700" transform="rotate(-10 122 135)"/>
+  </g>
+  
+  <!-- 沙漠中的仙人掌 -->
+  <g opacity="0.7">
+    <rect x="48" y="340" width="6" height="40" fill="#228b22"/>
+    <ellipse cx="45" cy="350" rx="3" ry="12" fill="#228b22" transform="rotate(-30 45 350)"/>
+    <ellipse cx="55" cy="355" rx="3" ry="10" fill="#228b22" transform="rotate(20 55 355)"/>
+    
+    <rect x="248" y="350" width="5" height="30" fill="#228b22"/>
+    <ellipse cx="246" cy="360" rx="2" ry="8" fill="#228b22" transform="rotate(-20 246 360)"/>
+  </g>
+  
+  <!-- 远处的金字塔 -->
+  <polygon points="70,160 90,120 110,160" fill="#daa520" opacity="0.6"/>
+  <polygon points="200,170 215,130 230,170" fill="#daa520" opacity="0.6"/>
+  
+  <!-- 地面装饰 -->
+  <g opacity="0.6">
+    <circle cx="50" cy="390" r="2" fill="#8b4513"/>
+    <circle cx="250" cy="400" r="3" fill="#8b4513"/>
+    <circle cx="100" cy="410" r="2" fill="#8b4513"/>
+    <circle cx="200" cy="420" r="2" fill="#8b4513"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">PAGE OF WANDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">权杖侍从</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8b4513" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

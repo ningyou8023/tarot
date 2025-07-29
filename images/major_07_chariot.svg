@@ -1,0 +1,190 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4169e1"/>
+      <stop offset="50%" stop-color="#6495ed"/>
+      <stop offset="100%" stop-color="#87ceeb"/>
+    </linearGradient>
+    <linearGradient id="chariotGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    <linearGradient id="armorGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c0c0c0"/>
+      <stop offset="50%" stop-color="#a9a9a9"/>
+      <stop offset="100%" stop-color="#808080"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="200" fill="url(#skyGradient)"/>
+  
+  <!-- 城市背景 -->
+  <rect x="10" y="180" width="280" height="80" fill="#ddd"/>
+  <rect x="50" y="150" width="20" height="50" fill="#999"/>
+  <rect x="80" y="160" width="15" height="40" fill="#999"/>
+  <rect x="100" y="140" width="25" height="60" fill="#999"/>
+  <rect x="180" y="155" width="18" height="45" fill="#999"/>
+  <rect x="210" y="145" width="22" height="55" fill="#999"/>
+  <rect x="240" y="165" width="16" height="35" fill="#999"/>
+  
+  <!-- 战车主体 -->
+  <g transform="translate(150,300)">
+    <!-- 战车底座 -->
+    <rect x="-60" y="20" width="120" height="40" fill="url(#chariotGradient)" rx="5"/>
+    
+    <!-- 战车装饰 -->
+    <rect x="-55" y="25" width="110" height="30" fill="none" stroke="#8b4513" stroke-width="2"/>
+    
+    <!-- 战车前面板 -->
+    <rect x="-50" y="0" width="100" height="25" fill="url(#chariotGradient)" rx="3"/>
+    
+    <!-- 星星装饰 -->
+    <g fill="#ffffff">
+      <polygon points="-30,12 -28,8 -26,12 -30,10 -26,10" />
+      <polygon points="0,12 2,8 4,12 0,10 4,10" />
+      <polygon points="30,12 32,8 34,12 30,10 34,10" />
+    </g>
+    
+    <!-- 车轮 -->
+    <circle cx="-35" cy="60" r="15" fill="#8b4513" stroke="#654321" stroke-width="2"/>
+    <circle cx="35" cy="60" r="15" fill="#8b4513" stroke="#654321" stroke-width="2"/>
+    
+    <!-- 车轮辐条 -->
+    <g stroke="#654321" stroke-width="2">
+      <line x1="-35" y1="45" x2="-35" y2="75"/>
+      <line x1="-50" y1="60" x2="-20" y2="60"/>
+      <line x1="-45" y1="50" x2="-25" y2="70"/>
+      <line x1="-25" y1="50" x2="-45" y2="70"/>
+      
+      <line x1="35" y1="45" x2="35" y2="75"/>
+      <line x1="20" y1="60" x2="50" y2="60"/>
+      <line x1="25" y1="50" x2="45" y2="70"/>
+      <line x1="45" y1="50" x2="25" y2="70"/>
+    </g>
+  </g>
+  
+  <!-- 战车驾驶者 -->
+  <g transform="translate(150,220)">
+    <!-- 身体盔甲 -->
+    <rect x="-15" y="20" width="30" height="50" fill="url(#armorGradient)" rx="5"/>
+    
+    <!-- 胸甲装饰 -->
+    <rect x="-12" y="25" width="24" height="20" fill="none" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="0" cy="35" r="5" fill="#ffd700"/>
+    
+    <!-- 肩甲 -->
+    <circle cx="-20" cy="25" r="8" fill="url(#armorGradient)"/>
+    <circle cx="20" cy="25" r="8" fill="url(#armorGradient)"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="0" r="15" fill="#fdbcb4"/>
+    
+    <!-- 头盔 -->
+    <path d="M -12,-10 Q 0,-18 12,-10 Q 10,-5 0,-8 Q -10,-5 -12,-10" fill="url(#armorGradient)"/>
+    
+    <!-- 王冠 -->
+    <rect x="-10" y="-12" width="20" height="6" fill="#ffd700"/>
+    <polygon points="-8,-12 -6,-18 -4,-12" fill="#ffd700"/>
+    <polygon points="-2,-12 0,-20 2,-12" fill="#ffd700"/>
+    <polygon points="4,-12 6,-18 8,-12" fill="#ffd700"/>
+    
+    <!-- 五官 -->
+    <circle cx="-4" cy="-2" r="1.5" fill="#333"/>
+    <circle cx="4" cy="-2" r="1.5" fill="#333"/>
+    <path d="M -3,3 Q 0,5 3,3" stroke="#333" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <rect x="-25" y="25" width="12" height="25" fill="url(#armorGradient)" rx="6"/>
+    <rect x="13" y="25" width="12" height="25" fill="url(#armorGradient)" rx="6"/>
+    
+    <!-- 手 -->
+    <circle cx="-19" cy="50" r="5" fill="#fdbcb4"/>
+    <circle cx="19" cy="50" r="5" fill="#fdbcb4"/>
+    
+    <!-- 权杖 -->
+    <rect x="-2" y="45" width="4" height="30" fill="#8b4513"/>
+    <circle cx="0" cy="42" r="6" fill="#ffd700"/>
+    <polygon points="-3,36 0,30 3,36" fill="#ffd700"/>
+  </g>
+  
+  <!-- 左侧狮身人面兽（黑色） -->
+  <g transform="translate(80,380)">
+    <!-- 身体 -->
+    <ellipse cx="0" cy="10" rx="25" ry="15" fill="#333"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-5" r="12" fill="#333"/>
+    
+    <!-- 鬃毛 -->
+    <circle cx="0" cy="-5" r="15" fill="#1a1a1a"/>
+    
+    <!-- 人脸 -->
+    <circle cx="0" cy="-5" r="8" fill="#8b4513"/>
+    
+    <!-- 五官 -->
+    <circle cx="-3" cy="-8" r="1" fill="#fff"/>
+    <circle cx="3" cy="-8" r="1" fill="#fff"/>
+    <path d="M -2,-2 Q 0,0 2,-2" stroke="#fff" stroke-width="1" fill="none"/>
+    
+    <!-- 腿 -->
+    <rect x="-15" y="20" width="6" height="15" fill="#333"/>
+    <rect x="-5" y="20" width="6" height="15" fill="#333"/>
+    <rect x="5" y="20" width="6" height="15" fill="#333"/>
+    <rect x="15" y="20" width="6" height="15" fill="#333"/>
+    
+    <!-- 翅膀 -->
+    <ellipse cx="-20" cy="5" rx="8" ry="12" fill="#333" opacity="0.7"/>
+    <ellipse cx="20" cy="5" rx="8" ry="12" fill="#333" opacity="0.7"/>
+  </g>
+  
+  <!-- 右侧狮身人面兽（白色） -->
+  <g transform="translate(220,380)">
+    <!-- 身体 -->
+    <ellipse cx="0" cy="10" rx="25" ry="15" fill="#f5f5f5"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-5" r="12" fill="#f5f5f5"/>
+    
+    <!-- 鬃毛 -->
+    <circle cx="0" cy="-5" r="15" fill="#e0e0e0"/>
+    
+    <!-- 人脸 -->
+    <circle cx="0" cy="-5" r="8" fill="#fdbcb4"/>
+    
+    <!-- 五官 -->
+    <circle cx="-3" cy="-8" r="1" fill="#333"/>
+    <circle cx="3" cy="-8" r="1" fill="#333"/>
+    <path d="M -2,-2 Q 0,0 2,-2" stroke="#333" stroke-width="1" fill="none"/>
+    
+    <!-- 腿 -->
+    <rect x="-15" y="20" width="6" height="15" fill="#f5f5f5"/>
+    <rect x="-5" y="20" width="6" height="15" fill="#f5f5f5"/>
+    <rect x="5" y="20" width="6" height="15" fill="#f5f5f5"/>
+    <rect x="15" y="20" width="6" height="15" fill="#f5f5f5"/>
+    
+    <!-- 翅膀 -->
+    <ellipse cx="-20" cy="5" rx="8" ry="12" fill="#f5f5f5" opacity="0.7"/>
+    <ellipse cx="20" cy="5" rx="8" ry="12" fill="#f5f5f5" opacity="0.7"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="420" width="280" height="30" fill="#deb887"/>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="470" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">VII - THE CHARIOT</text>
+  <text x="150" y="485" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">战车</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#daa520" stroke-width="2" fill="none">
+    <path d="M 15,15 L 25,15 L 25,25"/>
+    <path d="M 275,15 L 285,15 L 285,25"/>
+    <path d="M 15,485 L 25,485 L 25,475"/>
+    <path d="M 275,485 L 285,485 L 285,475"/>
+  </g>
+</svg>

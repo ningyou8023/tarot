@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#98fb98"/>
+      <stop offset="100%" stop-color="#90ee90"/>
+    </linearGradient>
+    
+    <!-- 权杖渐变 -->
+    <linearGradient id="wandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="50%" stop-color="#a0522d"/>
+      <stop offset="100%" stop-color="#8b4513"/>
+    </linearGradient>
+    
+    <!-- 运动模糊效果 -->
+    <filter id="motionBlur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1,0"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="300" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,280 80,220 150,240 220,210 290,260 290,310 10,310" fill="#696969" opacity="0.6"/>
+  
+  <!-- 河流/水面 -->
+  <ellipse cx="150" cy="350" rx="140" ry="20" fill="#4682b4" opacity="0.7"/>
+  
+  <!-- 水波纹 -->
+  <g opacity="0.5">
+    <ellipse cx="150" cy="345" rx="120" ry="3" fill="none" stroke="#4682b4" stroke-width="1"/>
+    <ellipse cx="150" cy="355" rx="130" ry="3" fill="none" stroke="#4682b4" stroke-width="1"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="370" width="280" height="120" fill="#90ee90"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="20" y1="380" x2="280" y2="385" stroke="#228b22" stroke-width="1"/>
+    <line x1="15" y1="400" x2="285" y2="405" stroke="#228b22" stroke-width="1"/>
+    <line x1="25" y1="420" x2="275" y2="425" stroke="#228b22" stroke-width="1"/>
+  </g>
+  
+  <!-- 八根飞行的权杖 -->
+  <g id="flyingWands" filter="url(#motionBlur)">
+    <!-- 第一根权杖 -->
+    <g transform="rotate(-15 50 100)">
+      <rect x="48" y="80" width="4" height="60" fill="url(#wandGradient)"/>
+      <circle cx="50" cy="75" r="4" fill="#ffd700"/>
+      <ellipse cx="47" cy="85" rx="2" ry="5" fill="#228b22" transform="rotate(-15 47 85)"/>
+      <ellipse cx="53" cy="85" rx="2" ry="5" fill="#228b22" transform="rotate(15 53 85)"/>
+    </g>
+    
+    <!-- 第二根权杖 -->
+    <g transform="rotate(-10 100 120)">
+      <rect x="98" y="100" width="4" height="60" fill="url(#wandGradient)"/>
+      <circle cx="100" cy="95" r="4" fill="#ffd700"/>
+      <ellipse cx="97" cy="105" rx="2" ry="5" fill="#228b22" transform="rotate(-10 97 105)"/>
+      <ellipse cx="103" cy="105" rx="2" ry="5" fill="#228b22" transform="rotate(10 103 105)"/>
+    </g>
+    
+    <!-- 第三根权杖 -->
+    <g transform="rotate(-5 150 110)">
+      <rect x="148" y="90" width="4" height="60" fill="url(#wandGradient)"/>
+      <circle cx="150" cy="85" r="4" fill="#ffd700"/>
+      <ellipse cx="147" cy="95" rx="2" ry="5" fill="#228b22" transform="rotate(-5 147 95)"/>
+      <ellipse cx="153" cy="95" rx="2" ry="5" fill="#228b22" transform="rotate(5 153 95)"/>
+    </g>
+    
+    <!-- 第四根权杖 -->
+    <g transform="rotate(0 200 130)">
+      <rect x="198" y="110" width="4" height="60" fill="url(#wandGradient)"/>
+      <circle cx="200" cy="105" r="4" fill="#ffd700"/>
+      <ellipse cx="197" cy="115" rx="2" ry="5" fill="#228b22"/>
+      <ellipse cx="203" cy="115" rx="2" ry="5" fill="#228b22"/>
+    </g>
+    
+    <!-- 第五根权杖 -->
+    <g transform="rotate(5 250 120)">
+      <rect x="248" y="100" width="4" height="60" fill="url(#wandGradient)"/>
+      <circle cx="250" cy="95" r="4" fill="#ffd700"/>
+      <ellipse cx="247" cy="105" rx="2" ry="5" fill="#228b22" transform="rotate(5 247 105)"/>
+      <ellipse cx="253" cy="105" rx="2" ry="5" fill="#228b22" transform="rotate(-5 253 105)"/>
+    </g>
+    
+    <!-- 第六根权杖 -->
+    <g transform="rotate(-8 80 180)">
+      <rect x="78" y="160" width="4" height="60" fill="url(#wandGradient)"/>
+      <circle cx="80" cy="155" r="4" fill="#ffd700"/>
+      <ellipse cx="77" cy="165" rx="2" ry="5" fill="#228b22" transform="rotate(-8 77 165)"/>
+      <ellipse cx="83" cy="165" rx="2" ry="5" fill="#228b22" transform="rotate(8 83 165)"/>
+    </g>
+    
+    <!-- 第七根权杖 -->
+    <g transform="rotate(3 170 190)">
+      <rect x="168" y="170" width="4" height="60" fill="url(#wandGradient)"/>
+      <circle cx="170" cy="165" r="4" fill="#ffd700"/>
+      <ellipse cx="167" cy="175" rx="2" ry="5" fill="#228b22" transform="rotate(3 167 175)"/>
+      <ellipse cx="173" cy="175" rx="2" ry="5" fill="#228b22" transform="rotate(-3 173 175)"/>
+    </g>
+    
+    <!-- 第八根权杖 -->
+    <g transform="rotate(10 220 170)">
+      <rect x="218" y="150" width="4" height="60" fill="url(#wandGradient)"/>
+      <circle cx="220" cy="145" r="4" fill="#ffd700"/>
+      <ellipse cx="217" cy="155" rx="2" ry="5" fill="#228b22" transform="rotate(10 217 155)"/>
+      <ellipse cx="223" cy="155" rx="2" ry="5" fill="#228b22" transform="rotate(-10 223 155)"/>
+    </g>
+  </g>
+  
+  <!-- 运动轨迹线 -->
+  <g opacity="0.3">
+    <path d="M30 100 Q60 95 90 100 Q120 105 150 100 Q180 95 210 100 Q240 105 270 100" stroke="#daa520" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+    <path d="M60 180 Q90 175 120 180 Q150 185 180 180 Q210 175 240 180" stroke="#daa520" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  </g>
+  
+  <!-- 云朵 -->
+  <g opacity="0.6">
+    <ellipse cx="70" cy="60" rx="15" ry="8" fill="#ffffff"/>
+    <ellipse cx="80" cy="55" rx="12" ry="6" fill="#ffffff"/>
+    <ellipse cx="85" cy="65" rx="10" ry="5" fill="#ffffff"/>
+    
+    <ellipse cx="220" cy="70" rx="18" ry="10" fill="#ffffff"/>
+    <ellipse cx="235" cy="65" rx="15" ry="8" fill="#ffffff"/>
+    <ellipse cx="240" cy="75" rx="12" ry="6" fill="#ffffff"/>
+  </g>
+  
+  <!-- 地面植物 -->
+  <g opacity="0.7">
+    <path d="M40 380 Q42 375 44 380" stroke="#228b22" stroke-width="2" fill="none"/>
+    <path d="M80 390 Q82 385 84 390" stroke="#228b22" stroke-width="2" fill="none"/>
+    <path d="M200 385 Q202 380 204 385" stroke="#228b22" stroke-width="2" fill="none"/>
+    <path d="M250 395 Q252 390 254 395" stroke="#228b22" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">VIII - EIGHT OF WANDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">权杖八</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8b4513" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

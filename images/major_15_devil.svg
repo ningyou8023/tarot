@@ -1,0 +1,247 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="darkGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2f2f2f"/>
+      <stop offset="50%" stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="devilGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b0000"/>
+      <stop offset="50%" stop-color="#660000"/>
+      <stop offset="100%" stop-color="#330000"/>
+    </linearGradient>
+    <linearGradient id="flameGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff4500"/>
+      <stop offset="50%" stop-color="#ff6347"/>
+      <stop offset="100%" stop-color="#dc143c"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 黑暗背景 -->
+  <rect x="10" y="10" width="280" height="400" fill="url(#darkGradient)"/>
+  
+  <!-- 火焰装饰 -->
+  <g fill="url(#flameGradient)" opacity="0.7">
+    <path d="M 30,350 Q 35,340 40,350 Q 45,330 50,350 Q 55,340 60,350" />
+    <path d="M 240,350 Q 245,340 250,350 Q 255,330 260,350 Q 265,340 270,350" />
+    <path d="M 50,380 Q 55,370 60,380 Q 65,360 70,380" />
+    <path d="M 230,380 Q 235,370 240,380 Q 245,360 250,380" />
+  </g>
+  
+  <!-- 恶魔主体 -->
+  <g transform="translate(150,180)">
+    <!-- 身体 -->
+    <ellipse cx="0" cy="40" rx="25" ry="35" fill="url(#devilGradient)"/>
+    
+    <!-- 胸肌 -->
+    <ellipse cx="-8" cy="25" rx="8" ry="12" fill="#660000"/>
+    <ellipse cx="8" cy="25" rx="8" ry="12" fill="#660000"/>
+    
+    <!-- 腹肌 -->
+    <g fill="#660000">
+      <ellipse cx="0" cy="35" rx="6" ry="4"/>
+      <ellipse cx="0" cy="45" rx="5" ry="3"/>
+      <ellipse cx="0" cy="55" rx="4" ry="3"/>
+    </g>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="0" r="18" fill="url(#devilGradient)"/>
+    
+    <!-- 角 -->
+    <polygon points="-8,-15 -12,-25 -4,-18" fill="#333"/>
+    <polygon points="8,-15 12,-25 4,-18" fill="#333"/>
+    
+    <!-- 角的螺旋纹 -->
+    <g stroke="#666" stroke-width="1" fill="none">
+      <path d="M -10,-20 Q -8,-22 -6,-20"/>
+      <path d="M 10,-20 Q 8,-22 6,-20"/>
+    </g>
+    
+    <!-- 眼睛 -->
+    <circle cx="-6" cy="-3" r="3" fill="#ff0000"/>
+    <circle cx="6" cy="-3" r="3" fill="#ff0000"/>
+    <circle cx="-6" cy="-3" r="1" fill="#000"/>
+    <circle cx="6" cy="-3" r="1" fill="#000"/>
+    
+    <!-- 第三只眼（在额头） -->
+    <circle cx="0" cy="-8" r="2" fill="#ff0000"/>
+    <circle cx="0" cy="-8" r="0.5" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <ellipse cx="0" cy="2" rx="2" ry="3" fill="#330000"/>
+    
+    <!-- 嘴巴 -->
+    <path d="M -6,6 Q 0,12 6,6" stroke="#ff0000" stroke-width="2" fill="none"/>
+    
+    <!-- 獠牙 -->
+    <polygon points="-3,8 -1,12 -5,12" fill="#ffffff"/>
+    <polygon points="3,8 1,12 5,12" fill="#ffffff"/>
+    
+    <!-- 山羊胡 -->
+    <path d="M 0,12 Q -2,18 0,22 Q 2,18 0,12" fill="#333"/>
+    
+    <!-- 手臂 -->
+    <rect x="-35" y="15" width="12" height="30" fill="url(#devilGradient)" rx="6"/>
+    <rect x="23" y="15" width="12" height="30" fill="url(#devilGradient)" rx="6"/>
+    
+    <!-- 手（爪子） -->
+    <g fill="#330000">
+      <!-- 左手 -->
+      <circle cx="-29" cy="45" r="6"/>
+      <rect x="-32" y="42" width="2" height="8"/>
+      <rect x="-29" y="40" width="2" height="10"/>
+      <rect x="-26" y="42" width="2" height="8"/>
+      
+      <!-- 右手 -->
+      <circle cx="29" cy="45" r="6"/>
+      <rect x="26" y="42" width="2" height="8"/>
+      <rect x="29" y="40" width="2" height="10"/>
+      <rect x="32" y="42" width="2" height="8"/>
+    </g>
+    
+    <!-- 腿部 -->
+    <rect x="-12" y="70" width="10" height="25" fill="url(#devilGradient)" rx="5"/>
+    <rect x="2" y="70" width="10" height="25" fill="url(#devilGradient)" rx="5"/>
+    
+    <!-- 蹄子 -->
+    <ellipse cx="-7" cy="95" rx="5" ry="3" fill="#333"/>
+    <ellipse cx="7" cy="95" rx="5" ry="3" fill="#333"/>
+    
+    <!-- 蹄子分叉 -->
+    <line x1="-7" y1="93" x2="-7" y2="97" stroke="#666" stroke-width="1"/>
+    <line x1="7" y1="93" x2="7" y2="97" stroke="#666" stroke-width="1"/>
+    
+    <!-- 翅膀 -->
+    <g fill="#333" opacity="0.8">
+      <!-- 左翅膀 -->
+      <path d="M -25,20 Q -45,10 -50,30 Q -45,50 -35,45 Q -30,35 -25,30"/>
+      
+      <!-- 右翅膀 -->
+      <path d="M 25,20 Q 45,10 50,30 Q 45,50 35,45 Q 30,35 25,30"/>
+    </g>
+    
+    <!-- 翅膀骨架 -->
+    <g stroke="#666" stroke-width="1" fill="none">
+      <line x1="-25" y1="25" x2="-40" y2="20"/>
+      <line x1="-30" y1="35" x2="-45" y2="35"/>
+      <line x1="-35" y1="45" x2="-48" y2="45"/>
+      
+      <line x1="25" y1="25" x2="40" y2="20"/>
+      <line x1="30" y1="35" x2="45" y2="35"/>
+      <line x1="35" y1="45" x2="48" y2="45"/>
+    </g>
+    
+    <!-- 尾巴 -->
+    <path d="M 0,75 Q 15,85 20,100 Q 15,105 10,100 Q 5,90 0,85" fill="url(#devilGradient)"/>
+    
+    <!-- 尾巴尖端（箭头） -->
+    <polygon points="18,98 22,102 18,106 14,102" fill="#333"/>
+  </g>
+  
+  <!-- 五芒星倒置（在恶魔额头上方） -->
+  <g transform="translate(150,120)">
+    <polygon points="0,-15 -4,-5 -14,-5 -7,2 -9,12 0,6 9,12 7,2 14,-5 4,-5" fill="#ff0000" stroke="#8b0000" stroke-width="1"/>
+  </g>
+  
+  <!-- 左侧被束缚的男人 -->
+  <g transform="translate(100,320)">
+    <!-- 身体 -->
+    <rect x="-6" y="10" width="12" height="25" fill="#fdbcb4" rx="3"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="5" r="6" fill="#fdbcb4"/>
+    
+    <!-- 头发 -->
+    <path d="M -5,-1 Q 0,-6 5,-1 Q 4,2 0,1 Q -4,2 -5,-1" fill="#8b4513"/>
+    
+    <!-- 角（小） -->
+    <polygon points="-3,-3 -4,-7 -1,-4" fill="#333"/>
+    <polygon points="3,-3 4,-7 1,-4" fill="#333"/>
+    
+    <!-- 五官 -->
+    <circle cx="-2" cy="3" r="0.5" fill="#333"/>
+    <circle cx="2" cy="3" r="0.5" fill="#333"/>
+    <path d="M -1,6 Q 0,7 1,6" stroke="#333" stroke-width="0.5" fill="none"/>
+    
+    <!-- 手臂 -->
+    <rect x="-10" y="15" width="5" height="15" fill="#fdbcb4" rx="2"/>
+    <rect x="5" y="15" width="5" height="15" fill="#fdbcb4" rx="2"/>
+    
+    <!-- 腿部 -->
+    <rect x="-4" y="35" width="3" height="15" fill="#fdbcb4" rx="1"/>
+    <rect x="1" y="35" width="3" height="15" fill="#fdbcb4" rx="1"/>
+    
+    <!-- 锁链 -->
+    <circle cx="0" cy="25" r="8" fill="none" stroke="#666" stroke-width="2"/>
+    <rect x="-1" y="17" width="2" height="16" fill="#666"/>
+    
+    <!-- 尾巴 -->
+    <path d="M 0,50 Q 3,55 6,50" stroke="#8b4513" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- 右侧被束缚的女人 -->
+  <g transform="translate(200,320)">
+    <!-- 身体 -->
+    <rect x="-6" y="10" width="12" height="25" fill="#fdbcb4" rx="3"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="5" r="6" fill="#fdbcb4"/>
+    
+    <!-- 头发 -->
+    <path d="M -5,-1 Q 0,-6 5,-1 Q 6,3 3,5 Q 0,4 -3,5 Q -6,3 -5,-1" fill="#daa520"/>
+    
+    <!-- 角（小） -->
+    <polygon points="-3,-3 -4,-7 -1,-4" fill="#333"/>
+    <polygon points="3,-3 4,-7 1,-4" fill="#333"/>
+    
+    <!-- 五官 -->
+    <circle cx="-2" cy="3" r="0.5" fill="#333"/>
+    <circle cx="2" cy="3" r="0.5" fill="#333"/>
+    <path d="M -1,6 Q 0,7 1,6" stroke="#333" stroke-width="0.5" fill="none"/>
+    
+    <!-- 手臂 -->
+    <rect x="-10" y="15" width="5" height="15" fill="#fdbcb4" rx="2"/>
+    <rect x="5" y="15" width="5" height="15" fill="#fdbcb4" rx="2"/>
+    
+    <!-- 腿部 -->
+    <rect x="-4" y="35" width="3" height="15" fill="#fdbcb4" rx="1"/>
+    <rect x="1" y="35" width="3" height="15" fill="#fdbcb4" rx="1"/>
+    
+    <!-- 锁链 -->
+    <circle cx="0" cy="25" r="8" fill="none" stroke="#666" stroke-width="2"/>
+    <rect x="-1" y="17" width="2" height="16" fill="#666"/>
+    
+    <!-- 尾巴 -->
+    <path d="M 0,50 Q -3,55 -6,50" stroke="#daa520" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- 基座/祭坛 -->
+  <rect x="120" y="380" width="60" height="20" fill="#333" rx="3"/>
+  <rect x="125" y="385" width="50" height="10" fill="#666"/>
+  
+  <!-- 地面 -->
+  <rect x="10" y="410" width="280" height="40" fill="#2f2f2f"/>
+  
+  <!-- 地面裂缝 -->
+  <g stroke="#666" stroke-width="2" fill="none">
+    <path d="M 30,420 Q 50,430 70,420"/>
+    <path d="M 200,425 Q 220,435 240,425"/>
+    <path d="M 100,440 Q 120,445 140,440"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="470" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">XV - THE DEVIL</text>
+  <text x="150" y="485" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">恶魔</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#daa520" stroke-width="2" fill="none">
+    <path d="M 15,15 L 25,15 L 25,25"/>
+    <path d="M 275,15 L 285,15 L 285,25"/>
+    <path d="M 15,485 L 25,485 L 25,475"/>
+    <path d="M 275,485 L 285,485 L 285,475"/>
+  </g>
+</svg>

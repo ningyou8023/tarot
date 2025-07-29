@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#4682b4" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#98fb98"/>
+      <stop offset="100%" stop-color="#90ee90"/>
+    </linearGradient>
+    
+    <!-- 圣杯渐变 -->
+    <linearGradient id="cupGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="200" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,180 80,120 150,140 220,110 290,160 290,210 10,210" fill="#696969" opacity="0.6"/>
+  
+  <!-- 地面 -->
+  <rect x="10" y="350" width="280" height="140" fill="#90ee90"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="20" y1="360" x2="280" y2="365" stroke="#228b22" stroke-width="1"/>
+    <line x1="15" y1="380" x2="285" y2="385" stroke="#228b22" stroke-width="1"/>
+    <line x1="25" y1="400" x2="275" y2="405" stroke="#228b22" stroke-width="1"/>
+  </g>
+  
+  <!-- 左侧女性 -->
+  <g id="leftWoman">
+    <!-- 身体/长裙 -->
+    <ellipse cx="80" cy="290" rx="20" ry="35" fill="#ff69b4"/>
+    
+    <!-- 头部 -->
+    <circle cx="80" cy="230" r="12" fill="url(#personGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M68 225 Q80 215 92 225 Q87 220 80 220 Q73 220 68 225" fill="#daa520"/>
+    <path d="M68 240 Q73 250 78 240 Q80 250 82 240 Q87 250 92 240" stroke="#daa520" stroke-width="2" fill="none"/>
+    
+    <!-- 眼睛 -->
+    <circle cx="76" cy="228" r="1.5" fill="#000"/>
+    <circle cx="84" cy="228" r="1.5" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <line x1="80" y1="230" x2="80" y2="233" stroke="#000" stroke-width="0.5"/>
+    
+    <!-- 嘴巴（微笑） -->
+    <path d="M78 236 Q80 238 82 236" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="65" cy="270" rx="6" ry="15" fill="url(#personGradient)" transform="rotate(-30 65 270)"/>
+    <ellipse cx="95" cy="270" rx="6" ry="15" fill="url(#personGradient)" transform="rotate(30 95 270)"/>
+    
+    <!-- 手 -->
+    <circle cx="60" cy="280" r="4" fill="url(#personGradient)"/>
+    <circle cx="100" cy="280" r="4" fill="url(#personGradient)"/>
+  </g>
+  
+  <!-- 中间女性 -->
+  <g id="centerWoman">
+    <!-- 身体/长裙 -->
+    <ellipse cx="150" cy="300" rx="22" ry="40" fill="#9370db"/>
+    
+    <!-- 头部 -->
+    <circle cx="150" cy="235" r="14" fill="url(#personGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M136 230 Q150 220 164 230 Q159 225 150 225 Q141 225 136 230" fill="#8b4513"/>
+    <path d="M136 245 Q141 255 146 245 Q150 255 154 245 Q159 255 164 245" stroke="#8b4513" stroke-width="2" fill="none"/>
+    
+    <!-- 眼睛 -->
+    <circle cx="145" cy="233" r="2" fill="#000"/>
+    <circle cx="155" cy="233" r="2" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <line x1="150" y1="235" x2="150" y2="238" stroke="#000" stroke-width="1"/>
+    
+    <!-- 嘴巴（微笑） -->
+    <path d="M147 241 Q150 243 153 241" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="125" cy="275" rx="8" ry="18" fill="url(#personGradient)" transform="rotate(-20 125 275)"/>
+    <ellipse cx="175" cy="275" rx="8" ry="18" fill="url(#personGradient)" transform="rotate(20 175 275)"/>
+    
+    <!-- 手 -->
+    <circle cx="120" cy="290" r="5" fill="url(#personGradient)"/>
+    <circle cx="180" cy="290" r="5" fill="url(#personGradient)"/>
+  </g>
+  
+  <!-- 右侧女性 -->
+  <g id="rightWoman">
+    <!-- 身体/长裙 -->
+    <ellipse cx="220" cy="290" rx="20" ry="35" fill="#20b2aa"/>
+    
+    <!-- 头部 -->
+    <circle cx="220" cy="230" r="12" fill="url(#personGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M208 225 Q220 215 232 225 Q227 220 220 220 Q213 220 208 225" fill="#dc143c"/>
+    <path d="M208 240 Q213 250 218 240 Q220 250 222 240 Q227 250 232 240" stroke="#dc143c" stroke-width="2" fill="none"/>
+    
+    <!-- 眼睛 -->
+    <circle cx="216" cy="228" r="1.5" fill="#000"/>
+    <circle cx="224" cy="228" r="1.5" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <line x1="220" y1="230" x2="220" y2="233" stroke="#000" stroke-width="0.5"/>
+    
+    <!-- 嘴巴（微笑） -->
+    <path d="M218 236 Q220 238 222 236" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="205" cy="270" rx="6" ry="15" fill="url(#personGradient)" transform="rotate(-30 205 270)"/>
+    <ellipse cx="235" cy="270" rx="6" ry="15" fill="url(#personGradient)" transform="rotate(30 235 270)"/>
+    
+    <!-- 手 -->
+    <circle cx="200" cy="280" r="4" fill="url(#personGradient)"/>
+    <circle cx="240" cy="280" r="4" fill="url(#personGradient)"/>
+  </g>
+  
+  <!-- 三个圣杯（举起庆祝） -->
+  <!-- 左侧圣杯 -->
+  <g id="leftCup">
+    <ellipse cx="100" cy="260" rx="6" ry="12" fill="url(#cupGradient)"/>
+    <ellipse cx="100" cy="248" rx="6" ry="2" fill="url(#cupGradient)"/>
+    <path d="M94 255 Q88 255 88 260 Q88 265 94 265" stroke="#daa520" stroke-width="1.5" fill="none"/>
+    <ellipse cx="100" cy="272" rx="4" ry="1.5" fill="#daa520"/>
+    <ellipse cx="100" cy="260" rx="4" ry="10" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <!-- 中间圣杯（最高） -->
+  <g id="centerCup">
+    <ellipse cx="150" cy="200" rx="8" ry="15" fill="url(#cupGradient)"/>
+    <ellipse cx="150" cy="185" rx="8" ry="3" fill="url(#cupGradient)"/>
+    <path d="M142 195 Q135 195 135 200 Q135 205 142 205" stroke="#daa520" stroke-width="2" fill="none"/>
+    <ellipse cx="150" cy="215" rx="6" ry="2" fill="#daa520"/>
+    <ellipse cx="150" cy="200" rx="6" ry="12" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <!-- 右侧圣杯 -->
+  <g id="rightCup">
+    <ellipse cx="200" cy="260" rx="6" ry="12" fill="url(#cupGradient)"/>
+    <ellipse cx="200" cy="248" rx="6" ry="2" fill="url(#cupGradient)"/>
+    <path d="M206 255 Q212 255 212 260 Q212 265 206 265" stroke="#daa520" stroke-width="1.5" fill="none"/>
+    <ellipse cx="200" cy="272" rx="4" ry="1.5" fill="#daa520"/>
+    <ellipse cx="200" cy="260" rx="4" ry="10" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <!-- 庆祝的水果 -->
+  <g opacity="0.8">
+    <!-- 葡萄 -->
+    <circle cx="60" cy="380" r="3" fill="#800080"/>
+    <circle cx="65" cy="383" r="3" fill="#800080"/>
+    <circle cx="70" cy="380" r="3" fill="#800080"/>
+    <circle cx="65" cy="377" r="3" fill="#800080"/>
+    
+    <!-- 苹果 -->
+    <circle cx="240" cy="385" r="5" fill="#ff0000"/>
+    <ellipse cx="240" cy="380" rx="2" ry="4" fill="#228b22"/>
+    
+    <!-- 橙子 -->
+    <circle cx="150" cy="390" r="4" fill="#ffa500"/>
+  </g>
+  
+  <!-- 花朵装饰 -->
+  <g opacity="0.6">
+    <circle cx="40" cy="320" r="3" fill="#ff69b4"/>
+    <circle cx="38" cy="318" r="1" fill="#ffffff"/>
+    <circle cx="42" cy="318" r="1" fill="#ffffff"/>
+    <circle cx="38" cy="322" r="1" fill="#ffffff"/>
+    <circle cx="42" cy="322" r="1" fill="#ffffff"/>
+    
+    <circle cx="260" cy="330" r="3" fill="#ff69b4"/>
+    <circle cx="258" cy="328" r="1" fill="#ffffff"/>
+    <circle cx="262" cy="328" r="1" fill="#ffffff"/>
+    <circle cx="258" cy="332" r="1" fill="#ffffff"/>
+    <circle cx="262" cy="332" r="1" fill="#ffffff"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">III - THREE OF CUPS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">圣杯三</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#4682b4" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

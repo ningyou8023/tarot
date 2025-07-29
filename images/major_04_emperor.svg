@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500" style="background: linear-gradient(135deg, #8b0000 0%, #dc143c 50%, #ff6347 100%);">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="none" stroke="#d4af37" stroke-width="3"/>
+  
+  <!-- 内边框 -->
+  <rect x="20" y="20" width="260" height="460" rx="10" ry="10" fill="none" stroke="#b8860b" stroke-width="1" opacity="0.7"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#cd853f;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#d2691e;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#8b4513;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc143c;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#b22222;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#8b0000;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="armorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c0c0c0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a9a9a9;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#696969;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="crownGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:0.8" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 背景填充 -->
+  <rect x="20" y="20" width="260" height="460" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 山脉背景 -->
+  <path d="M 20 120 L 60 80 L 100 100 L 140 70 L 180 90 L 220 60 L 260 80 L 280 120 Z" fill="#8b4513" opacity="0.6"/>
+  <path d="M 20 140 L 80 110 L 140 130 L 200 100 L 260 120 L 280 140 Z" fill="#a0522d" opacity="0.5"/>
+  
+  <!-- 皇帝宝座 -->
+  <rect x="100" y="250" width="100" height="120" fill="#daa520" stroke="#b8860b" stroke-width="3" rx="8"/>
+  
+  <!-- 宝座靠背 -->
+  <rect x="105" y="200" width="90" height="60" fill="#ffd700" stroke="#b8860b" stroke-width="2" rx="5"/>
+  
+  <!-- 宝座扶手 -->
+  <rect x="95" y="260" width="15" height="60" fill="#daa520" stroke="#b8860b" stroke-width="2" rx="3"/>
+  <rect x="190" y="260" width="15" height="60" fill="#daa520" stroke="#b8860b" stroke-width="2" rx="3"/>
+  
+  <!-- 宝座装饰 -->
+  <circle cx="120" cy="220" r="6" fill="#ff6347"/>
+  <circle cx="150" cy="210" r="8" fill="#dc143c"/>
+  <circle cx="180" cy="220" r="6" fill="#ff6347"/>
+  
+  <!-- 羊头装饰（宝座） -->
+  <g transform="translate(150, 230)">
+    <ellipse cx="0" cy="0" rx="12" ry="8" fill="#f5deb3"/>
+    <circle cx="-4" cy="-2" r="1" fill="#000"/>
+    <circle cx="4" cy="-2" r="1" fill="#000"/>
+    <path d="M -8 -5 Q -10 -8 -6 -6" stroke="#8b4513" stroke-width="2" fill="none"/>
+    <path d="M 8 -5 Q 10 -8 6 -6" stroke="#8b4513" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- 皇帝身体 -->
+  <ellipse cx="150" cy="290" rx="45" ry="80" fill="url(#robeGradient)"/>
+  
+  <!-- 胸甲 -->
+  <ellipse cx="150" cy="270" rx="35" ry="40" fill="url(#armorGradient)"/>
+  
+  <!-- 胸甲装饰 -->
+  <circle cx="150" cy="260" r="8" fill="#ff6347"/>
+  <rect x="145" y="275" width="10" height="15" fill="#dc143c" rx="2"/>
+  
+  <!-- 皇帝头部 -->
+  <circle cx="150" cy="190" r="30" fill="#fdbcb4" stroke="#f4a460" stroke-width="1"/>
+  
+  <!-- 胡须 -->
+  <path d="M 130 210 Q 150 220 170 210 Q 170 230 150 235 Q 130 230 130 210" fill="#d3d3d3"/>
+  <path d="M 135 215 Q 150 225 165 215 Q 165 225 150 230 Q 135 225 135 215" fill="#ffffff"/>
+  
+  <!-- 头发 -->
+  <path d="M 120 170 Q 150 160 180 170 Q 180 185 150 190 Q 120 185 120 170" fill="#d3d3d3"/>
+  
+  <!-- 王冠 -->
+  <ellipse cx="150" cy="165" rx="40" ry="15" fill="url(#crownGlow)"/>
+  <polygon points="125,165 130,150 135,165" fill="#ffd700"/>
+  <polygon points="135,165 140,145 145,165" fill="#ffd700"/>
+  <polygon points="145,165 150,140 155,165" fill="#ffd700"/>
+  <polygon points="155,165 160,145 165,165" fill="#ffd700"/>
+  <polygon points="165,165 170,150 175,165" fill="#ffd700"/>
+  
+  <!-- 王冠宝石 -->
+  <circle cx="150" cy="150" r="4" fill="#dc143c"/>
+  <circle cx="140" cy="155" r="2" fill="#ff6347"/>
+  <circle cx="160" cy="155" r="2" fill="#ff6347"/>
+  
+  <!-- 眼睛 -->
+  <circle cx="142" cy="185" r="2" fill="#4169e1"/>
+  <circle cx="158" cy="185" r="2" fill="#4169e1"/>
+  
+  <!-- 鼻子 -->
+  <line x1="150" y1="190" x2="150" y2="195" stroke="#d2691e" stroke-width="1"/>
+  
+  <!-- 嘴巴（在胡须下） -->
+  <path d="M 145 205 Q 150 208 155 205" stroke="#cd5c5c" stroke-width="1" fill="none"/>
+  
+  <!-- 手臂 -->
+  <ellipse cx="110" cy="280" rx="18" ry="40" fill="url(#robeGradient)" transform="rotate(-20 110 280)"/>
+  <ellipse cx="190" cy="280" rx="18" ry="40" fill="url(#robeGradient)" transform="rotate(20 190 280)"/>
+  
+  <!-- 手 -->
+  <circle cx="100" cy="310" r="12" fill="#fdbcb4"/>
+  <circle cx="200" cy="310" r="12" fill="#fdbcb4"/>
+  
+  <!-- 权杖/安卡符号 -->
+  <rect x="95" y="300" width="6" height="50" fill="#ffd700"/>
+  <circle cx="98" cy="295" r="8" fill="none" stroke="#ffd700" stroke-width="3"/>
+  <line x1="90" y1="295" x2="106" y2="295" stroke="#ffd700" stroke-width="3"/>
+  
+  <!-- 宝球 -->
+  <circle cx="200" cy="310" r="10" fill="#4169e1" stroke="#000080" stroke-width="2"/>
+  <path d="M 195 305 Q 200 300 205 305" stroke="#87ceeb" stroke-width="1" fill="none"/>
+  <path d="M 195 315 Q 200 320 205 315" stroke="#87ceeb" stroke-width="1" fill="none"/>
+  <line x1="190" y1="310" x2="210" y2="310" stroke="#87ceeb" stroke-width="1"/>
+  
+  <!-- 腿部 -->
+  <rect x="130" y="360" width="18" height="40" fill="url(#armorGradient)" rx="3"/>
+  <rect x="152" y="360" width="18" height="40" fill="url(#armorGradient)" rx="3"/>
+  
+  <!-- 靴子 -->
+  <ellipse cx="139" cy="405" rx="12" ry="8" fill="#8b4513"/>
+  <ellipse cx="161" cy="405" rx="12" ry="8" fill="#8b4513"/>
+  
+  <!-- 地面 -->
+  <rect x="20" y="410" width="260" height="30" fill="#8b4513" opacity="0.6"/>
+  
+  <!-- 岩石装饰 -->
+  <ellipse cx="60" cy="420" rx="15" ry="8" fill="#696969"/>
+  <ellipse cx="240" cy="425" rx="12" ry="6" fill="#696969"/>
+  <ellipse cx="100" cy="430" rx="10" ry="5" fill="#a9a9a9"/>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="460" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">IV - THE EMPEROR</text>
+  <text x="150" y="480" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">皇帝</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#d4af37" stroke-width="1" fill="none" opacity="0.6">
+    <path d="M 25 25 L 35 25 L 35 35"/>
+    <path d="M 275 25 L 265 25 L 265 35"/>
+    <path d="M 25 475 L 35 475 L 35 465"/>
+    <path d="M 275 475 L 265 475 L 265 465"/>
+  </g>
+</svg>

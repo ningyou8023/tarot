@@ -1,0 +1,160 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="nightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#191970"/>
+      <stop offset="50%" stop-color="#2f2f4f"/>
+      <stop offset="100%" stop-color="#483d8b"/>
+    </linearGradient>
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#708090"/>
+      <stop offset="50%" stop-color="#696969"/>
+      <stop offset="100%" stop-color="#2f4f4f"/>
+    </linearGradient>
+    <linearGradient id="lightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffff00"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#ffa500"/>
+    </linearGradient>
+    <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffff00" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ffd700" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffa500" stop-opacity="0.1"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- 夜空背景 -->
+  <rect x="10" y="10" width="280" height="350" fill="url(#nightGradient)"/>
+  
+  <!-- 星星 -->
+  <g fill="#ffffff">
+    <circle cx="50" cy="40" r="1"/>
+    <circle cx="80" cy="60" r="1.5"/>
+    <circle cx="120" cy="35" r="1"/>
+    <circle cx="180" cy="50" r="1.5"/>
+    <circle cx="220" cy="30" r="1"/>
+    <circle cx="250" cy="70" r="1"/>
+    <circle cx="60" cy="90" r="1"/>
+    <circle cx="200" cy="80" r="1.5"/>
+    <circle cx="240" cy="100" r="1"/>
+  </g>
+  
+  <!-- 远山轮廓 -->
+  <polygon points="10,300 60,250 120,270 180,240 240,260 280,280 280,360 10,360" fill="#2f2f2f" opacity="0.7"/>
+  
+  <!-- 隐者人物 -->
+  <g transform="translate(150,200)">
+    <!-- 长袍 -->
+    <path d="M -25,50 Q -30,30 -25,10 Q -20,-10 0,-10 Q 20,-10 25,10 Q 30,30 25,50 Q 20,100 15,150 Q 10,180 0,180 Q -10,180 -15,150 Q -20,100 -25,50" fill="url(#robeGradient)"/>
+    
+    <!-- 袍子褶皱 -->
+    <g stroke="#1c1c1c" stroke-width="1" fill="none">
+      <path d="M -20,60 Q -15,65 -10,60"/>
+      <path d="M 10,70 Q 15,75 20,70"/>
+      <path d="M -15,90 Q -10,95 -5,90"/>
+      <path d="M 5,100 Q 10,105 15,100"/>
+    </g>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-15" r="12" fill="#fdbcb4"/>
+    
+    <!-- 头发和胡须 -->
+    <path d="M -10,-25 Q 0,-30 10,-25 Q 12,-20 10,-10 Q 8,0 0,5 Q -8,0 -10,-10 Q -12,-20 -10,-25" fill="#d3d3d3"/>
+    
+    <!-- 胡须 -->
+    <path d="M -8,-5 Q 0,5 8,-5 Q 6,10 0,15 Q -6,10 -8,-5" fill="#d3d3d3"/>
+    
+    <!-- 眉毛 -->
+    <path d="M -6,-20 Q -3,-22 0,-20" stroke="#d3d3d3" stroke-width="2" fill="none"/>
+    <path d="M 0,-20 Q 3,-22 6,-20" stroke="#d3d3d3" stroke-width="2" fill="none"/>
+    
+    <!-- 眼睛 -->
+    <circle cx="-3" cy="-18" r="1" fill="#333"/>
+    <circle cx="3" cy="-18" r="1" fill="#333"/>
+    
+    <!-- 鼻子 -->
+    <path d="M 0,-15 L 0,-12" stroke="#333" stroke-width="1"/>
+    
+    <!-- 嘴巴（隐藏在胡须中） -->
+    <path d="M -2,-8 Q 0,-6 2,-8" stroke="#333" stroke-width="1" fill="none"/>
+    
+    <!-- 兜帽 -->
+    <path d="M -15,-25 Q 0,-35 15,-25 Q 12,-15 8,-10 Q 0,-12 -8,-10 Q -12,-15 -15,-25" fill="url(#robeGradient)"/>
+    
+    <!-- 左手臂（持灯笼） -->
+    <rect x="-35" y="20" width="12" height="40" fill="url(#robeGradient)" rx="6"/>
+    
+    <!-- 左手 -->
+    <circle cx="-29" cy="60" r="5" fill="#fdbcb4"/>
+    
+    <!-- 右手臂（持手杖） -->
+    <rect x="23" y="25" width="12" height="45" fill="url(#robeGradient)" rx="6"/>
+    
+    <!-- 右手 -->
+    <circle cx="29" cy="70" r="5" fill="#fdbcb4"/>
+  </g>
+  
+  <!-- 灯笼 -->
+  <g transform="translate(115,260)">
+    <!-- 灯笼光晕 -->
+    <circle cx="0" cy="0" r="40" fill="url(#lanternGlow)"/>
+    
+    <!-- 灯笼主体 -->
+    <rect x="-8" y="-15" width="16" height="30" fill="#8b4513" rx="2"/>
+    
+    <!-- 灯笼玻璃 -->
+    <rect x="-6" y="-12" width="12" height="24" fill="url(#lightGradient)" rx="1"/>
+    
+    <!-- 灯笼顶部 -->
+    <rect x="-10" y="-18" width="20" height="6" fill="#654321" rx="3"/>
+    
+    <!-- 灯笼底部 -->
+    <rect x="-10" y="15" width="20" height="6" fill="#654321" rx="3"/>
+    
+    <!-- 提手 -->
+    <path d="M -8,-18 Q 0,-25 8,-18" stroke="#654321" stroke-width="2" fill="none"/>
+    
+    <!-- 六芒星在灯笼内 -->
+    <g fill="#ffffff" opacity="0.8">
+      <polygon points="0,-8 2,-3 7,-3 3,0 5,5 0,2 -5,5 -3,0 -7,-3 -2,-3"/>
+    </g>
+  </g>
+  
+  <!-- 手杖 -->
+  <g transform="translate(185,270)">
+    <!-- 手杖主体 -->
+    <rect x="-2" y="0" width="4" height="120" fill="#8b4513"/>
+    
+    <!-- 手杖顶部装饰 -->
+    <circle cx="0" cy="-5" r="6" fill="#daa520"/>
+    <polygon points="-3,-8 0,-15 3,-8" fill="#daa520"/>
+  </g>
+  
+  <!-- 山路 -->
+  <path d="M 10,360 Q 80,350 150,360 Q 220,370 280,360 L 280,400 L 10,400 Z" fill="#8b7355"/>
+  
+  <!-- 地面 -->
+  <rect x="10" y="400" width="280" height="50" fill="#654321"/>
+  
+  <!-- 岩石装饰 -->
+  <g fill="#696969">
+    <ellipse cx="50" cy="380" rx="8" ry="5"/>
+    <ellipse cx="200" cy="385" rx="6" ry="4"/>
+    <ellipse cx="250" cy="375" rx="7" ry="5"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="470" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">IX - THE HERMIT</text>
+  <text x="150" y="485" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">隐者</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#daa520" stroke-width="2" fill="none">
+    <path d="M 15,15 L 25,15 L 25,25"/>
+    <path d="M 275,15 L 285,15 L 285,25"/>
+    <path d="M 15,485 L 25,485 L 25,475"/>
+    <path d="M 275,485 L 285,485 L 285,475"/>
+  </g>
+</svg>

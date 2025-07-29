@@ -1,0 +1,250 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2f2f2f"/>
+      <stop offset="50%" stop-color="#4a4a4a"/>
+      <stop offset="100%" stop-color="#696969"/>
+    </linearGradient>
+    <linearGradient id="armorGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2f2f2f"/>
+      <stop offset="50%" stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="riverGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682b4"/>
+      <stop offset="50%" stop-color="#5f9ea0"/>
+      <stop offset="100%" stop-color="#708090"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 阴暗天空背景 -->
+  <rect x="10" y="10" width="280" height="300" fill="url(#skyGradient)"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,250 80,200 150,220 220,180 280,210 280,310 10,310" fill="#2f2f2f" opacity="0.8"/>
+  
+  <!-- 太阳（在远山间升起） -->
+  <circle cx="200" cy="200" r="20" fill="#ffd700" opacity="0.7"/>
+  <g stroke="#ffd700" stroke-width="2" opacity="0.5">
+    <line x1="200" y1="170" x2="200" y2="175"/>
+    <line x1="215" y1="185" x2="212" y2="188"/>
+    <line x1="230" y1="200" x2="225" y2="200"/>
+    <line x1="215" y1="215" x2="212" y2="212"/>
+    <line x1="200" y1="230" x2="200" y2="225"/>
+    <line x1="185" y1="215" x2="188" y2="212"/>
+    <line x1="170" y1="200" x2="175" y2="200"/>
+    <line x1="185" y1="185" x2="188" y2="188"/>
+  </g>
+  
+  <!-- 河流 -->
+  <path d="M 10,350 Q 80,340 150,350 Q 220,360 280,350 L 280,380 Q 220,370 150,380 Q 80,390 10,380 Z" fill="url(#riverGradient)"/>
+  
+  <!-- 水波纹 -->
+  <g stroke="#4682b4" stroke-width="1" fill="none" opacity="0.6">
+    <path d="M 30,360 Q 40,355 50,360 Q 60,365 70,360"/>
+    <path d="M 100,365 Q 110,360 120,365 Q 130,370 140,365"/>
+    <path d="M 180,355 Q 190,350 200,355 Q 210,360 220,355"/>
+    <path d="M 240,370 Q 250,365 260,370 Q 270,375 280,370"/>
+  </g>
+  
+  <!-- 死神骑士 -->
+  <g transform="translate(150,250)">
+    <!-- 马匹 -->
+    <g transform="translate(0,30)">
+      <!-- 马身 -->
+      <ellipse cx="0" cy="0" rx="30" ry="15" fill="#f5f5f5"/>
+      
+      <!-- 马头 -->
+      <ellipse cx="-25" cy="-10" rx="12" ry="8" fill="#f5f5f5"/>
+      
+      <!-- 马鬃 -->
+      <path d="M -30,-15 Q -35,-20 -25,-18 Q -20,-22 -15,-15" fill="#e0e0e0"/>
+      
+      <!-- 马眼 -->
+      <circle cx="-28" cy="-12" r="2" fill="#333"/>
+      
+      <!-- 马鼻孔 -->
+      <ellipse cx="-35" cy="-8" rx="1" ry="2" fill="#333"/>
+      
+      <!-- 马腿 -->
+      <rect x="-20" y="12" width="6" height="20" fill="#f5f5f5"/>
+      <rect x="-8" y="12" width="6" height="20" fill="#f5f5f5"/>
+      <rect x="4" y="12" width="6" height="20" fill="#f5f5f5"/>
+      <rect x="16" y="12" width="6" height="20" fill="#f5f5f5"/>
+      
+      <!-- 马蹄 -->
+      <ellipse cx="-17" cy="32" rx="3" ry="2" fill="#333"/>
+      <ellipse cx="-5" cy="32" rx="3" ry="2" fill="#333"/>
+      <ellipse cx="7" cy="32" rx="3" ry="2" fill="#333"/>
+      <ellipse cx="19" cy="32" rx="3" ry="2" fill="#333"/>
+      
+      <!-- 马尾 -->
+      <path d="M 25,5 Q 35,10 30,20 Q 25,25 20,15" fill="#e0e0e0"/>
+    </g>
+    
+    <!-- 死神身体 -->
+    <g transform="translate(0,-20)">
+      <!-- 斗篷 -->
+      <path d="M -20,20 Q -25,0 -20,-20 Q -15,-40 0,-40 Q 15,-40 20,-20 Q 25,0 20,20 Q 15,60 10,80 Q 5,90 0,90 Q -5,90 -10,80 Q -15,60 -20,20" fill="url(#armorGradient)"/>
+      
+      <!-- 斗篷褶皱 -->
+      <g stroke="#333" stroke-width="1" fill="none">
+        <path d="M -15,10 Q -10,15 -5,10"/>
+        <path d="M 5,20 Q 10,25 15,20"/>
+        <path d="M -12,40 Q -7,45 -2,40"/>
+        <path d="M 2,50 Q 7,55 12,50"/>
+      </g>
+      
+      <!-- 骷髅头 -->
+      <circle cx="0" cy="-35" r="12" fill="#f5f5dc"/>
+      
+      <!-- 眼窝 -->
+      <circle cx="-4" cy="-38" r="3" fill="#000"/>
+      <circle cx="4" cy="-38" r="3" fill="#000"/>
+      
+      <!-- 鼻骨 -->
+      <polygon points="0,-32 -2,-28 2,-28" fill="#000"/>
+      
+      <!-- 牙齿 -->
+      <g fill="#f5f5dc">
+        <rect x="-6" y="-26" width="2" height="4"/>
+        <rect x="-3" y="-26" width="2" height="4"/>
+        <rect x="0" y="-26" width="2" height="4"/>
+        <rect x="3" y="-26" width="2" height="4"/>
+      </g>
+      
+      <!-- 下颚 -->
+      <rect x="-8" y="-22" width="16" height="3" fill="#f5f5dc" rx="1"/>
+      
+      <!-- 手臂 -->
+      <rect x="-30" y="-10" width="12" height="30" fill="url(#armorGradient)" rx="6"/>
+      <rect x="18" y="-15" width="12" height="35" fill="url(#armorGradient)" rx="6"/>
+      
+      <!-- 骷髅手 -->
+      <g fill="#f5f5dc">
+        <!-- 左手 -->
+        <circle cx="-24" cy="20" r="4"/>
+        <rect x="-26" y="16" width="1.5" height="8"/>
+        <rect x="-24" y="15" width="1.5" height="9"/>
+        <rect x="-22" y="16" width="1.5" height="8"/>
+        <rect x="-20" y="17" width="1.5" height="7"/>
+        
+        <!-- 右手（持镰刀） -->
+        <circle cx="24" cy="20" r="4"/>
+        <rect x="22" y="16" width="1.5" height="8"/>
+        <rect x="24" y="15" width="1.5" height="9"/>
+        <rect x="26" y="16" width="1.5" height="8"/>
+        <rect x="28" y="17" width="1.5" height="7"/>
+      </g>
+    </g>
+  </g>
+  
+  <!-- 镰刀 -->
+  <g transform="translate(200,230)">
+    <!-- 镰刀柄 -->
+    <rect x="-2" y="0" width="4" height="60" fill="#8b4513"/>
+    
+    <!-- 镰刀刃 -->
+    <path d="M 0,0 Q -20,-10 -30,0 Q -25,10 -15,15 Q -5,10 0,0" fill="#c0c0c0"/>
+    
+    <!-- 镰刀刃边缘 -->
+    <path d="M 0,0 Q -20,-10 -30,0 Q -25,10 -15,15" stroke="#a9a9a9" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- 跪拜的国王 -->
+  <g transform="translate(80,320)">
+    <!-- 身体 -->
+    <rect x="-8" y="10" width="16" height="25" fill="#4b0082" rx="3"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="5" r="6" fill="#fdbcb4"/>
+    
+    <!-- 王冠 -->
+    <rect x="-6" y="-2" width="12" height="4" fill="#ffd700"/>
+    <polygon points="-4,-2 -2,-6 0,-2" fill="#ffd700"/>
+    <polygon points="0,-2 2,-6 4,-2" fill="#ffd700"/>
+    
+    <!-- 五官 -->
+    <circle cx="-2" cy="3" r="0.5" fill="#333"/>
+    <circle cx="2" cy="3" r="0.5" fill="#333"/>
+    <path d="M -1,6 Q 0,7 1,6" stroke="#333" stroke-width="0.5" fill="none"/>
+    
+    <!-- 手臂（祈祷姿势） -->
+    <rect x="-12" y="15" width="6" height="15" fill="#fdbcb4" rx="3"/>
+    <rect x="6" y="15" width="6" height="15" fill="#fdbcb4" rx="3"/>
+    
+    <!-- 祈祷的手 -->
+    <ellipse cx="0" cy="25" rx="4" ry="6" fill="#fdbcb4"/>
+    
+    <!-- 腿部（跪姿） -->
+    <rect x="-6" y="35" width="5" height="15" fill="#4b0082" rx="2"/>
+    <rect x="1" y="35" width="5" height="15" fill="#4b0082" rx="2"/>
+  </g>
+  
+  <!-- 主教 -->
+  <g transform="translate(220,330)">
+    <!-- 长袍 -->
+    <rect x="-6" y="10" width="12" height="20" fill="#8b0000" rx="2"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="5" r="5" fill="#fdbcb4"/>
+    
+    <!-- 主教帽 -->
+    <path d="M -4,0 Q 0,-8 4,0 Q 2,2 0,1 Q -2,2 -4,0" fill="#8b0000"/>
+    
+    <!-- 十字架 -->
+    <g fill="#ffd700">
+      <rect x="-0.5" y="-6" width="1" height="4"/>
+      <rect x="-2" y="-5" width="4" height="1"/>
+    </g>
+    
+    <!-- 五官 -->
+    <circle cx="-1.5" cy="3" r="0.5" fill="#333"/>
+    <circle cx="1.5" cy="3" r="0.5" fill="#333"/>
+    
+    <!-- 手臂 -->
+    <rect x="-10" y="15" width="5" height="12" fill="#fdbcb4" rx="2"/>
+    <rect x="5" y="15" width="5" height="12" fill="#fdbcb4" rx="2"/>
+    
+    <!-- 权杖 -->
+    <rect x="8" y="5" width="2" height="25" fill="#8b4513"/>
+    <circle cx="9" cy="3" r="3" fill="#ffd700"/>
+  </g>
+  
+  <!-- 玫瑰花（象征重生） -->
+  <g transform="translate(50,300)">
+    <g fill="#ff69b4">
+      <circle cx="0" cy="0" r="3"/>
+      <ellipse cx="-2" cy="-2" rx="2" ry="3" transform="rotate(-30)"/>
+      <ellipse cx="2" cy="-2" rx="2" ry="3" transform="rotate(30)"/>
+      <ellipse cx="-2" cy="2" rx="2" ry="3" transform="rotate(-150)"/>
+      <ellipse cx="2" cy="2" rx="2" ry="3" transform="rotate(150)"/>
+    </g>
+    
+    <!-- 茎 -->
+    <rect x="-0.5" y="3" width="1" height="15" fill="#228b22"/>
+    
+    <!-- 叶子 -->
+    <ellipse cx="-3" cy="10" rx="2" ry="4" fill="#228b22" transform="rotate(-45)"/>
+    <ellipse cx="3" cy="12" rx="2" ry="4" fill="#228b22" transform="rotate(45)"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="410" width="280" height="40" fill="#8b7355"/>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="470" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">XIII - DEATH</text>
+  <text x="150" y="485" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">死神</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#daa520" stroke-width="2" fill="none">
+    <path d="M 15,15 L 25,15 L 25,25"/>
+    <path d="M 275,15 L 285,15 L 285,25"/>
+    <path d="M 15,485 L 25,485 L 25,475"/>
+    <path d="M 275,485 L 285,485 L 285,475"/>
+  </g>
+</svg>

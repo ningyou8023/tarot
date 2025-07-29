@@ -1,0 +1,223 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="50%" stop-color="#b0e0e6"/>
+      <stop offset="100%" stop-color="#e0f6ff"/>
+    </linearGradient>
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f0f8ff"/>
+      <stop offset="100%" stop-color="#e6f3ff"/>
+    </linearGradient>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682b4"/>
+      <stop offset="50%" stop-color="#5f9ea0"/>
+      <stop offset="100%" stop-color="#708090"/>
+    </linearGradient>
+    <linearGradient id="waterFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#87ceeb" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#b0e0e6" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#e0f6ff" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="300" fill="url(#skyGradient)"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,250 80,200 150,220 220,180 280,210 280,310 10,310" fill="#9370db" opacity="0.6"/>
+  
+  <!-- 太阳 -->
+  <circle cx="220" cy="80" r="25" fill="#ffd700" opacity="0.8"/>
+  <g stroke="#ffd700" stroke-width="2" opacity="0.6">
+    <line x1="220" y1="45" x2="220" y2="50"/>
+    <line x1="238" y1="62" x2="235" y2="65"/>
+    <line x1="255" y1="80" x2="250" y2="80"/>
+    <line x1="238" y1="98" x2="235" y2="95"/>
+    <line x1="220" y1="115" x2="220" y2="110"/>
+    <line x1="202" y1="98" x2="205" y2="95"/>
+    <line x1="185" y1="80" x2="190" y2="80"/>
+    <line x1="202" y1="62" x2="205" y2="65"/>
+  </g>
+  
+  <!-- 池塘 -->
+  <ellipse cx="150" cy="380" rx="120" ry="30" fill="url(#waterGradient)"/>
+  
+  <!-- 水波纹 -->
+  <g stroke="#4682b4" stroke-width="1" fill="none" opacity="0.6">
+    <ellipse cx="150" cy="375" rx="100" ry="20"/>
+    <ellipse cx="150" cy="380" rx="80" ry="15"/>
+    <ellipse cx="150" cy="385" rx="60" ry="10"/>
+  </g>
+  
+  <!-- 天使 -->
+  <g transform="translate(150,200)">
+    <!-- 翅膀 -->
+    <g fill="#ffffff" opacity="0.9">
+      <!-- 左翅膀 -->
+      <ellipse cx="-25" cy="-10" rx="15" ry="30" transform="rotate(-20 -25 -10)"/>
+      <ellipse cx="-30" cy="-5" rx="12" ry="25" transform="rotate(-30 -30 -5)"/>
+      
+      <!-- 右翅膀 -->
+      <ellipse cx="25" cy="-10" rx="15" ry="30" transform="rotate(20 25 -10)"/>
+      <ellipse cx="30" cy="-5" rx="12" ry="25" transform="rotate(30 30 -5)"/>
+    </g>
+    
+    <!-- 翅膀羽毛细节 -->
+    <g stroke="#e0e0e0" stroke-width="1" fill="none">
+      <path d="M -35,-20 Q -30,-15 -25,-20"/>
+      <path d="M -33,-10 Q -28,-5 -23,-10"/>
+      <path d="M -31,0 Q -26,5 -21,0"/>
+      <path d="M 35,-20 Q 30,-15 25,-20"/>
+      <path d="M 33,-10 Q 28,-5 23,-10"/>
+      <path d="M 31,0 Q 26,5 21,0"/>
+    </g>
+    
+    <!-- 身体/长袍 -->
+    <path d="M -20,20 Q -25,0 -20,-20 Q -15,-40 0,-40 Q 15,-40 20,-20 Q 25,0 20,20 Q 15,80 10,120 Q 5,140 0,140 Q -5,140 -10,120 Q -15,80 -20,20" fill="url(#robeGradient)"/>
+    
+    <!-- 袍子装饰 -->
+    <g fill="#ffd700">
+      <circle cx="0" cy="10" r="3"/>
+      <rect x="-15" y="30" width="30" height="2"/>
+      <rect x="-12" y="50" width="24" height="2"/>
+    </g>
+    
+    <!-- 胸前三角形（火元素） -->
+    <polygon points="0,0 -8,12 8,12" fill="#ff4500" opacity="0.7"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-45" r="15" fill="#fdbcb4"/>
+    
+    <!-- 光环 -->
+    <circle cx="0" cy="-48" r="20" fill="none" stroke="#ffd700" stroke-width="3" opacity="0.8"/>
+    
+    <!-- 头发 -->
+    <path d="M -12,-55 Q 0,-60 12,-55 Q 15,-50 12,-40 Q 8,-35 0,-38 Q -8,-35 -12,-40 Q -15,-50 -12,-55" fill="#daa520"/>
+    
+    <!-- 五官 -->
+    <circle cx="-4" cy="-48" r="1.5" fill="#333"/>
+    <circle cx="4" cy="-48" r="1.5" fill="#333"/>
+    <path d="M -3,-42 Q 0,-40 3,-42" stroke="#333" stroke-width="1" fill="none"/>
+    
+    <!-- 左手臂（持上方杯子） -->
+    <rect x="-35" y="-10" width="12" height="35" fill="#fdbcb4" rx="6"/>
+    
+    <!-- 左手 -->
+    <circle cx="-29" cy="25" r="5" fill="#fdbcb4"/>
+    
+    <!-- 右手臂（持下方杯子） -->
+    <rect x="23" y="10" width="12" height="40" fill="#fdbcb4" rx="6"/>
+    
+    <!-- 右手 -->
+    <circle cx="29" cy="50" r="5" fill="#fdbcb4"/>
+    
+    <!-- 一只脚在水中，一只脚在陆地上 -->
+    <!-- 左脚（在陆地上） -->
+    <ellipse cx="-8" cy="140" rx="6" ry="12" fill="#fdbcb4"/>
+    
+    <!-- 右脚（在水中） -->
+    <ellipse cx="8" cy="150" rx="6" ry="8" fill="#fdbcb4"/>
+  </g>
+  
+  <!-- 上方杯子（金色） -->
+  <g transform="translate(115,225)">
+    <!-- 杯身 -->
+    <rect x="-6" y="0" width="12" height="15" fill="#ffd700" rx="2"/>
+    
+    <!-- 杯口 -->
+    <ellipse cx="0" cy="0" rx="6" ry="2" fill="#daa520"/>
+    
+    <!-- 杯底 -->
+    <ellipse cx="0" cy="15" rx="6" ry="2" fill="#b8860b"/>
+    
+    <!-- 杯柄 -->
+    <path d="M 6,8 Q 12,8 12,12 Q 12,16 6,16" stroke="#daa520" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- 下方杯子（银色） -->
+  <g transform="translate(185,250)">
+    <!-- 杯身 -->
+    <rect x="-6" y="0" width="12" height="15" fill="#c0c0c0" rx="2"/>
+    
+    <!-- 杯口 -->
+    <ellipse cx="0" cy="0" rx="6" ry="2" fill="#a9a9a9"/>
+    
+    <!-- 杯底 -->
+    <ellipse cx="0" cy="15" rx="6" ry="2" fill="#808080"/>
+    
+    <!-- 杯柄 -->
+    <path d="M -6,8 Q -12,8 -12,12 Q -12,16 -6,16" stroke="#a9a9a9" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- 水流（从上方杯子流向下方杯子） -->
+  <path d="M 115,240 Q 130,245 140,250 Q 150,252 160,250 Q 170,248 185,250" stroke="url(#waterFlow)" stroke-width="4" fill="none"/>
+  
+  <!-- 水流装饰 -->
+  <g fill="#87ceeb" opacity="0.6">
+    <ellipse cx="125" cy="243" rx="2" ry="1"/>
+    <ellipse cx="140" cy="250" rx="1.5" ry="0.8"/>
+    <ellipse cx="155" cy="249" rx="2" ry="1"/>
+    <ellipse cx="170" cy="248" rx="1.5" ry="0.8"/>
+  </g>
+  
+  <!-- 鸢尾花（在池塘边） -->
+  <g transform="translate(80,350)">
+    <!-- 花瓣 -->
+    <g fill="#4b0082">
+      <ellipse cx="0" cy="-8" rx="3" ry="8"/>
+      <ellipse cx="-6" cy="4" rx="3" ry="8" transform="rotate(-120 -6 4)"/>
+      <ellipse cx="6" cy="4" rx="3" ry="8" transform="rotate(120 6 4)"/>
+    </g>
+    
+    <!-- 花心 -->
+    <circle cx="0" cy="0" r="2" fill="#ffd700"/>
+    
+    <!-- 茎 -->
+    <rect x="-1" y="8" width="2" height="20" fill="#228b22"/>
+    
+    <!-- 叶子 -->
+    <ellipse cx="-5" cy="15" rx="2" ry="8" fill="#228b22" transform="rotate(-30 -5 15)"/>
+    <ellipse cx="5" cy="18" rx="2" ry="8" fill="#228b22" transform="rotate(30 5 18)"/>
+  </g>
+  
+  <!-- 另一朵鸢尾花 -->
+  <g transform="translate(220,360)">
+    <!-- 花瓣 -->
+    <g fill="#4b0082">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="6"/>
+      <ellipse cx="-4" cy="3" rx="2.5" ry="6" transform="rotate(-120 -4 3)"/>
+      <ellipse cx="4" cy="3" rx="2.5" ry="6" transform="rotate(120 4 3)"/>
+    </g>
+    
+    <!-- 花心 -->
+    <circle cx="0" cy="0" r="1.5" fill="#ffd700"/>
+    
+    <!-- 茎 -->
+    <rect x="-0.8" y="6" width="1.6" height="15" fill="#228b22"/>
+    
+    <!-- 叶子 -->
+    <ellipse cx="-3" cy="12" rx="1.5" ry="6" fill="#228b22" transform="rotate(-30 -3 12)"/>
+    <ellipse cx="3" cy="14" rx="1.5" ry="6" fill="#228b22" transform="rotate(30 3 14)"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="410" width="280" height="40" fill="#8fbc8f"/>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="470" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">XIV - TEMPERANCE</text>
+  <text x="150" y="485" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">节制</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#daa520" stroke-width="2" fill="none">
+    <path d="M 15,15 L 25,15 L 25,25"/>
+    <path d="M 275,15 L 285,15 L 285,25"/>
+    <path d="M 15,485 L 25,485 L 25,475"/>
+    <path d="M 275,485 L 285,485 L 285,475"/>
+  </g>
+</svg>

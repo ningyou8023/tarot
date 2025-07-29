@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#4682b4" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#98fb98"/>
+      <stop offset="100%" stop-color="#90ee90"/>
+    </linearGradient>
+    
+    <!-- 圣杯渐变 -->
+    <linearGradient id="cupGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 水波渐变 -->
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682b4"/>
+      <stop offset="100%" stop-color="#1e90ff"/>
+    </linearGradient>
+    
+    <!-- 鱼渐变 -->
+    <linearGradient id="fishGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6347"/>
+      <stop offset="100%" stop-color="#dc143c"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="200" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 云朵 -->
+  <ellipse cx="80" cy="80" rx="25" ry="15" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="95" cy="75" rx="20" ry="12" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="220" cy="100" rx="30" ry="18" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="240" cy="95" rx="25" ry="15" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,150 80,100 150,120 220,90 290,140 290,210 10,210" fill="#696969" opacity="0.5"/>
+  
+  <!-- 水面/海洋 -->
+  <rect x="10" y="210" width="280" height="280" fill="url(#waveGradient)"/>
+  
+  <!-- 水波纹 -->
+  <g opacity="0.4">
+    <ellipse cx="150" cy="250" rx="100" ry="8" fill="#ffffff"/>
+    <ellipse cx="120" cy="280" rx="80" ry="6" fill="#ffffff"/>
+    <ellipse cx="200" cy="320" rx="90" ry="7" fill="#ffffff"/>
+    <ellipse cx="80" cy="360" rx="70" ry="5" fill="#ffffff"/>
+    <ellipse cx="220" cy="400" rx="85" ry="6" fill="#ffffff"/>
+  </g>
+  
+  <!-- 年轻的侍从 -->
+  <g id="page">
+    <!-- 身体 -->
+    <ellipse cx="150" cy="350" rx="20" ry="35" fill="#4169e1"/>
+    
+    <!-- 头部 -->
+    <circle cx="150" cy="290" r="15" fill="url(#personGradient)"/>
+    
+    <!-- 头发（年轻的卷发） -->
+    <path d="M135 285 Q150 275 165 285 Q160 280 150 280 Q140 280 135 285" fill="#daa520"/>
+    <circle cx="140" cy="285" r="3" fill="#daa520" opacity="0.7"/>
+    <circle cx="160" cy="285" r="3" fill="#daa520" opacity="0.7"/>
+    <circle cx="145" cy="280" r="2" fill="#daa520" opacity="0.7"/>
+    <circle cx="155" cy="280" r="2" fill="#daa520" opacity="0.7"/>
+    
+    <!-- 眼睛（好奇的表情） -->
+    <circle cx="145" cy="288" r="2" fill="#000"/>
+    <circle cx="155" cy="288" r="2" fill="#000"/>
+    <circle cx="145" cy="287" r="0.5" fill="#ffffff"/>
+    <circle cx="155" cy="287" r="0.5" fill="#ffffff"/>
+    
+    <!-- 鼻子 -->
+    <line x1="150" y1="290" x2="150" y2="293" stroke="#000" stroke-width="1"/>
+    
+    <!-- 嘴巴（惊奇表情） -->
+    <ellipse cx="150" cy="296" rx="2" ry="3" fill="#000"/>
+    
+    <!-- 帽子（侍从帽） -->
+    <ellipse cx="150" cy="275" rx="18" ry="10" fill="#4169e1"/>
+    <ellipse cx="150" cy="270" rx="15" ry="8" fill="#4169e1"/>
+    <circle cx="150" cy="265" r="3" fill="#ffd700"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="125" cy="330" rx="10" ry="20" fill="url(#personGradient)" transform="rotate(-20 125 330)"/>
+    <ellipse cx="175" cy="330" rx="10" ry="20" fill="url(#personGradient)" transform="rotate(20 175 330)"/>
+    
+    <!-- 手 -->
+    <circle cx="120" cy="345" r="5" fill="url(#personGradient)"/>
+    <circle cx="180" cy="345" r="5" fill="url(#personGradient)"/>
+    
+    <!-- 腿部 -->
+    <ellipse cx="140" cy="385" rx="10" ry="25" fill="#4169e1"/>
+    <ellipse cx="160" cy="385" rx="10" ry="25" fill="#4169e1"/>
+    
+    <!-- 脚 -->
+    <ellipse cx="140" cy="410" rx="8" ry="4" fill="#8b4513"/>
+    <ellipse cx="160" cy="410" rx="8" ry="4" fill="#8b4513"/>
+    
+    <!-- 斗篷 -->
+    <path d="M130 315 Q150 310 170 315 Q175 350 170 385 Q150 390 130 385 Q125 350 130 315" fill="#ff6347" opacity="0.7"/>
+  </g>
+  
+  <!-- 神奇的圣杯 -->
+  <g id="magicalCup">
+    <!-- 圣杯主体 -->
+    <ellipse cx="120" cy="320" rx="8" ry="15" fill="url(#cupGradient)"/>
+    <ellipse cx="120" cy="305" rx="8" ry="3" fill="url(#cupGradient)"/>
+    
+    <!-- 圣杯柄 -->
+    <path d="M112 315 Q105 315 105 320 Q105 325 112 325" stroke="#daa520" stroke-width="2" fill="none"/>
+    
+    <!-- 圣杯底座 -->
+    <ellipse cx="120" cy="335" rx="6" ry="2" fill="#daa520"/>
+    
+    <!-- 杯中的水 -->
+    <ellipse cx="120" cy="320" rx="6" ry="12" fill="#4682b4" opacity="0.7"/>
+    
+    <!-- 跳出的鱼 -->
+    <g id="jumpingFish">
+      <!-- 鱼身 -->
+      <ellipse cx="120" cy="290" rx="6" ry="3" fill="url(#fishGradient)"/>
+      
+      <!-- 鱼头 -->
+      <circle cx="126" cy="290" r="2" fill="url(#fishGradient)"/>
+      
+      <!-- 鱼眼 -->
+      <circle cx="127" cy="289" r="0.5" fill="#000"/>
+      
+      <!-- 鱼尾 -->
+      <polygon points="114,290 110,287 110,293" fill="url(#fishGradient)"/>
+      
+      <!-- 鱼鳍 -->
+      <ellipse cx="118" cy="287" rx="2" ry="1" fill="url(#fishGradient)" transform="rotate(30 118 287)"/>
+      <ellipse cx="118" cy="293" rx="2" ry="1" fill="url(#fishGradient)" transform="rotate(-30 118 293)"/>
+      
+      <!-- 水花 -->
+      <circle cx="115" cy="285" r="1" fill="#4682b4" opacity="0.6"/>
+      <circle cx="125" cy="285" r="1" fill="#4682b4" opacity="0.6"/>
+      <circle cx="118" cy="282" r="0.5" fill="#4682b4" opacity="0.6"/>
+      <circle cx="122" cy="282" r="0.5" fill="#4682b4" opacity="0.6"/>
+    </g>
+    
+    <!-- 圣杯装饰 -->
+    <circle cx="116" cy="315" r="1" fill="#ff69b4"/>
+    <circle cx="124" cy="315" r="1" fill="#ff69b4"/>
+    <circle cx="120" cy="310" r="1" fill="#ff69b4"/>
+  </g>
+  
+  <!-- 海洋生物 -->
+  <g opacity="0.6">
+    <!-- 海草 -->
+    <path d="M50 400 Q55 380 50 360 Q45 380 50 400" stroke="#228b22" stroke-width="3" fill="none"/>
+    <path d="M250 420 Q255 400 250 380 Q245 400 250 420" stroke="#228b22" stroke-width="3" fill="none"/>
+    <path d="M80 450 Q85 430 80 410 Q75 430 80 450" stroke="#228b22" stroke-width="2" fill="none"/>
+    
+    <!-- 小鱼 -->
+    <ellipse cx="200" cy="380" rx="3" ry="1.5" fill="#ffa500"/>
+    <polygon points="197,380 195,379 195,381" fill="#ffa500"/>
+    <circle cx="201" cy="379.5" r="0.3" fill="#000"/>
+    
+    <ellipse cx="70" cy="350" rx="2.5" ry="1" fill="#ff69b4"/>
+    <polygon points="67.5,350 66,349.5 66,350.5" fill="#ff69b4"/>
+    <circle cx="71" cy="349.7" r="0.2" fill="#000"/>
+    
+    <!-- 贝壳 -->
+    <path d="M220 450 Q225 445 230 450 Q225 455 220 450" fill="#dda0dd"/>
+    <line x1="220" y1="450" x2="230" y2="450" stroke="#9370db" stroke-width="1"/>
+    <line x1="222" y1="447" x2="228" y2="453" stroke="#9370db" stroke-width="0.5"/>
+    <line x1="228" y1="447" x2="222" y2="453" stroke="#9370db" stroke-width="0.5"/>
+  </g>
+  
+  <!-- 神秘光芒 -->
+  <g opacity="0.5">
+    <circle cx="120" cy="290" r="15" stroke="#ffd700" stroke-width="2" fill="none"/>
+    <circle cx="120" cy="290" r="20" stroke="#ffd700" stroke-width="1" fill="none"/>
+    
+    <!-- 光线 -->
+    <line x1="105" y1="275" x2="100" y2="270" stroke="#ffd700" stroke-width="2"/>
+    <line x1="135" y1="275" x2="140" y2="270" stroke="#ffd700" stroke-width="2"/>
+    <line x1="120" y1="265" x2="120" y2="260" stroke="#ffd700" stroke-width="2"/>
+    <line x1="105" y1="305" x2="100" y2="310" stroke="#ffd700" stroke-width="2"/>
+    <line x1="135" y1="305" x2="140" y2="310" stroke="#ffd700" stroke-width="2"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">PAGE OF CUPS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">圣杯侍从</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#4682b4" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

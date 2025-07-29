@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#4682b4" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#98fb98"/>
+      <stop offset="100%" stop-color="#90ee90"/>
+    </linearGradient>
+    
+    <!-- 圣杯渐变 -->
+    <linearGradient id="cupGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 水渐变 -->
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="100%" stop-color="#4682b4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="200" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,180 80,120 150,140 220,110 290,160 290,210 10,210" fill="#696969" opacity="0.6"/>
+  
+  <!-- 水面 -->
+  <ellipse cx="150" cy="380" rx="140" ry="30" fill="url(#waterGradient)" opacity="0.7"/>
+  
+  <!-- 水波纹 -->
+  <g opacity="0.5">
+    <ellipse cx="150" cy="375" rx="120" ry="5" fill="none" stroke="#4682b4" stroke-width="1"/>
+    <ellipse cx="150" cy="385" rx="130" ry="5" fill="none" stroke="#4682b4" stroke-width="1"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="350" width="280" height="140" fill="#90ee90"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="20" y1="360" x2="280" y2="365" stroke="#228b22" stroke-width="1"/>
+    <line x1="15" y1="380" x2="285" y2="385" stroke="#228b22" stroke-width="1"/>
+    <line x1="25" y1="400" x2="275" y2="405" stroke="#228b22" stroke-width="1"/>
+  </g>
+  
+  <!-- 左侧男性 -->
+  <g id="man">
+    <!-- 身体 -->
+    <ellipse cx="100" cy="280" rx="20" ry="35" fill="#4169e1"/>
+    
+    <!-- 头部 -->
+    <circle cx="100" cy="220" r="15" fill="url(#personGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M85 215 Q100 205 115 215 Q110 210 100 210 Q90 210 85 215" fill="#8b4513"/>
+    
+    <!-- 眼睛 -->
+    <circle cx="95" cy="218" r="2" fill="#000"/>
+    <circle cx="105" cy="218" r="2" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <line x1="100" y1="220" x2="100" y2="225" stroke="#000" stroke-width="1"/>
+    
+    <!-- 嘴巴（微笑） -->
+    <path d="M97 228 Q100 230 103 228" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="80" cy="260" rx="8" ry="20" fill="url(#personGradient)" transform="rotate(-20 80 260)"/>
+    <ellipse cx="120" cy="260" rx="8" ry="20" fill="url(#personGradient)" transform="rotate(20 120 260)"/>
+    
+    <!-- 手 -->
+    <circle cx="75" cy="275" r="5" fill="url(#personGradient)"/>
+    <circle cx="125" cy="275" r="5" fill="url(#personGradient)"/>
+    
+    <!-- 腿部 -->
+    <ellipse cx="90" cy="320" rx="8" ry="25" fill="url(#personGradient)"/>
+    <ellipse cx="110" cy="320" rx="8" ry="25" fill="url(#personGradient)"/>
+    
+    <!-- 脚 -->
+    <ellipse cx="90" cy="350" rx="6" ry="8" fill="#8b4513"/>
+    <ellipse cx="110" cy="350" rx="6" ry="8" fill="#8b4513"/>
+  </g>
+  
+  <!-- 右侧女性 -->
+  <g id="woman">
+    <!-- 身体/长裙 -->
+    <ellipse cx="200" cy="290" rx="25" ry="40" fill="#ff69b4"/>
+    
+    <!-- 头部 -->
+    <circle cx="200" cy="220" r="15" fill="url(#personGradient)"/>
+    
+    <!-- 头发（长发） -->
+    <path d="M185 215 Q200 205 215 215 Q210 210 200 210 Q190 210 185 215" fill="#daa520"/>
+    <path d="M185 235 Q190 245 195 235 Q200 245 205 235 Q210 245 215 235" stroke="#daa520" stroke-width="3" fill="none"/>
+    
+    <!-- 眼睛 -->
+    <circle cx="195" cy="218" r="2" fill="#000"/>
+    <circle cx="205" cy="218" r="2" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <line x1="200" y1="220" x2="200" y2="225" stroke="#000" stroke-width="1"/>
+    
+    <!-- 嘴巴（微笑） -->
+    <path d="M197 228 Q200 230 203 228" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="175" cy="260" rx="8" ry="20" fill="url(#personGradient)" transform="rotate(-20 175 260)"/>
+    <ellipse cx="225" cy="260" rx="8" ry="20" fill="url(#personGradient)" transform="rotate(20 225 260)"/>
+    
+    <!-- 手 -->
+    <circle cx="170" cy="275" r="5" fill="url(#personGradient)"/>
+    <circle cx="230" cy="275" r="5" fill="url(#personGradient)"/>
+    
+    <!-- 脚（在长裙下方） -->
+    <ellipse cx="190" cy="335" rx="6" ry="8" fill="#ff69b4"/>
+    <ellipse cx="210" cy="335" rx="6" ry="8" fill="#ff69b4"/>
+  </g>
+  
+  <!-- 左侧圣杯 -->
+  <g id="leftCup">
+    <!-- 杯身 -->
+    <ellipse cx="125" cy="250" rx="8" ry="15" fill="url(#cupGradient)"/>
+    <!-- 杯口 -->
+    <ellipse cx="125" cy="235" rx="8" ry="3" fill="url(#cupGradient)"/>
+    <!-- 杯柄 -->
+    <path d="M117 245 Q110 245 110 250 Q110 255 117 255" stroke="#daa520" stroke-width="2" fill="none"/>
+    <!-- 杯底 -->
+    <ellipse cx="125" cy="265" rx="6" ry="2" fill="#daa520"/>
+    <!-- 杯中液体 -->
+    <ellipse cx="125" cy="250" rx="6" ry="12" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <!-- 右侧圣杯 -->
+  <g id="rightCup">
+    <!-- 杯身 -->
+    <ellipse cx="170" cy="250" rx="8" ry="15" fill="url(#cupGradient)"/>
+    <!-- 杯口 -->
+    <ellipse cx="170" cy="235" rx="8" ry="3" fill="url(#cupGradient)"/>
+    <!-- 杯柄 -->
+    <path d="M178 245 Q185 245 185 250 Q185 255 178 255" stroke="#daa520" stroke-width="2" fill="none"/>
+    <!-- 杯底 -->
+    <ellipse cx="170" cy="265" rx="6" ry="2" fill="#daa520"/>
+    <!-- 杯中液体 -->
+    <ellipse cx="170" cy="250" rx="6" ry="12" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <!-- 中央的卡杜修斯（医神杖） -->
+  <g id="caduceus">
+    <!-- 杖身 -->
+    <rect x="148" y="150" width="4" height="80" fill="#daa520"/>
+    
+    <!-- 翅膀 -->
+    <ellipse cx="140" cy="160" rx="8" ry="4" fill="#ffffff" transform="rotate(-20 140 160)"/>
+    <ellipse cx="160" cy="160" rx="8" ry="4" fill="#ffffff" transform="rotate(20 160 160)"/>
+    
+    <!-- 蛇（左） -->
+    <path d="M145 170 Q140 180 145 190 Q150 200 145 210 Q140 220 145 230" stroke="#228b22" stroke-width="3" fill="none"/>
+    
+    <!-- 蛇（右） -->
+    <path d="M155 170 Q160 180 155 190 Q150 200 155 210 Q160 220 155 230" stroke="#228b22" stroke-width="3" fill="none"/>
+    
+    <!-- 蛇头 -->
+    <circle cx="145" cy="165" r="2" fill="#228b22"/>
+    <circle cx="155" cy="165" r="2" fill="#228b22"/>
+  </g>
+  
+  <!-- 爱心符号 -->
+  <g opacity="0.7">
+    <path d="M150 180 Q145 175 140 180 Q140 185 150 195 Q160 185 160 180 Q155 175 150 180" fill="#ff69b4"/>
+  </g>
+  
+  <!-- 花朵装饰 -->
+  <g opacity="0.6">
+    <circle cx="50" cy="300" r="4" fill="#ff69b4"/>
+    <circle cx="47" cy="297" r="2" fill="#ffffff"/>
+    <circle cx="53" cy="297" r="2" fill="#ffffff"/>
+    <circle cx="47" cy="303" r="2" fill="#ffffff"/>
+    <circle cx="53" cy="303" r="2" fill="#ffffff"/>
+    
+    <circle cx="250" cy="310" r="4" fill="#ff69b4"/>
+    <circle cx="247" cy="307" r="2" fill="#ffffff"/>
+    <circle cx="253" cy="307" r="2" fill="#ffffff"/>
+    <circle cx="247" cy="313" r="2" fill="#ffffff"/>
+    <circle cx="253" cy="313" r="2" fill="#ffffff"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">II - TWO OF CUPS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">圣杯二</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#4682b4" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

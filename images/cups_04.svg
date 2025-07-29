@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#4682b4" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="40%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#98fb98"/>
+      <stop offset="100%" stop-color="#90ee90"/>
+    </linearGradient>
+    
+    <!-- 圣杯渐变 -->
+    <linearGradient id="cupGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 树木渐变 -->
+    <linearGradient id="treeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#228b22"/>
+      <stop offset="100%" stop-color="#006400"/>
+    </linearGradient>
+    
+    <!-- 云朵渐变 -->
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f8ff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="250" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,200 60,150 120,170 180,140 240,160 290,180 290,260 10,260" fill="#696969" opacity="0.5"/>
+  
+  <!-- 云朵 -->
+  <ellipse cx="80" cy="80" rx="25" ry="15" fill="url(#cloudGradient)" opacity="0.8"/>
+  <ellipse cx="95" cy="75" rx="20" ry="12" fill="url(#cloudGradient)" opacity="0.8"/>
+  <ellipse cx="220" cy="100" rx="30" ry="18" fill="url(#cloudGradient)" opacity="0.8"/>
+  <ellipse cx="240" cy="95" rx="25" ry="15" fill="url(#cloudGradient)" opacity="0.8"/>
+  
+  <!-- 天空中的第四个圣杯（神秘出现） -->
+  <g id="skyCup" opacity="0.9">
+    <!-- 云朵手 -->
+    <ellipse cx="150" cy="120" rx="15" ry="8" fill="url(#cloudGradient)"/>
+    <ellipse cx="160" cy="125" rx="12" ry="6" fill="url(#cloudGradient)"/>
+    
+    <!-- 第四个圣杯 -->
+    <ellipse cx="150" cy="140" rx="8" ry="15" fill="url(#cupGradient)"/>
+    <ellipse cx="150" cy="125" rx="8" ry="3" fill="url(#cupGradient)"/>
+    <path d="M142 135 Q135 135 135 140 Q135 145 142 145" stroke="#daa520" stroke-width="2" fill="none"/>
+    <ellipse cx="150" cy="155" rx="6" ry="2" fill="#daa520"/>
+    <ellipse cx="150" cy="140" rx="6" ry="12" fill="#dc143c" opacity="0.7"/>
+    
+    <!-- 光芒 -->
+    <g stroke="#ffd700" stroke-width="2" opacity="0.6">
+      <line x1="135" y1="125" x2="125" y2="115"/>
+      <line x1="165" y1="125" x2="175" y2="115"/>
+      <line x1="150" y1="110" x2="150" y2="100"/>
+      <line x1="135" y1="155" x2="125" y2="165"/>
+      <line x1="165" y1="155" x2="175" y2="165"/>
+    </g>
+  </g>
+  
+  <!-- 大树 -->
+  <g id="tree">
+    <!-- 树干 -->
+    <rect x="35" y="200" width="15" height="80" fill="#8b4513"/>
+    <rect x="32" y="270" width="21" height="20" fill="#8b4513"/>
+    
+    <!-- 树根 -->
+    <ellipse cx="42" cy="290" rx="12" ry="4" fill="#654321"/>
+    
+    <!-- 树冠 -->
+    <circle cx="42" cy="180" r="35" fill="url(#treeGradient)"/>
+    <circle cx="55" cy="190" r="25" fill="url(#treeGradient)"/>
+    <circle cx="30" cy="195" r="20" fill="url(#treeGradient)"/>
+    
+    <!-- 树叶细节 -->
+    <g opacity="0.7">
+      <circle cx="45" cy="170" r="3" fill="#32cd32"/>
+      <circle cx="35" cy="185" r="2" fill="#32cd32"/>
+      <circle cx="55" cy="175" r="2" fill="#32cd32"/>
+      <circle cx="25" cy="200" r="2" fill="#32cd32"/>
+    </g>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="280" width="280" height="210" fill="#90ee90"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="10" y1="290" x2="290" y2="295" stroke="#228b22" stroke-width="1"/>
+    <line x1="15" y1="310" x2="285" y2="315" stroke="#228b22" stroke-width="1"/>
+    <line x1="20" y1="330" x2="280" y2="335" stroke="#228b22" stroke-width="1"/>
+  </g>
+  
+  <!-- 沉思的人物 -->
+  <g id="person">
+    <!-- 身体 -->
+    <ellipse cx="180" cy="350" rx="18" ry="30" fill="#4169e1"/>
+    
+    <!-- 头部 -->
+    <circle cx="180" cy="310" r="12" fill="url(#personGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M168 305 Q180 295 192 305 Q187 300 180 300 Q173 300 168 305" fill="#8b4513"/>
+    
+    <!-- 眼睛（沉思状） -->
+    <ellipse cx="176" cy="308" rx="2" ry="1" fill="#000"/>
+    <ellipse cx="184" cy="308" rx="2" ry="1" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <line x1="180" y1="310" x2="180" y2="313" stroke="#000" stroke-width="1"/>
+    
+    <!-- 嘴巴（沉思表情） -->
+    <path d="M178 316 Q180 315 182 316" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂（交叉沉思） -->
+    <ellipse cx="165" cy="340" rx="8" ry="15" fill="url(#personGradient)" transform="rotate(-20 165 340)"/>
+    <ellipse cx="195" cy="340" rx="8" ry="15" fill="url(#personGradient)" transform="rotate(20 195 340)"/>
+    
+    <!-- 手 -->
+    <circle cx="160" cy="350" r="4" fill="url(#personGradient)"/>
+    <circle cx="200" cy="350" r="4" fill="url(#personGradient)"/>
+    
+    <!-- 腿部 -->
+    <ellipse cx="170" cy="380" rx="8" ry="20" fill="#4169e1"/>
+    <ellipse cx="190" cy="380" rx="8" ry="20" fill="#4169e1"/>
+    
+    <!-- 脚 -->
+    <ellipse cx="170" cy="400" rx="6" ry="3" fill="#8b4513"/>
+    <ellipse cx="190" cy="400" rx="6" ry="3" fill="#8b4513"/>
+  </g>
+  
+  <!-- 面前的三个圣杯 -->
+  <!-- 左侧圣杯 -->
+  <g id="leftGroundCup">
+    <ellipse cx="130" cy="380" rx="6" ry="12" fill="url(#cupGradient)"/>
+    <ellipse cx="130" cy="368" rx="6" ry="2" fill="url(#cupGradient)"/>
+    <path d="M124 375 Q118 375 118 380 Q118 385 124 385" stroke="#daa520" stroke-width="1.5" fill="none"/>
+    <ellipse cx="130" cy="392" rx="4" ry="1.5" fill="#daa520"/>
+    <ellipse cx="130" cy="380" rx="4" ry="10" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <!-- 中间圣杯 -->
+  <g id="centerGroundCup">
+    <ellipse cx="180" cy="420" rx="7" ry="14" fill="url(#cupGradient)"/>
+    <ellipse cx="180" cy="406" rx="7" ry="2.5" fill="url(#cupGradient)"/>
+    <path d="M173 415 Q166 415 166 420 Q166 425 173 425" stroke="#daa520" stroke-width="2" fill="none"/>
+    <ellipse cx="180" cy="434" rx="5" ry="2" fill="#daa520"/>
+    <ellipse cx="180" cy="420" rx="5" ry="12" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <!-- 右侧圣杯 -->
+  <g id="rightGroundCup">
+    <ellipse cx="230" cy="380" rx="6" ry="12" fill="url(#cupGradient)"/>
+    <ellipse cx="230" cy="368" rx="6" ry="2" fill="url(#cupGradient)"/>
+    <path d="M236 375 Q242 375 242 380 Q242 385 236 385" stroke="#daa520" stroke-width="1.5" fill="none"/>
+    <ellipse cx="230" cy="392" rx="4" ry="1.5" fill="#daa520"/>
+    <ellipse cx="230" cy="380" rx="4" ry="10" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <!-- 地面装饰 -->
+  <g opacity="0.6">
+    <!-- 小花 -->
+    <circle cx="100" cy="420" r="2" fill="#ff69b4"/>
+    <circle cx="98" cy="418" r="0.5" fill="#ffffff"/>
+    <circle cx="102" cy="418" r="0.5" fill="#ffffff"/>
+    <circle cx="98" cy="422" r="0.5" fill="#ffffff"/>
+    <circle cx="102" cy="422" r="0.5" fill="#ffffff"/>
+    
+    <circle cx="260" cy="410" r="2" fill="#ff69b4"/>
+    <circle cx="258" cy="408" r="0.5" fill="#ffffff"/>
+    <circle cx="262" cy="408" r="0.5" fill="#ffffff"/>
+    <circle cx="258" cy="412" r="0.5" fill="#ffffff"/>
+    <circle cx="262" cy="412" r="0.5" fill="#ffffff"/>
+    
+    <!-- 草 -->
+    <line x1="80" y1="400" x2="82" y2="390" stroke="#228b22" stroke-width="2"/>
+    <line x1="85" y1="405" x2="87" y2="395" stroke="#228b22" stroke-width="2"/>
+    <line x1="250" y1="420" x2="252" y2="410" stroke="#228b22" stroke-width="2"/>
+    <line x1="255" y1="425" x2="257" y2="415" stroke="#228b22" stroke-width="2"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">IV - FOUR OF CUPS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">圣杯四</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#4682b4" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

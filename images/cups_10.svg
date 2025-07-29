@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#4682b4" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#98fb98"/>
+      <stop offset="100%" stop-color="#90ee90"/>
+    </linearGradient>
+    
+    <!-- 圣杯渐变 -->
+    <linearGradient id="cupGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 彩虹渐变 -->
+    <linearGradient id="rainbowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0000"/>
+      <stop offset="16.66%" stop-color="#ff8c00"/>
+      <stop offset="33.33%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#00ff00"/>
+      <stop offset="66.66%" stop-color="#0000ff"/>
+      <stop offset="83.33%" stop-color="#4b0082"/>
+      <stop offset="100%" stop-color="#8b00ff"/>
+    </linearGradient>
+    
+    <!-- 房屋渐变 -->
+    <linearGradient id="houseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#daa520"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 美丽的天空 -->
+  <rect x="10" y="10" width="280" height="200" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 彩虹 -->
+  <path d="M10 150 Q150 80 290 150" stroke="url(#rainbowGradient)" stroke-width="8" fill="none" opacity="0.8"/>
+  <path d="M20 160 Q150 95 280 160" stroke="url(#rainbowGradient)" stroke-width="6" fill="none" opacity="0.6"/>
+  
+  <!-- 十个圣杯在彩虹中排列 -->
+  <!-- 彩虹左侧圣杯 -->
+  <g id="rainbowCup1">
+    <ellipse cx="50" cy="140" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="50" cy="132" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M46 136 Q42 136 42 140 Q42 144 46 144" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="50" cy="148" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="50" cy="140" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <g id="rainbowCup2">
+    <ellipse cx="80" cy="120" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="80" cy="112" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M76 116 Q72 116 72 120 Q72 124 76 124" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="80" cy="128" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="80" cy="120" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <g id="rainbowCup3">
+    <ellipse cx="110" cy="105" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="110" cy="97" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M106 101 Q102 101 102 105 Q102 109 106 109" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="110" cy="113" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="110" cy="105" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <g id="rainbowCup4">
+    <ellipse cx="130" cy="95" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="130" cy="87" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M126 91 Q122 91 122 95 Q122 99 126 99" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="130" cy="103" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="130" cy="95" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <!-- 彩虹中心圣杯 -->
+  <g id="rainbowCup5">
+    <ellipse cx="150" cy="90" rx="5" ry="10" fill="url(#cupGradient)"/>
+    <ellipse cx="150" cy="80" rx="5" ry="2" fill="url(#cupGradient)"/>
+    <path d="M145 85 Q140 85 140 90 Q140 95 145 95" stroke="#daa520" stroke-width="1.5" fill="none"/>
+    <ellipse cx="150" cy="100" rx="3" ry="1" fill="#daa520"/>
+    <ellipse cx="150" cy="90" rx="3" ry="8" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <!-- 彩虹右侧圣杯 -->
+  <g id="rainbowCup6">
+    <ellipse cx="170" cy="95" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="170" cy="87" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M174 91 Q178 91 178 95 Q178 99 174 99" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="170" cy="103" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="170" cy="95" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <g id="rainbowCup7">
+    <ellipse cx="190" cy="105" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="190" cy="97" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M194 101 Q198 101 198 105 Q198 109 194 109" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="190" cy="113" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="190" cy="105" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <g id="rainbowCup8">
+    <ellipse cx="220" cy="120" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="220" cy="112" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M224 116 Q228 116 228 120 Q228 124 224 124" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="220" cy="128" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="220" cy="120" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <g id="rainbowCup9">
+    <ellipse cx="250" cy="140" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="250" cy="132" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M254 136 Q258 136 258 140 Q258 144 254 144" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="250" cy="148" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="250" cy="140" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+  </g>
+  
+  <!-- 第十个圣杯（特殊位置） -->
+  <g id="rainbowCup10">
+    <ellipse cx="150" cy="60" rx="5" ry="10" fill="url(#cupGradient)"/>
+    <ellipse cx="150" cy="50" rx="5" ry="2" fill="url(#cupGradient)"/>
+    <path d="M145 55 Q140 55 140 60 Q140 65 145 65" stroke="#daa520" stroke-width="1.5" fill="none"/>
+    <ellipse cx="150" cy="70" rx="3" ry="1" fill="#daa520"/>
+    <ellipse cx="150" cy="60" rx="3" ry="8" fill="#dc143c" opacity="0.7"/>
+    <!-- 特殊光芒 -->
+    <g stroke="#ffd700" stroke-width="2" opacity="0.6">
+      <line x1="140" y1="50" x2="135" y2="45"/>
+      <line x1="160" y1="50" x2="165" y2="45"/>
+      <line x1="150" y1="40" x2="150" y2="35"/>
+    </g>
+  </g>
+  
+  <!-- 远山 -->
+  <polygon points="10,180 80,140 150,160 220,130 290,170 290,210 10,210" fill="#696969" opacity="0.5"/>
+  
+  <!-- 房屋 -->
+  <g id="house">
+    <!-- 房屋主体 -->
+    <rect x="200" y="300" width="60" height="50" fill="url(#houseGradient)"/>
+    <!-- 屋顶 -->
+    <polygon points="195,300 230,280 265,300" fill="#8b4513"/>
+    <!-- 烟囱 -->
+    <rect x="240" y="285" width="8" height="20" fill="#696969"/>
+    <!-- 烟 -->
+    <circle cx="244" cy="280" r="2" fill="#d3d3d3" opacity="0.6"/>
+    <circle cx="246" cy="275" r="1.5" fill="#d3d3d3" opacity="0.4"/>
+    <!-- 门 -->
+    <rect x="220" y="330" width="12" height="20" fill="#8b4513"/>
+    <circle cx="230" cy="340" r="1" fill="#ffd700"/>
+    <!-- 窗户 -->
+    <rect x="210" y="315" width="8" height="8" fill="#87ceeb"/>
+    <rect x="245" y="315" width="8" height="8" fill="#87ceeb"/>
+    <line x1="214" y1="315" x2="214" y2="323" stroke="#8b4513" stroke-width="1"/>
+    <line x1="210" y1="319" x2="218" y2="319" stroke="#8b4513" stroke-width="1"/>
+    <line x1="249" y1="315" x2="249" y2="323" stroke="#8b4513" stroke-width="1"/>
+    <line x1="245" y1="319" x2="253" y2="319" stroke="#8b4513" stroke-width="1"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="210" width="280" height="280" fill="#90ee90"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="10" y1="220" x2="290" y2="225" stroke="#228b22" stroke-width="1"/>
+    <line x1="15" y1="240" x2="285" y2="245" stroke="#228b22" stroke-width="1"/>
+    <line x1="20" y1="260" x2="280" y2="265" stroke="#228b22" stroke-width="1"/>
+  </g>
+  
+  <!-- 幸福的家庭 -->
+  <!-- 父亲 -->
+  <g id="father">
+    <ellipse cx="80" cy="350" rx="12" ry="25" fill="#4169e1"/>
+    <circle cx="80" cy="320" r="10" fill="url(#personGradient)"/>
+    <path d="M70 315 Q80 308 90 315 Q86 312 80 312 Q74 312 70 315" fill="#8b4513"/>
+    <circle cx="77" cy="318" r="1.5" fill="#000"/>
+    <circle cx="83" cy="318" r="1.5" fill="#000"/>
+    <line x1="80" y1="320" x2="80" y2="323" stroke="#000" stroke-width="1"/>
+    <path d="M78 326 Q80 328 82 326" stroke="#000" stroke-width="1" fill="none"/>
+    <ellipse cx="65" cy="340" rx="6" ry="12" fill="url(#personGradient)" transform="rotate(-20 65 340)"/>
+    <ellipse cx="95" cy="340" rx="6" ry="12" fill="url(#personGradient)" transform="rotate(20 95 340)"/>
+    <circle cx="60" cy="350" r="3" fill="url(#personGradient)"/>
+    <circle cx="100" cy="350" r="3" fill="url(#personGradient)"/>
+    <ellipse cx="75" cy="375" rx="6" ry="15" fill="#4169e1"/>
+    <ellipse cx="85" cy="375" rx="6" ry="15" fill="#4169e1"/>
+    <ellipse cx="75" cy="390" rx="4" ry="2" fill="#8b4513"/>
+    <ellipse cx="85" cy="390" rx="4" ry="2" fill="#8b4513"/>
+  </g>
+  
+  <!-- 母亲 -->
+  <g id="mother">
+    <ellipse cx="120" cy="350" rx="12" ry="25" fill="#ff69b4"/>
+    <circle cx="120" cy="320" r="10" fill="url(#personGradient)"/>
+    <path d="M110 315 Q120 308 130 315 Q126 312 120 312 Q114 312 110 315" fill="#daa520"/>
+    <circle cx="117" cy="318" r="1.5" fill="#000"/>
+    <circle cx="123" cy="318" r="1.5" fill="#000"/>
+    <line x1="120" y1="320" x2="120" y2="323" stroke="#000" stroke-width="1"/>
+    <path d="M118 326 Q120 328 122 326" stroke="#000" stroke-width="1" fill="none"/>
+    <ellipse cx="105" cy="340" rx="6" ry="12" fill="url(#personGradient)" transform="rotate(-20 105 340)"/>
+    <ellipse cx="135" cy="340" rx="6" ry="12" fill="url(#personGradient)" transform="rotate(20 135 340)"/>
+    <circle cx="100" cy="350" r="3" fill="url(#personGradient)"/>
+    <circle cx="140" cy="350" r="3" fill="url(#personGradient)"/>
+    <ellipse cx="115" cy="375" rx="6" ry="15" fill="#ff69b4"/>
+    <ellipse cx="125" cy="375" rx="6" ry="15" fill="#ff69b4"/>
+    <ellipse cx="115" cy="390" rx="4" ry="2" fill="#8b4513"/>
+    <ellipse cx="125" cy="390" rx="4" ry="2" fill="#8b4513"/>
+  </g>
+  
+  <!-- 孩子们 -->
+  <g id="child1">
+    <ellipse cx="50" cy="380" rx="8" ry="15" fill="#32cd32"/>
+    <circle cx="50" cy="360" r="6" fill="url(#personGradient)"/>
+    <path d="M44 356 Q50 350 56 356 Q53 353 50 353 Q47 353 44 356" fill="#ffd700"/>
+    <circle cx="48" cy="358" r="1" fill="#000"/>
+    <circle cx="52" cy="358" r="1" fill="#000"/>
+    <path d="M49 361 Q50 362 51 361" stroke="#000" stroke-width="1" fill="none"/>
+    <ellipse cx="40" cy="370" rx="4" ry="8" fill="url(#personGradient)" transform="rotate(-10 40 370)"/>
+    <ellipse cx="60" cy="370" rx="4" ry="8" fill="url(#personGradient)" transform="rotate(10 60 370)"/>
+    <circle cx="38" cy="378" r="2" fill="url(#personGradient)"/>
+    <circle cx="62" cy="378" r="2" fill="url(#personGradient)"/>
+    <ellipse cx="47" cy="395" rx="4" ry="10" fill="#32cd32"/>
+    <ellipse cx="53" cy="395" rx="4" ry="10" fill="#32cd32"/>
+    <ellipse cx="47" cy="405" rx="3" ry="1.5" fill="#8b4513"/>
+    <ellipse cx="53" cy="405" rx="3" ry="1.5" fill="#8b4513"/>
+  </g>
+  
+  <g id="child2">
+    <ellipse cx="160" cy="380" rx="8" ry="15" fill="#ff6347"/>
+    <circle cx="160" cy="360" r="6" fill="url(#personGradient)"/>
+    <path d="M154 356 Q160 350 166 356 Q163 353 160 353 Q157 353 154 356" fill="#8b4513"/>
+    <circle cx="158" cy="358" r="1" fill="#000"/>
+    <circle cx="162" cy="358" r="1" fill="#000"/>
+    <path d="M159 361 Q160 362 161 361" stroke="#000" stroke-width="1" fill="none"/>
+    <ellipse cx="150" cy="370" rx="4" ry="8" fill="url(#personGradient)" transform="rotate(-10 150 370)"/>
+    <ellipse cx="170" cy="370" rx="4" ry="8" fill="url(#personGradient)" transform="rotate(10 170 370)"/>
+    <circle cx="148" cy="378" r="2" fill="url(#personGradient)"/>
+    <circle cx="172" cy="378" r="2" fill="url(#personGradient)"/>
+    <ellipse cx="157" cy="395" rx="4" ry="10" fill="#ff6347"/>
+    <ellipse cx="163" cy="395" rx="4" ry="10" fill="#ff6347"/>
+    <ellipse cx="157" cy="405" rx="3" ry="1.5" fill="#8b4513"/>
+    <ellipse cx="163" cy="405" rx="3" ry="1.5" fill="#8b4513"/>
+  </g>
+  
+  <!-- 花园装饰 -->
+  <g opacity="0.7">
+    <!-- 花朵 -->
+    <circle cx="30" cy="420" r="3" fill="#ff69b4"/>
+    <circle cx="28" cy="418" r="1" fill="#ffffff"/>
+    <circle cx="32" cy="418" r="1" fill="#ffffff"/>
+    <circle cx="28" cy="422" r="1" fill="#ffffff"/>
+    <circle cx="32" cy="422" r="1" fill="#ffffff"/>
+    
+    <circle cx="270" cy="430" r="3" fill="#ff1493"/>
+    <circle cx="268" cy="428" r="1" fill="#ffffff"/>
+    <circle cx="272" cy="428" r="1" fill="#ffffff"/>
+    <circle cx="268" cy="432" r="1" fill="#ffffff"/>
+    <circle cx="272" cy="432" r="1" fill="#ffffff"/>
+    
+    <!-- 树 -->
+    <rect x="25" y="280" width="8" height="40" fill="#8b4513"/>
+    <circle cx="29" cy="270" r="15" fill="#228b22"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">X - TEN OF CUPS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">圣杯十</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#4682b4" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

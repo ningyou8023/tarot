@@ -1,0 +1,259 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f9fa" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="30%" stop-color="#B0E0E6"/>
+      <stop offset="70%" stop-color="#E0F6FF"/>
+      <stop offset="100%" stop-color="#F0F8FF"/>
+    </linearGradient>
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="50%" stop-color="#D2B48C"/>
+      <stop offset="100%" stop-color="#BC9A6A"/>
+    </linearGradient>
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4169E1"/>
+      <stop offset="50%" stop-color="#6495ED"/>
+      <stop offset="100%" stop-color="#1E90FF"/>
+    </linearGradient>
+    <linearGradient id="pentacleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+    <linearGradient id="cityGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D3D3D3"/>
+      <stop offset="50%" stop-color="#A9A9A9"/>
+      <stop offset="100%" stop-color="#808080"/>
+    </linearGradient>
+    <linearGradient id="crownGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="15" y="15" width="270" height="250" fill="url(#bgGradient)"/>
+  
+  <!-- 云朵 -->
+  <g opacity="0.7">
+    <ellipse cx="60" cy="80" rx="20" ry="12" fill="#FFFFFF"/>
+    <ellipse cx="45" cy="85" rx="15" ry="8" fill="#FFFFFF"/>
+    <ellipse cx="75" cy="85" rx="18" ry="10" fill="#FFFFFF"/>
+    
+    <ellipse cx="220" cy="100" rx="25" ry="15" fill="#FFFFFF"/>
+    <ellipse cx="200" cy="105" rx="18" ry="10" fill="#FFFFFF"/>
+    <ellipse cx="240" cy="105" rx="20" ry="12" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- 远山和城市轮廓 -->
+  <path d="M15 250 Q80 230 150 240 Q220 235 285 250 L285 300 L15 300 Z" fill="url(#cityGradient)" opacity="0.6"/>
+  
+  <!-- 城市建筑 -->
+  <g opacity="0.8">
+    <rect x="30" y="220" width="15" height="80" fill="url(#cityGradient)"/>
+    <rect x="50" y="210" width="20" height="90" fill="url(#cityGradient)"/>
+    <rect x="75" y="225" width="12" height="75" fill="url(#cityGradient)"/>
+    <rect x="90" y="215" width="18" height="85" fill="url(#cityGradient)"/>
+    
+    <rect x="190" y="220" width="16" height="80" fill="url(#cityGradient)"/>
+    <rect x="210" y="205" width="22" height="95" fill="url(#cityGradient)"/>
+    <rect x="235" y="230" width="14" height="70" fill="url(#cityGradient)"/>
+    <rect x="252" y="218" width="20" height="82" fill="url(#cityGradient)"/>
+    
+    <!-- 建筑窗户 -->
+    <rect x="32" y="230" width="2" height="3" fill="#FFD700"/>
+    <rect x="36" y="240" width="2" height="3" fill="#FFD700"/>
+    <rect x="40" y="250" width="2" height="3" fill="#FFD700"/>
+    
+    <rect x="52" y="220" width="3" height="4" fill="#FFD700"/>
+    <rect x="58" y="235" width="3" height="4" fill="#FFD700"/>
+    <rect x="64" y="250" width="3" height="4" fill="#FFD700"/>
+    
+    <rect x="192" y="235" width="2" height="3" fill="#FFD700"/>
+    <rect x="196" y="245" width="2" height="3" fill="#FFD700"/>
+    <rect x="200" y="255" width="2" height="3" fill="#FFD700"/>
+    
+    <rect x="212" y="215" width="3" height="4" fill="#FFD700"/>
+    <rect x="218" y="230" width="3" height="4" fill="#FFD700"/>
+    <rect x="224" y="245" width="3" height="4" fill="#FFD700"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="15" y="300" width="270" height="185" fill="#D2B48C"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <path d="M15 320 Q50 315 85 320 Q120 325 155 320 Q190 315 225 320 Q260 325 285 320" stroke="#8B4513" stroke-width="1" fill="none"/>
+    <path d="M15 340 Q50 335 85 340 Q120 345 155 340 Q190 335 225 340 Q260 345 285 340" stroke="#8B4513" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- 守财奴 -->
+  <g transform="translate(150, 350)">
+    <!-- 身体/长袍 -->
+    <ellipse cx="0" cy="30" rx="20" ry="35" fill="url(#robeGradient)"/>
+    <path d="M-18 -5 Q0 -8 18 -5 Q22 35 18 65 Q0 68 -18 65 Q-22 35 -18 -5" fill="url(#robeGradient)"/>
+    
+    <!-- 长袍装饰 -->
+    <path d="M-15 15 Q0 13 15 15" stroke="#FFD700" stroke-width="2" fill="none"/>
+    <path d="M-12 30 Q0 28 12 30" stroke="#FFD700" stroke-width="1.5" fill="none"/>
+    <path d="M-10 45 Q0 43 10 45" stroke="#FFD700" stroke-width="1" fill="none"/>
+    
+    <!-- 长袍边缘装饰 -->
+    <path d="M-18 60 Q-9 65 0 60 Q9 65 18 60" stroke="#C0C0C0" stroke-width="1.5" fill="none"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-15" r="12" fill="url(#figureGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M-10 -23 Q0 -27 10 -23 Q12 -12 10 0 Q0 3 -10 0 Q-12 -12 -10 -23" fill="#8B4513"/>
+    
+    <!-- 王冠 -->
+    <path d="M-10 -23 L-5 -30 L0 -27 L5 -30 L10 -23" fill="url(#crownGradient)"/>
+    <circle cx="-5" cy="-30" r="1.5" fill="#8B0000"/>
+    <circle cx="0" cy="-27" r="2" fill="#8B0000"/>
+    <circle cx="5" cy="-30" r="1.5" fill="#8B0000"/>
+    
+    <!-- 王冠宝石 -->
+    <circle cx="0" cy="-25" r="1" fill="#4169E1"/>
+    <circle cx="-4" cy="-26" r="0.8" fill="#DC143C"/>
+    <circle cx="4" cy="-26" r="0.8" fill="#32CD32"/>
+    
+    <!-- 眼睛 (贪婪的表情) -->
+    <circle cx="-4" cy="-16" r="1.5" fill="#000"/>
+    <circle cx="4" cy="-16" r="1.5" fill="#000"/>
+    <circle cx="-4" cy="-16.5" r="0.5" fill="#FFF"/>
+    <circle cx="4" cy="-16.5" r="0.5" fill="#FFF"/>
+    
+    <!-- 眉毛 (紧皱的表情) -->
+    <path d="M-6 -19 Q-4 -21 -2 -19" stroke="#654321" stroke-width="1" fill="none"/>
+    <path d="M2 -19 Q4 -21 6 -19" stroke="#654321" stroke-width="1" fill="none"/>
+    
+    <!-- 鼻子 -->
+    <path d="M0 -12 L1 -10 L0 -9" stroke="#BC9A6A" stroke-width="0.5" fill="none"/>
+    
+    <!-- 嘴巴 (贪婪的表情) -->
+    <path d="M-3 -6 Q0 -8 3 -6" stroke="#8B4513" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="-18" cy="20" rx="5" ry="20" fill="url(#robeGradient)"/>
+    <ellipse cx="18" cy="20" rx="5" ry="20" fill="url(#robeGradient)"/>
+    
+    <!-- 手 (紧握星币) -->
+    <circle cx="-22" cy="40" r="4" fill="url(#figureGradient)"/>
+    <circle cx="22" cy="40" r="4" fill="url(#figureGradient)"/>
+  </g>
+  
+  <!-- 第一个星币 (头顶上方) -->
+  <g transform="translate(150, 280)">
+    <!-- 外圆 -->
+    <circle cx="0" cy="0" r="18" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="2"/>
+    
+    <!-- 五角星 -->
+    <path d="M0,-14 L4.5,-4.5 L13.5,-4.5 L7.2,1.8 L10.8,11.7 L0,5.4 L-10.8,11.7 L-7.2,1.8 L-13.5,-4.5 L-4.5,-4.5 Z" fill="#8B4513"/>
+    
+    <!-- 内圆 -->
+    <circle cx="0" cy="0" r="5.5" fill="none" stroke="#8B4513" stroke-width="1.2"/>
+    
+    <!-- 装饰 -->
+    <circle cx="0" cy="0" r="2.2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 第二个星币 (脚下) -->
+  <g transform="translate(150, 450)">
+    <!-- 外圆 -->
+    <circle cx="0" cy="0" r="18" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="2"/>
+    
+    <!-- 五角星 -->
+    <path d="M0,-14 L4.5,-4.5 L13.5,-4.5 L7.2,1.8 L10.8,11.7 L0,5.4 L-10.8,11.7 L-7.2,1.8 L-13.5,-4.5 L-4.5,-4.5 Z" fill="#8B4513"/>
+    
+    <!-- 内圆 -->
+    <circle cx="0" cy="0" r="5.5" fill="none" stroke="#8B4513" stroke-width="1.2"/>
+    
+    <!-- 装饰 -->
+    <circle cx="0" cy="0" r="2.2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 第三个星币 (左手紧握) -->
+  <g transform="translate(128, 390)">
+    <!-- 外圆 -->
+    <circle cx="0" cy="0" r="15" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="2"/>
+    
+    <!-- 五角星 -->
+    <path d="M0,-12 L3.8,-3.8 L11.3,-3.8 L6,1.5 L9,9.8 L0,4.5 L-9,9.8 L-6,1.5 L-11.3,-3.8 L-3.8,-3.8 Z" fill="#8B4513"/>
+    
+    <!-- 内圆 -->
+    <circle cx="0" cy="0" r="4.5" fill="none" stroke="#8B4513" stroke-width="1"/>
+    
+    <!-- 装饰 -->
+    <circle cx="0" cy="0" r="1.8" fill="#8B4513"/>
+  </g>
+  
+  <!-- 第四个星币 (右手紧握) -->
+  <g transform="translate(172, 390)">
+    <!-- 外圆 -->
+    <circle cx="0" cy="0" r="15" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="2"/>
+    
+    <!-- 五角星 -->
+    <path d="M0,-12 L3.8,-3.8 L11.3,-3.8 L6,1.5 L9,9.8 L0,4.5 L-9,9.8 L-6,1.5 L-11.3,-3.8 L-3.8,-3.8 Z" fill="#8B4513"/>
+    
+    <!-- 内圆 -->
+    <circle cx="0" cy="0" r="4.5" fill="none" stroke="#8B4513" stroke-width="1"/>
+    
+    <!-- 装饰 -->
+    <circle cx="0" cy="0" r="1.8" fill="#8B4513"/>
+  </g>
+  
+  <!-- 贪婪的光环 -->
+  <g opacity="0.3">
+    <circle cx="150" cy="365" r="60" fill="none" stroke="#FFD700" stroke-width="2"/>
+    <circle cx="150" cy="365" r="80" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+    <circle cx="150" cy="365" r="100" fill="none" stroke="#FFD700" stroke-width="1"/>
+  </g>
+  
+  <!-- 金币堆 (在脚边) -->
+  <g>
+    <circle cx="120" cy="460" r="3" fill="#FFD700"/>
+    <circle cx="125" cy="465" r="2.5" fill="#FFD700"/>
+    <circle cx="115" cy="465" r="2" fill="#FFD700"/>
+    <circle cx="122" cy="470" r="2.2" fill="#FFD700"/>
+    
+    <circle cx="180" cy="460" r="3" fill="#FFD700"/>
+    <circle cx="175" cy="465" r="2.5" fill="#FFD700"/>
+    <circle cx="185" cy="465" r="2" fill="#FFD700"/>
+    <circle cx="178" cy="470" r="2.2" fill="#FFD700"/>
+  </g>
+  
+  <!-- 保护的屏障 (象征安全感) -->
+  <g opacity="0.4">
+    <rect x="130" y="320" width="40" height="80" fill="none" stroke="#4169E1" stroke-width="2" stroke-dasharray="5,5"/>
+    <rect x="125" y="315" width="50" height="90" fill="none" stroke="#4169E1" stroke-width="1.5" stroke-dasharray="3,3"/>
+  </g>
+  
+  <!-- 城市的繁荣光芒 -->
+  <g opacity="0.2">
+    <path d="M150 200 L155 190 L150 180 L145 190 Z" fill="#FFD700"/>
+    <path d="M100 180 L105 170 L100 160 L95 170 Z" fill="#FFD700"/>
+    <path d="M200 185 L205 175 L200 165 L195 175 Z" fill="#FFD700"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">IV - FOUR OF PENTACLES</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">星币四</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8B4513" stroke-width="1" fill="none">
+    <path d="M25 25 L35 25 L35 35"/>
+    <path d="M275 25 L265 25 L265 35"/>
+    <path d="M25 475 L35 475 L35 465"/>
+    <path d="M275 475 L265 475 L265 465"/>
+  </g>
+</svg>

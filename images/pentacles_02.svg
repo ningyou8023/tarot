@@ -1,0 +1,206 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f9fa" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="30%" stop-color="#B0E0E6"/>
+      <stop offset="70%" stop-color="#E0F6FF"/>
+      <stop offset="100%" stop-color="#F0F8FF"/>
+    </linearGradient>
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="50%" stop-color="#D2B48C"/>
+      <stop offset="100%" stop-color="#BC9A6A"/>
+    </linearGradient>
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B4513"/>
+      <stop offset="50%" stop-color="#A0522D"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+    <linearGradient id="pentacleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682B4"/>
+      <stop offset="50%" stop-color="#5F9EA0"/>
+      <stop offset="100%" stop-color="#87CEEB"/>
+    </linearGradient>
+    <linearGradient id="shipGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B4513"/>
+      <stop offset="50%" stop-color="#A0522D"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="15" y="15" width="270" height="200" fill="url(#bgGradient)"/>
+  
+  <!-- 云朵 -->
+  <g opacity="0.7">
+    <ellipse cx="60" cy="80" rx="20" ry="12" fill="#FFFFFF"/>
+    <ellipse cx="45" cy="85" rx="15" ry="8" fill="#FFFFFF"/>
+    <ellipse cx="75" cy="85" rx="18" ry="10" fill="#FFFFFF"/>
+    
+    <ellipse cx="220" cy="100" rx="25" ry="15" fill="#FFFFFF"/>
+    <ellipse cx="200" cy="105" rx="18" ry="10" fill="#FFFFFF"/>
+    <ellipse cx="240" cy="105" rx="20" ry="12" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- 海面 -->
+  <rect x="15" y="200" width="270" height="285" fill="url(#waveGradient)"/>
+  
+  <!-- 海浪 -->
+  <g opacity="0.6">
+    <path d="M15 220 Q50 215 85 220 Q120 225 155 220 Q190 215 225 220 Q260 225 285 220" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <path d="M15 240 Q50 235 85 240 Q120 245 155 240 Q190 235 225 240 Q260 245 285 240" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+    <path d="M15 260 Q50 255 85 260 Q120 265 155 260 Q190 255 225 260 Q260 265 285 260" stroke="#FFFFFF" stroke-width="1" fill="none"/>
+    <path d="M15 280 Q50 275 85 280 Q120 285 155 280 Q190 275 225 280 Q260 285 285 280" stroke="#FFFFFF" stroke-width="1" fill="none"/>
+    <path d="M15 300 Q50 295 85 300 Q120 305 155 300 Q190 295 225 300 Q260 305 285 300" stroke="#FFFFFF" stroke-width="0.8" fill="none"/>
+  </g>
+  
+  <!-- 船只 -->
+  <g transform="translate(150, 350)">
+    <!-- 船身 -->
+    <ellipse cx="0" cy="0" rx="40" ry="15" fill="url(#shipGradient)"/>
+    <path d="M-35 -5 Q0 -20 35 -5 Q40 10 35 15 Q0 20 -35 15 Q-40 10 -35 -5" fill="url(#shipGradient)"/>
+    
+    <!-- 船身装饰 -->
+    <path d="M-30 0 Q0 -5 30 0" stroke="#654321" stroke-width="1" fill="none"/>
+    <path d="M-25 8 Q0 5 25 8" stroke="#654321" stroke-width="1" fill="none"/>
+    
+    <!-- 桅杆 -->
+    <rect x="-2" y="-50" width="4" height="50" fill="#8B4513"/>
+    
+    <!-- 帆 -->
+    <path d="M5 -45 Q25 -40 30 -25 Q25 -10 5 -15 Z" fill="#F5F5DC"/>
+    <path d="M8 -40 Q20 -37 23 -28" stroke="#D2B48C" stroke-width="0.5" fill="none"/>
+    <path d="M8 -30 Q18 -28 21 -22" stroke="#D2B48C" stroke-width="0.5" fill="none"/>
+  </g>
+  
+  <!-- 杂耍的人物 -->
+  <g transform="translate(150, 280)">
+    <!-- 身体/长袍 -->
+    <ellipse cx="0" cy="20" rx="15" ry="25" fill="url(#robeGradient)"/>
+    <path d="M-12 -5 Q0 -8 12 -5 Q15 25 12 45 Q0 48 -12 45 Q-15 25 -12 -5" fill="url(#robeGradient)"/>
+    
+    <!-- 长袍装饰 -->
+    <path d="M-10 10 Q0 8 10 10" stroke="#FFD700" stroke-width="1.5" fill="none"/>
+    <path d="M-8 25 Q0 23 8 25" stroke="#FFD700" stroke-width="1" fill="none"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-15" r="8" fill="url(#figureGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M-6 -20 Q0 -23 6 -20 Q8 -12 6 -5 Q0 -3 -6 -5 Q-8 -12 -6 -20" fill="#8B4513"/>
+    
+    <!-- 帽子 -->
+    <path d="M-8 -20 Q0 -25 8 -20 Q10 -15 8 -12 Q0 -10 -8 -12 Q-10 -15 -8 -20" fill="#4169E1"/>
+    <circle cx="0" cy="-22" r="2" fill="#FFD700"/>
+    
+    <!-- 眼睛 -->
+    <circle cx="-3" cy="-16" r="1" fill="#000"/>
+    <circle cx="3" cy="-16" r="1" fill="#000"/>
+    <circle cx="-3" cy="-16.5" r="0.3" fill="#FFF"/>
+    <circle cx="3" cy="-16.5" r="0.3" fill="#FFF"/>
+    
+    <!-- 鼻子 -->
+    <path d="M0 -12 L0.5 -10 L0 -9" stroke="#BC9A6A" stroke-width="0.3" fill="none"/>
+    
+    <!-- 嘴巴 (专注的表情) -->
+    <path d="M-2 -8 Q0 -9 2 -8" stroke="#8B4513" stroke-width="0.5" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="-12" cy="10" rx="3" ry="15" fill="url(#robeGradient)"/>
+    <ellipse cx="12" cy="10" rx="3" ry="15" fill="url(#robeGradient)"/>
+    
+    <!-- 手 -->
+    <circle cx="-15" cy="25" r="3" fill="url(#figureGradient)"/>
+    <circle cx="15" cy="25" r="3" fill="url(#figureGradient)"/>
+  </g>
+  
+  <!-- 第一个星币 (左上) -->
+  <g transform="translate(80, 150)">
+    <!-- 外圆 -->
+    <circle cx="0" cy="0" r="25" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="2"/>
+    
+    <!-- 五角星 -->
+    <path d="M0,-20 L6,-6 L19,-6 L10,2 L15,16 L0,8 L-15,16 L-10,2 L-19,-6 L-6,-6 Z" fill="#8B4513"/>
+    
+    <!-- 内圆 -->
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#8B4513" stroke-width="1.5"/>
+    
+    <!-- 装饰 -->
+    <circle cx="0" cy="0" r="3" fill="#8B4513"/>
+  </g>
+  
+  <!-- 第二个星币 (右下) -->
+  <g transform="translate(220, 400)">
+    <!-- 外圆 -->
+    <circle cx="0" cy="0" r="25" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="2"/>
+    
+    <!-- 五角星 -->
+    <path d="M0,-20 L6,-6 L19,-6 L10,2 L15,16 L0,8 L-15,16 L-10,2 L-19,-6 L-6,-6 Z" fill="#8B4513"/>
+    
+    <!-- 内圆 -->
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#8B4513" stroke-width="1.5"/>
+    
+    <!-- 装饰 -->
+    <circle cx="0" cy="0" r="3" fill="#8B4513"/>
+  </g>
+  
+  <!-- 无穷符号 (连接两个星币) -->
+  <g transform="translate(150, 275)" opacity="0.8">
+    <path d="M-50 -100 Q-70 -120 -90 -100 Q-70 -80 -50 -100 Q-30 -120 -10 -100 Q10 -80 30 -100 Q50 -120 70 -100 Q50 -80 30 -100 Q10 -120 -10 -100 Q-30 -80 -50 -100" 
+          stroke="#FFD700" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- 平衡的光芒 -->
+  <g opacity="0.4">
+    <circle cx="150" cy="275" r="60" fill="none" stroke="#FFD700" stroke-width="1"/>
+    <circle cx="150" cy="275" r="80" fill="none" stroke="#FFD700" stroke-width="0.8"/>
+    <circle cx="150" cy="275" r="100" fill="none" stroke="#FFD700" stroke-width="0.5"/>
+  </g>
+  
+  <!-- 海鸥 (自由的象征) -->
+  <g opacity="0.7">
+    <path d="M100 120 Q105 115 110 120 Q105 125 100 120" fill="#FFFFFF"/>
+    <path d="M95 118 Q100 113 105 118" fill="#FFFFFF"/>
+    
+    <path d="M200 140 Q205 135 210 140 Q205 145 200 140" fill="#FFFFFF"/>
+    <path d="M195 138 Q200 133 205 138" fill="#FFFFFF"/>
+    
+    <path d="M250 110 Q255 105 260 110 Q255 115 250 110" fill="#FFFFFF"/>
+    <path d="M245 108 Q250 103 255 108" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- 水花效果 -->
+  <g opacity="0.5">
+    <circle cx="120" cy="380" r="2" fill="#FFFFFF"/>
+    <circle cx="125" cy="375" r="1.5" fill="#FFFFFF"/>
+    <circle cx="115" cy="385" r="1" fill="#FFFFFF"/>
+    
+    <circle cx="180" cy="390" r="2" fill="#FFFFFF"/>
+    <circle cx="185" cy="385" r="1.5" fill="#FFFFFF"/>
+    <circle cx="175" cy="395" r="1" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">II - TWO OF PENTACLES</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">星币二</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8B4513" stroke-width="1" fill="none">
+    <path d="M25 25 L35 25 L35 35"/>
+    <path d="M275 25 L265 25 L265 35"/>
+    <path d="M25 475 L35 475 L35 465"/>
+    <path d="M275 475 L265 475 L265 465"/>
+  </g>
+</svg>

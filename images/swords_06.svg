@@ -1,0 +1,211 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f9fa" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="30%" stop-color="#B0E0E6"/>
+      <stop offset="70%" stop-color="#E0F6FF"/>
+      <stop offset="100%" stop-color="#F0F8FF"/>
+    </linearGradient>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682B4"/>
+      <stop offset="50%" stop-color="#5F9EA0"/>
+      <stop offset="100%" stop-color="#708090"/>
+    </linearGradient>
+    <linearGradient id="boatGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B4513"/>
+      <stop offset="50%" stop-color="#A0522D"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="50%" stop-color="#D2B48C"/>
+      <stop offset="100%" stop-color="#BC9A6A"/>
+    </linearGradient>
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4169E1"/>
+      <stop offset="50%" stop-color="#6495ED"/>
+      <stop offset="100%" stop-color="#1E90FF"/>
+    </linearGradient>
+    <linearGradient id="swordGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E6E6FA"/>
+      <stop offset="50%" stop-color="#C0C0C0"/>
+      <stop offset="100%" stop-color="#A9A9A9"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 远山 -->
+  <path d="M15 200 Q80 180 150 190 Q220 185 285 200 L285 250 L15 250 Z" fill="#9370DB" opacity="0.6"/>
+  <path d="M15 220 Q100 200 180 210 Q250 205 285 220 L285 270 L15 270 Z" fill="#8A2BE2" opacity="0.4"/>
+  
+  <!-- 水面 -->
+  <rect x="15" y="250" width="270" height="200" fill="url(#waterGradient)"/>
+  
+  <!-- 水波纹 -->
+  <g opacity="0.3">
+    <path d="M15 280 Q50 275 85 280 Q120 285 155 280 Q190 275 225 280 Q260 285 285 280" stroke="#87CEEB" stroke-width="2" fill="none"/>
+    <path d="M15 300 Q50 295 85 300 Q120 305 155 300 Q190 295 225 300 Q260 305 285 300" stroke="#87CEEB" stroke-width="2" fill="none"/>
+    <path d="M15 320 Q50 315 85 320 Q120 325 155 320 Q190 315 225 320 Q260 325 285 320" stroke="#87CEEB" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- 船只 -->
+  <g transform="translate(120, 300)">
+    <!-- 船身 -->
+    <ellipse cx="0" cy="0" rx="40" ry="8" fill="url(#boatGradient)"/>
+    <path d="M-35 -3 Q0 -8 35 -3 Q35 3 0 8 Q-35 3 -35 -3" fill="#8B4513"/>
+    
+    <!-- 船的装饰 -->
+    <rect x="-2" y="-15" width="4" height="15" fill="#654321"/>
+    <path d="M-30 -3 L30 -3" stroke="#654321" stroke-width="1"/>
+  </g>
+  
+  <!-- 船夫人物 -->
+  <g transform="translate(120, 285)">
+    <!-- 身体/长袍 -->
+    <ellipse cx="0" cy="5" rx="12" ry="18" fill="url(#robeGradient)"/>
+    <path d="M-10 -5 Q0 -8 10 -5 Q12 10 8 20 Q0 25 -8 20 Q-12 10 -10 -5" fill="url(#robeGradient)"/>
+    
+    <!-- 长袍装饰 -->
+    <path d="M-8 0 Q0 -2 8 0" stroke="#FFD700" stroke-width="1" fill="none"/>
+    <path d="M-6 8 Q0 6 6 8" stroke="#FFD700" stroke-width="1" fill="none"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-15" r="8" fill="url(#figureGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M-6 -20 Q0 -25 6 -20 Q8 -15 6 -10 Q0 -8 -6 -10 Q-8 -15 -6 -20" fill="#8B4513"/>
+    
+    <!-- 眼睛 -->
+    <circle cx="-3" cy="-16" r="1" fill="#000"/>
+    <circle cx="3" cy="-16" r="1" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <path d="M0 -14 L1 -12 L0 -11" stroke="#BC9A6A" stroke-width="0.5" fill="none"/>
+    
+    <!-- 嘴巴 -->
+    <path d="M-2 -10 Q0 -9 2 -10" stroke="#8B4513" stroke-width="0.8" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="-8" cy="0" rx="3" ry="12" fill="url(#robeGradient)" transform="rotate(-20)"/>
+    <ellipse cx="8" cy="0" rx="3" ry="12" fill="url(#robeGradient)" transform="rotate(20)"/>
+    
+    <!-- 手 -->
+    <circle cx="-12" cy="-8" r="3" fill="url(#figureGradient)"/>
+    <circle cx="12" cy="-8" r="3" fill="url(#figureGradient)"/>
+  </g>
+  
+  <!-- 乘客人物们 -->
+  <!-- 左侧乘客1 -->
+  <g transform="translate(95, 290)">
+    <ellipse cx="0" cy="0" rx="8" ry="12" fill="#8B0000"/>
+    <circle cx="0" cy="-8" r="5" fill="url(#figureGradient)"/>
+    <path d="M-3 -10 Q0 -12 3 -10" fill="#654321"/>
+    <circle cx="-2" cy="-9" r="0.8" fill="#000"/>
+    <circle cx="2" cy="-9" r="0.8" fill="#000"/>
+  </g>
+  
+  <!-- 右侧乘客2 -->
+  <g transform="translate(145, 290)">
+    <ellipse cx="0" cy="0" rx="8" ry="12" fill="#006400"/>
+    <circle cx="0" cy="-8" r="5" fill="url(#figureGradient)"/>
+    <path d="M-3 -10 Q0 -12 3 -10" fill="#8B4513"/>
+    <circle cx="-2" cy="-9" r="0.8" fill="#000"/>
+    <circle cx="2" cy="-9" r="0.8" fill="#000"/>
+  </g>
+  
+  <!-- 中央乘客3 -->
+  <g transform="translate(120, 295)">
+    <ellipse cx="0" cy="0" rx="6" ry="10" fill="#4B0082"/>
+    <circle cx="0" cy="-6" r="4" fill="url(#figureGradient)"/>
+    <path d="M-2 -8 Q0 -9 2 -8" fill="#654321"/>
+    <circle cx="-1.5" cy="-7" r="0.6" fill="#000"/>
+    <circle cx="1.5" cy="-7" r="0.6" fill="#000"/>
+  </g>
+  
+  <!-- 六把宝剑 -->
+  <!-- 剑1 (左上) -->
+  <g transform="translate(60, 120) rotate(15)">
+    <rect x="-2" y="0" width="4" height="80" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-6" y="75" width="12" height="3" fill="#8B4513"/>
+    <rect x="-3" y="78" width="6" height="8" fill="#654321"/>
+    <circle cx="0" cy="86" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑2 (右上) -->
+  <g transform="translate(240, 120) rotate(-15)">
+    <rect x="-2" y="0" width="4" height="80" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-6" y="75" width="12" height="3" fill="#8B4513"/>
+    <rect x="-3" y="78" width="6" height="8" fill="#654321"/>
+    <circle cx="0" cy="86" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑3 (左中) -->
+  <g transform="translate(80, 180) rotate(25)">
+    <rect x="-2" y="0" width="4" height="75" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-6" y="70" width="12" height="3" fill="#8B4513"/>
+    <rect x="-3" y="73" width="6" height="8" fill="#654321"/>
+    <circle cx="0" cy="81" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑4 (右中) -->
+  <g transform="translate(220, 180) rotate(-25)">
+    <rect x="-2" y="0" width="4" height="75" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-6" y="70" width="12" height="3" fill="#8B4513"/>
+    <rect x="-3" y="73" width="6" height="8" fill="#654321"/>
+    <circle cx="0" cy="81" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑5 (左下) -->
+  <g transform="translate(100, 240) rotate(35)">
+    <rect x="-2" y="0" width="4" height="70" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-6" y="65" width="12" height="3" fill="#8B4513"/>
+    <rect x="-3" y="68" width="6" height="8" fill="#654321"/>
+    <circle cx="0" cy="76" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 剑6 (右下) -->
+  <g transform="translate(200, 240) rotate(-35)">
+    <rect x="-2" y="0" width="4" height="70" fill="url(#swordGradient)"/>
+    <path d="M-2 0 L0 -8 L2 0" fill="url(#swordGradient)"/>
+    <rect x="-6" y="65" width="12" height="3" fill="#8B4513"/>
+    <rect x="-3" y="68" width="6" height="8" fill="#654321"/>
+    <circle cx="0" cy="76" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 芦苇装饰 -->
+  <g opacity="0.6">
+    <path d="M20 400 Q25 380 30 400 Q35 420 40 400" stroke="#228B22" stroke-width="2" fill="none"/>
+    <path d="M260 400 Q265 380 270 400 Q275 420 280 400" stroke="#228B22" stroke-width="2" fill="none"/>
+    <circle cx="25" cy="380" r="2" fill="#8B4513"/>
+    <circle cx="275" cy="380" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- 平静的氛围光芒 -->
+  <g opacity="0.3">
+    <circle cx="150" cy="200" r="80" fill="none" stroke="#FFD700" stroke-width="1"/>
+    <circle cx="150" cy="200" r="100" fill="none" stroke="#FFD700" stroke-width="0.5"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">VI - SIX OF SWORDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">宝剑六</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8B4513" stroke-width="1" fill="none">
+    <path d="M25 25 L35 25 L35 35"/>
+    <path d="M275 25 L265 25 L265 35"/>
+    <path d="M25 475 L35 475 L35 465"/>
+    <path d="M275 475 L265 475 L265 465"/>
+  </g>
+</svg>

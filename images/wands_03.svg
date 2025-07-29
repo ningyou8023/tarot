@@ -1,0 +1,199 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="50%" stop-color="#b0e0e6"/>
+      <stop offset="100%" stop-color="#e0f6ff"/>
+    </linearGradient>
+    <linearGradient id="wandGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#daa520"/>
+      <stop offset="50%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </linearGradient>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682b4"/>
+      <stop offset="50%" stop-color="#1e90ff"/>
+      <stop offset="100%" stop-color="#0000cd"/>
+    </linearGradient>
+    <linearGradient id="groundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b7355"/>
+      <stop offset="50%" stop-color="#a0522d"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="250" fill="url(#skyGradient)"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,200 80,150 150,170 220,130 280,160 280,260 10,260" fill="#708090" opacity="0.7"/>
+  
+  <!-- 水面 -->
+  <rect x="10" y="260" width="280" height="40" fill="url(#waterGradient)"/>
+  
+  <!-- 水波纹 -->
+  <g stroke="#87ceeb" stroke-width="1" fill="none" opacity="0.6">
+    <path d="M 10,270 Q 50,265 90,270 Q 130,275 170,270 Q 210,265 250,270 Q 270,275 290,270"/>
+    <path d="M 10,285 Q 50,280 90,285 Q 130,290 170,285 Q 210,280 250,285 Q 270,290 290,285"/>
+  </g>
+  
+  <!-- 人物（背对观者，眺望远方） -->
+  <g transform="translate(150,220)">
+    <!-- 身体 -->
+    <ellipse cx="0" cy="5" rx="8" ry="15" fill="#4169e1"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-12" r="5" fill="#fdbcb4"/>
+    
+    <!-- 头发 -->
+    <path d="M -5,-16 Q 0,-18 5,-16 Q 4,-14 2,-15 Q 0,-16 -2,-15 Q -4,-14 -5,-16" fill="#8b4513"/>
+    
+    <!-- 斗篷 -->
+    <path d="M -8,0 Q -12,5 -10,15 Q -8,20 -5,18 Q -2,15 0,18 Q 2,15 5,18 Q 8,20 10,15 Q 12,5 8,0" fill="#dc143c" opacity="0.8"/>
+    
+    <!-- 左手臂 -->
+    <ellipse cx="-10" cy="0" rx="3" ry="10" fill="#fdbcb4" transform="rotate(-10)"/>
+    
+    <!-- 右手臂 -->
+    <ellipse cx="10" cy="0" rx="3" ry="10" fill="#fdbcb4" transform="rotate(10)"/>
+    
+    <!-- 手 -->
+    <circle cx="-12" cy="8" r="2" fill="#fdbcb4"/>
+    <circle cx="12" cy="8" r="2" fill="#fdbcb4"/>
+    
+    <!-- 腿 -->
+    <ellipse cx="-3" cy="18" rx="3" ry="12" fill="#8b4513"/>
+    <ellipse cx="3" cy="18" rx="3" ry="12" fill="#8b4513"/>
+    
+    <!-- 脚 -->
+    <ellipse cx="-3" cy="32" rx="2" ry="3" fill="#654321"/>
+    <ellipse cx="3" cy="32" rx="2" ry="3" fill="#654321"/>
+  </g>
+  
+  <!-- 三根权杖 -->
+  <!-- 中间权杖（人物手持） -->
+  <g transform="translate(150,180)">
+    <!-- 权杖主体 -->
+    <rect x="-3" y="0" width="6" height="100" fill="url(#wandGradient)" rx="3"/>
+    
+    <!-- 权杖顶部装饰 -->
+    <circle cx="0" cy="-5" r="5" fill="#ffd700"/>
+    <polygon points="0,-10 -2,-15 0,-18 2,-15" fill="#ffd700"/>
+    
+    <!-- 权杖纹理 -->
+    <g stroke="#8b6914" stroke-width="1" fill="none">
+      <line x1="-2" y1="15" x2="2" y2="15"/>
+      <line x1="-2" y1="30" x2="2" y2="30"/>
+      <line x1="-2" y1="45" x2="2" y2="45"/>
+      <line x1="-2" y1="60" x2="2" y2="60"/>
+      <line x1="-2" y1="75" x2="2" y2="75"/>
+      <line x1="-2" y1="90" x2="2" y2="90"/>
+    </g>
+    
+    <!-- 新芽 -->
+    <ellipse cx="-4" cy="25" rx="3" ry="1.5" fill="#32cd32" transform="rotate(-30)"/>
+    <ellipse cx="4" cy="40" rx="3" ry="1.5" fill="#32cd32" transform="rotate(30)"/>
+    <ellipse cx="-3" cy="65" rx="2.5" ry="1.2" fill="#32cd32" transform="rotate(-45)"/>
+    <ellipse cx="3" cy="80" rx="2.5" ry="1.2" fill="#32cd32" transform="rotate(45)"/>
+  </g>
+  
+  <!-- 左侧权杖 -->
+  <g transform="translate(100,200)">
+    <!-- 权杖主体 -->
+    <rect x="-2.5" y="0" width="5" height="80" fill="url(#wandGradient)" rx="2.5" transform="rotate(-15)"/>
+    
+    <!-- 权杖顶部装饰 -->
+    <g transform="rotate(-15)">
+      <circle cx="0" cy="-4" r="4" fill="#ffd700"/>
+      <polygon points="0,-8 -1.5,-12 0,-14 1.5,-12" fill="#ffd700"/>
+    </g>
+    
+    <!-- 新芽 -->
+    <ellipse cx="-2" cy="20" rx="2" ry="1" fill="#32cd32" transform="rotate(-45)"/>
+    <ellipse cx="3" cy="35" rx="2" ry="1" fill="#32cd32" transform="rotate(15)"/>
+    <ellipse cx="-1" cy="55" rx="1.5" ry="0.8" fill="#32cd32" transform="rotate(-60)"/>
+  </g>
+  
+  <!-- 右侧权杖 -->
+  <g transform="translate(200,195)">
+    <!-- 权杖主体 -->
+    <rect x="-2.5" y="0" width="5" height="85" fill="url(#wandGradient)" rx="2.5" transform="rotate(15)"/>
+    
+    <!-- 权杖顶部装饰 -->
+    <g transform="rotate(15)">
+      <circle cx="0" cy="-4" r="4" fill="#ffd700"/>
+      <polygon points="0,-8 -1.5,-12 0,-14 1.5,-12" fill="#ffd700"/>
+    </g>
+    
+    <!-- 新芽 -->
+    <ellipse cx="2" cy="25" rx="2" ry="1" fill="#32cd32" transform="rotate(45)"/>
+    <ellipse cx="-3" cy="40" rx="2" ry="1" fill="#32cd32" transform="rotate(-15)"/>
+    <ellipse cx="1" cy="60" rx="1.5" ry="0.8" fill="#32cd32" transform="rotate(60)"/>
+  </g>
+  
+  <!-- 远处的船只 -->
+  <g transform="translate(80,240)">
+    <!-- 船身 -->
+    <ellipse cx="0" cy="0" rx="15" ry="4" fill="#8b4513"/>
+    
+    <!-- 桅杆 -->
+    <rect x="-1" y="-15" width="2" height="15" fill="#654321"/>
+    
+    <!-- 帆 -->
+    <polygon points="1,-15 8,-15 8,-5 1,-5" fill="#f5deb3"/>
+    
+    <!-- 船旗 -->
+    <polygon points="1,-15 5,-15 5,-12 3,-13 1,-12" fill="#ff0000"/>
+  </g>
+  
+  <g transform="translate(220,245)">
+    <!-- 船身 -->
+    <ellipse cx="0" cy="0" rx="12" ry="3" fill="#8b4513"/>
+    
+    <!-- 桅杆 -->
+    <rect x="-0.5" y="-12" width="1" height="12" fill="#654321"/>
+    
+    <!-- 帆 -->
+    <polygon points="0.5,-12 6,-12 6,-4 0.5,-4" fill="#f5deb3"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="300" width="280" height="120" fill="url(#groundGradient)"/>
+  
+  <!-- 地面纹理 -->
+  <g stroke="#654321" stroke-width="1" fill="none" opacity="0.5">
+    <line x1="20" y1="320" x2="280" y2="320"/>
+    <line x1="20" y1="350" x2="280" y2="350"/>
+    <line x1="20" y1="380" x2="280" y2="380"/>
+  </g>
+  
+  <!-- 地面上的植物和石头 -->
+  <g fill="#32cd32">
+    <ellipse cx="40" cy="380" rx="4" ry="2" transform="rotate(-20)"/>
+    <ellipse cx="70" cy="370" rx="3" ry="1.5" transform="rotate(30)"/>
+    <ellipse cx="230" cy="375" rx="4" ry="2" transform="rotate(-45)"/>
+    <ellipse cx="260" cy="365" rx="3" ry="1.5" transform="rotate(15)"/>
+  </g>
+  
+  <g fill="#696969">
+    <ellipse cx="50" cy="390" rx="3" ry="2"/>
+    <ellipse cx="240" cy="385" rx="2.5" ry="1.8"/>
+    <ellipse cx="90" cy="395" rx="2" ry="1.5"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">III - THREE OF WANDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">权杖三</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#daa520" stroke-width="2" fill="none">
+    <path d="M 15,15 L 25,15 L 25,25"/>
+    <path d="M 275,15 L 285,15 L 285,25"/>
+    <path d="M 15,485 L 25,485 L 25,475"/>
+    <path d="M 275,485 L 285,485 L 285,475"/>
+  </g>
+</svg>

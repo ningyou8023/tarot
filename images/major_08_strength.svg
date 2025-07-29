@@ -1,0 +1,163 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="50%" stop-color="#98fb98"/>
+      <stop offset="100%" stop-color="#90ee90"/>
+    </linearGradient>
+    <linearGradient id="dressGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f0f8ff"/>
+      <stop offset="100%" stop-color="#e6f3ff"/>
+    </linearGradient>
+    <linearGradient id="lionGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#daa520"/>
+      <stop offset="50%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="300" fill="url(#skyGradient)"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,250 80,200 150,220 220,180 280,210 280,300 10,300" fill="#9370db" opacity="0.6"/>
+  
+  <!-- 花朵装饰 -->
+  <g fill="#ff69b4">
+    <circle cx="50" cy="280" r="3"/>
+    <circle cx="70" cy="290" r="2"/>
+    <circle cx="230" cy="275" r="3"/>
+    <circle cx="250" cy="285" r="2"/>
+  </g>
+  
+  <!-- 狮子 -->
+  <g transform="translate(180,320)">
+    <!-- 身体 -->
+    <ellipse cx="0" cy="20" rx="35" ry="20" fill="url(#lionGradient)"/>
+    
+    <!-- 头部 -->
+    <circle cx="-15" cy="0" r="18" fill="url(#lionGradient)"/>
+    
+    <!-- 鬃毛 -->
+    <circle cx="-15" cy="0" r="22" fill="#cd853f" opacity="0.8"/>
+    
+    <!-- 耳朵 -->
+    <ellipse cx="-25" cy="-10" rx="4" ry="6" fill="url(#lionGradient)"/>
+    <ellipse cx="-5" cy="-10" rx="4" ry="6" fill="url(#lionGradient)"/>
+    
+    <!-- 眼睛 -->
+    <circle cx="-20" cy="-3" r="2" fill="#333"/>
+    <circle cx="-10" cy="-3" r="2" fill="#333"/>
+    <circle cx="-19" cy="-4" r="0.5" fill="#fff"/>
+    <circle cx="-9" cy="-4" r="0.5" fill="#fff"/>
+    
+    <!-- 鼻子 -->
+    <ellipse cx="-15" cy="2" rx="2" ry="1" fill="#333"/>
+    
+    <!-- 嘴巴 -->
+    <path d="M -17,5 Q -15,7 -13,5" stroke="#333" stroke-width="1" fill="none"/>
+    
+    <!-- 腿 -->
+    <rect x="-25" y="35" width="8" height="20" fill="url(#lionGradient)"/>
+    <rect x="-10" y="35" width="8" height="20" fill="url(#lionGradient)"/>
+    <rect x="5" y="35" width="8" height="20" fill="url(#lionGradient)"/>
+    <rect x="20" y="35" width="8" height="20" fill="url(#lionGradient)"/>
+    
+    <!-- 爪子 -->
+    <ellipse cx="-21" cy="55" rx="4" ry="2" fill="#8b6914"/>
+    <ellipse cx="-6" cy="55" rx="4" ry="2" fill="#8b6914"/>
+    <ellipse cx="9" cy="55" rx="4" ry="2" fill="#8b6914"/>
+    <ellipse cx="24" cy="55" rx="4" ry="2" fill="#8b6914"/>
+    
+    <!-- 尾巴 -->
+    <path d="M 30,25 Q 45,15 50,30 Q 45,35 40,30" fill="url(#lionGradient)"/>
+  </g>
+  
+  <!-- 女性人物 -->
+  <g transform="translate(120,200)">
+    <!-- 身体/裙子 -->
+    <path d="M -20,80 Q -25,60 -20,40 Q -15,20 0,20 Q 15,20 20,40 Q 25,60 20,80 Q 10,120 0,120 Q -10,120 -20,80" fill="url(#dressGradient)"/>
+    
+    <!-- 腰带 -->
+    <ellipse cx="0" cy="60" rx="22" ry="3" fill="#ffd700"/>
+    
+    <!-- 胸部装饰 -->
+    <rect x="-8" y="35" width="16" height="15" fill="none" stroke="#ffd700" stroke-width="1"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="0" r="15" fill="#fdbcb4"/>
+    
+    <!-- 头发 -->
+    <path d="M -12,-12 Q 0,-18 12,-12 Q 15,-5 12,5 Q 8,10 0,8 Q -8,10 -12,5 Q -15,-5 -12,-12" fill="#daa520"/>
+    
+    <!-- 花环 -->
+    <ellipse cx="0" cy="-10" rx="14" ry="3" fill="none" stroke="#ff69b4" stroke-width="2"/>
+    <g fill="#ff69b4">
+      <circle cx="-10" cy="-12" r="2"/>
+      <circle cx="-5" cy="-14" r="1.5"/>
+      <circle cx="0" cy="-15" r="2"/>
+      <circle cx="5" cy="-14" r="1.5"/>
+      <circle cx="10" cy="-12" r="2"/>
+    </g>
+    
+    <!-- 无穷符号（∞）在额头 -->
+    <path d="M -4,-5 Q -2,-8 0,-5 Q 2,-2 4,-5 Q 2,-8 0,-5 Q -2,-2 -4,-5" fill="none" stroke="#ffd700" stroke-width="2"/>
+    
+    <!-- 五官 -->
+    <circle cx="-4" cy="-2" r="1.5" fill="#333"/>
+    <circle cx="4" cy="-2" r="1.5" fill="#333"/>
+    <path d="M -3,3 Q 0,5 3,3" stroke="#333" stroke-width="1" fill="none"/>
+    
+    <!-- 左手臂 -->
+    <rect x="-25" y="25" width="10" height="30" fill="#fdbcb4" rx="5"/>
+    
+    <!-- 左手 -->
+    <circle cx="-20" cy="55" r="6" fill="#fdbcb4"/>
+    
+    <!-- 右手臂 -->
+    <rect x="15" y="25" width="10" height="35" fill="#fdbcb4" rx="5"/>
+    
+    <!-- 右手 -->
+    <circle cx="20" cy="60" r="6" fill="#fdbcb4"/>
+  </g>
+  
+  <!-- 女性的手轻抚狮子的嘴巴 -->
+  <g transform="translate(150,280)">
+    <!-- 手指 -->
+    <ellipse cx="0" cy="0" rx="3" ry="8" fill="#fdbcb4"/>
+    <ellipse cx="4" cy="-2" rx="2" ry="6" fill="#fdbcb4"/>
+    <ellipse cx="-4" cy="-2" rx="2" ry="6" fill="#fdbcb4"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="420" width="280" height="30" fill="#90ee90"/>
+  
+  <!-- 草地装饰 -->
+  <g stroke="#228b22" stroke-width="1">
+    <line x1="30" y1="420" x2="32" y2="415"/>
+    <line x1="50" y1="420" x2="52" y2="417"/>
+    <line x1="80" y1="420" x2="82" y2="416"/>
+    <line x1="120" y1="420" x2="122" y2="415"/>
+    <line x1="160" y1="420" x2="162" y2="417"/>
+    <line x1="200" y1="420" x2="202" y2="416"/>
+    <line x1="240" y1="420" x2="242" y2="415"/>
+    <line x1="270" y1="420" x2="272" y2="417"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="470" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">VIII - STRENGTH</text>
+  <text x="150" y="485" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">力量</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#daa520" stroke-width="2" fill="none">
+    <path d="M 15,15 L 25,15 L 25,25"/>
+    <path d="M 275,15 L 285,15 L 285,25"/>
+    <path d="M 15,485 L 25,485 L 25,475"/>
+    <path d="M 275,485 L 285,485 L 285,475"/>
+  </g>
+</svg>

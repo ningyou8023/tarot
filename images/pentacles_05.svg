@@ -1,0 +1,285 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f9fa" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2F4F4F"/>
+      <stop offset="30%" stop-color="#696969"/>
+      <stop offset="70%" stop-color="#A9A9A9"/>
+      <stop offset="100%" stop-color="#D3D3D3"/>
+    </linearGradient>
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="50%" stop-color="#D2B48C"/>
+      <stop offset="100%" stop-color="#BC9A6A"/>
+    </linearGradient>
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B4513"/>
+      <stop offset="50%" stop-color="#A0522D"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+    <linearGradient id="pentacleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+    <linearGradient id="snowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F0F8FF"/>
+      <stop offset="100%" stop-color="#E6E6FA"/>
+    </linearGradient>
+    <linearGradient id="churchGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B4513"/>
+      <stop offset="50%" stop-color="#A0522D"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 暴风雪天空 -->
+  <rect x="15" y="15" width="270" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- 暴风雪 -->
+  <g opacity="0.8">
+    <circle cx="50" cy="80" r="1.5" fill="url(#snowGradient)"/>
+    <circle cx="80" cy="60" r="1" fill="url(#snowGradient)"/>
+    <circle cx="120" cy="90" r="1.2" fill="url(#snowGradient)"/>
+    <circle cx="160" cy="70" r="1.8" fill="url(#snowGradient)"/>
+    <circle cx="200" cy="100" r="1" fill="url(#snowGradient)"/>
+    <circle cx="240" cy="85" r="1.5" fill="url(#snowGradient)"/>
+    
+    <circle cx="40" cy="120" r="1.2" fill="url(#snowGradient)"/>
+    <circle cx="90" cy="140" r="1.5" fill="url(#snowGradient)"/>
+    <circle cx="140" cy="130" r="1" fill="url(#snowGradient)"/>
+    <circle cx="180" cy="150" r="1.3" fill="url(#snowGradient)"/>
+    <circle cx="220" cy="135" r="1.8" fill="url(#snowGradient)"/>
+    <circle cx="260" cy="125" r="1" fill="url(#snowGradient)"/>
+    
+    <circle cx="60" cy="180" r="1.5" fill="url(#snowGradient)"/>
+    <circle cx="110" cy="200" r="1.2" fill="url(#snowGradient)"/>
+    <circle cx="150" cy="190" r="1.8" fill="url(#snowGradient)"/>
+    <circle cx="190" cy="210" r="1" fill="url(#snowGradient)"/>
+    <circle cx="230" cy="195" r="1.5" fill="url(#snowGradient)"/>
+    <circle cx="270" cy="185" r="1.3" fill="url(#snowGradient)"/>
+  </g>
+  
+  <!-- 教堂建筑 -->
+  <g transform="translate(220, 200)">
+    <!-- 教堂主体 -->
+    <rect x="0" y="0" width="50" height="80" fill="url(#churchGradient)"/>
+    
+    <!-- 教堂屋顶 -->
+    <path d="M-5 0 L25 -20 L55 0" fill="#654321"/>
+    
+    <!-- 教堂塔楼 -->
+    <rect x="15" y="-30" width="20" height="30" fill="url(#churchGradient)"/>
+    <path d="M10 -30 L25 -45 L40 -30" fill="#654321"/>
+    
+    <!-- 十字架 -->
+    <rect x="23" y="-50" width="4" height="12" fill="#8B4513"/>
+    <rect x="20" y="-47" width="10" height="4" fill="#8B4513"/>
+    
+    <!-- 教堂门 -->
+    <rect x="20" y="60" width="10" height="20" fill="#2F4F4F"/>
+    <path d="M20 60 Q25 55 30 60" fill="#2F4F4F"/>
+    
+    <!-- 教堂窗户 -->
+    <rect x="8" y="30" width="6" height="10" fill="#FFD700"/>
+    <rect x="36" y="30" width="6" height="10" fill="#FFD700"/>
+    <rect x="22" y="15" width="6" height="8" fill="#FFD700"/>
+  </g>
+  
+  <!-- 地面 (雪覆盖) -->
+  <rect x="15" y="315" width="270" height="170" fill="url(#snowGradient)"/>
+  
+  <!-- 雪地纹理 -->
+  <g opacity="0.4">
+    <path d="M15 330 Q50 325 85 330 Q120 335 155 330 Q190 325 225 330 Q260 335 285 330" stroke="#E6E6FA" stroke-width="1" fill="none"/>
+    <path d="M15 350 Q50 345 85 350 Q120 355 155 350 Q190 345 225 350 Q260 355 285 350" stroke="#E6E6FA" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- 第一个乞丐 (左侧) -->
+  <g transform="translate(80, 380)">
+    <!-- 身体/破烂长袍 -->
+    <ellipse cx="0" cy="25" rx="15" ry="30" fill="url(#robeGradient)"/>
+    <path d="M-12 -5 Q0 -8 12 -5 Q15 30 12 50 Q0 53 -12 50 Q-15 30 -12 -5" fill="url(#robeGradient)"/>
+    
+    <!-- 破洞和补丁 -->
+    <ellipse cx="-5" cy="20" rx="3" ry="2" fill="#2F4F4F"/>
+    <ellipse cx="8" cy="35" rx="2" ry="3" fill="#2F4F4F"/>
+    <rect x="-8" y="40" width="4" height="6" fill="#654321"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-15" r="8" fill="url(#figureGradient)"/>
+    
+    <!-- 凌乱的头发 -->
+    <path d="M-6 -20 Q0 -23 6 -20 Q8 -12 6 -5 Q0 -3 -6 -5 Q-8 -12 -6 -20" fill="#696969"/>
+    <path d="M-8 -18 Q-5 -22 -2 -18" stroke="#2F4F4F" stroke-width="0.5" fill="none"/>
+    <path d="M2 -18 Q5 -22 8 -18" stroke="#2F4F4F" stroke-width="0.5" fill="none"/>
+    
+    <!-- 眼睛 (痛苦的表情) -->
+    <circle cx="-3" cy="-16" r="1" fill="#000"/>
+    <circle cx="3" cy="-16" r="1" fill="#000"/>
+    <circle cx="-3" cy="-16.5" r="0.3" fill="#FFF"/>
+    <circle cx="3" cy="-16.5" r="0.3" fill="#FFF"/>
+    
+    <!-- 眉毛 (痛苦的表情) -->
+    <path d="M-5 -19 Q-3 -20 -1 -19" stroke="#2F4F4F" stroke-width="0.8" fill="none"/>
+    <path d="M1 -19 Q3 -20 5 -19" stroke="#2F4F4F" stroke-width="0.8" fill="none"/>
+    
+    <!-- 鼻子 -->
+    <path d="M0 -12 L0.5 -10 L0 -9" stroke="#BC9A6A" stroke-width="0.3" fill="none"/>
+    
+    <!-- 嘴巴 (痛苦) -->
+    <path d="M-2 -7 Q0 -5 2 -7" stroke="#8B4513" stroke-width="0.5" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="-12" cy="15" rx="3" ry="15" fill="url(#robeGradient)"/>
+    <ellipse cx="12" cy="15" rx="3" ry="15" fill="url(#robeGradient)"/>
+    
+    <!-- 手 (乞讨姿势) -->
+    <circle cx="-15" cy="30" r="3" fill="url(#figureGradient)"/>
+    <circle cx="15" cy="30" r="3" fill="url(#figureGradient)"/>
+    
+    <!-- 拐杖 -->
+    <rect x="18" y="10" width="2" height="40" fill="#8B4513"/>
+    <path d="M18 10 Q22 8 24 12" stroke="#8B4513" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- 第二个乞丐 (右侧) -->
+  <g transform="translate(120, 390)">
+    <!-- 身体/破烂长袍 -->
+    <ellipse cx="0" cy="20" rx="12" ry="25" fill="url(#robeGradient)"/>
+    <path d="M-10 -5 Q0 -8 10 -5 Q12 25 10 40 Q0 43 -10 40 Q-12 25 -10 -5" fill="url(#robeGradient)"/>
+    
+    <!-- 破洞和补丁 -->
+    <ellipse cx="-3" cy="15" rx="2" ry="1.5" fill="#2F4F4F"/>
+    <ellipse cx="6" cy="25" rx="1.5" ry="2" fill="#2F4F4F"/>
+    <rect x="-6" y="30" width="3" height="5" fill="#654321"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-12" r="7" fill="url(#figureGradient)"/>
+    
+    <!-- 凌乱的头发 -->
+    <path d="M-5 -17 Q0 -20 5 -17 Q7 -10 5 -3 Q0 -1 -5 -3 Q-7 -10 -5 -17" fill="#696969"/>
+    
+    <!-- 眼睛 (痛苦的表情) -->
+    <circle cx="-2.5" cy="-13" r="0.8" fill="#000"/>
+    <circle cx="2.5" cy="-13" r="0.8" fill="#000"/>
+    <circle cx="-2.5" cy="-13.3" r="0.2" fill="#FFF"/>
+    <circle cx="2.5" cy="-13.3" r="0.2" fill="#FFF"/>
+    
+    <!-- 眉毛 (痛苦的表情) -->
+    <path d="M-4 -16 Q-2.5 -17 -1 -16" stroke="#2F4F4F" stroke-width="0.6" fill="none"/>
+    <path d="M1 -16 Q2.5 -17 4 -16" stroke="#2F4F4F" stroke-width="0.6" fill="none"/>
+    
+    <!-- 鼻子 -->
+    <path d="M0 -10 L0.3 -8.5 L0 -8" stroke="#BC9A6A" stroke-width="0.2" fill="none"/>
+    
+    <!-- 嘴巴 (痛苦) -->
+    <path d="M-1.5 -6 Q0 -4.5 1.5 -6" stroke="#8B4513" stroke-width="0.4" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="-10" cy="10" rx="2.5" ry="12" fill="url(#robeGradient)"/>
+    <ellipse cx="10" cy="10" rx="2.5" ry="12" fill="url(#robeGradient)"/>
+    
+    <!-- 手 (乞讨姿势) -->
+    <circle cx="-12" cy="22" r="2.5" fill="url(#figureGradient)"/>
+    <circle cx="12" cy="22" r="2.5" fill="url(#figureGradient)"/>
+    
+    <!-- 绷带 (受伤) -->
+    <rect x="-1" y="-5" width="2" height="8" fill="#F5F5DC"/>
+    <rect x="8" y="18" width="6" height="2" fill="#F5F5DC"/>
+  </g>
+  
+  <!-- 五个星币 (在彩色玻璃窗中) -->
+  <g transform="translate(50, 150)">
+    <!-- 彩色玻璃窗框 -->
+    <rect x="0" y="0" width="80" height="120" fill="none" stroke="#8B4513" stroke-width="3"/>
+    <path d="M0 0 Q40 -10 80 0 Q90 60 80 120 Q40 130 0 120 Q-10 60 0 0" fill="#4169E1" opacity="0.3"/>
+    
+    <!-- 窗格 -->
+    <path d="M40 0 L40 120" stroke="#8B4513" stroke-width="2"/>
+    <path d="M0 60 L80 60" stroke="#8B4513" stroke-width="2"/>
+    
+    <!-- 第一个星币 (左上) -->
+    <g transform="translate(20, 30)">
+      <circle cx="0" cy="0" r="12" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="1.5"/>
+      <path d="M0,-9 L3,-3 L9,-3 L5,1 L7,8 L0,4 L-7,8 L-5,1 L-9,-3 L-3,-3 Z" fill="#8B4513"/>
+      <circle cx="0" cy="0" r="3.5" fill="none" stroke="#8B4513" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.5" fill="#8B4513"/>
+    </g>
+    
+    <!-- 第二个星币 (右上) -->
+    <g transform="translate(60, 30)">
+      <circle cx="0" cy="0" r="12" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="1.5"/>
+      <path d="M0,-9 L3,-3 L9,-3 L5,1 L7,8 L0,4 L-7,8 L-5,1 L-9,-3 L-3,-3 Z" fill="#8B4513"/>
+      <circle cx="0" cy="0" r="3.5" fill="none" stroke="#8B4513" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.5" fill="#8B4513"/>
+    </g>
+    
+    <!-- 第三个星币 (中央) -->
+    <g transform="translate(40, 60)">
+      <circle cx="0" cy="0" r="14" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="1.5"/>
+      <path d="M0,-11 L3.5,-3.5 L10.5,-3.5 L5.8,1.2 L8.2,9.1 L0,5.2 L-8.2,9.1 L-5.8,1.2 L-10.5,-3.5 L-3.5,-3.5 Z" fill="#8B4513"/>
+      <circle cx="0" cy="0" r="4" fill="none" stroke="#8B4513" stroke-width="0.9"/>
+      <circle cx="0" cy="0" r="1.8" fill="#8B4513"/>
+    </g>
+    
+    <!-- 第四个星币 (左下) -->
+    <g transform="translate(20, 90)">
+      <circle cx="0" cy="0" r="12" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="1.5"/>
+      <path d="M0,-9 L3,-3 L9,-3 L5,1 L7,8 L0,4 L-7,8 L-5,1 L-9,-3 L-3,-3 Z" fill="#8B4513"/>
+      <circle cx="0" cy="0" r="3.5" fill="none" stroke="#8B4513" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.5" fill="#8B4513"/>
+    </g>
+    
+    <!-- 第五个星币 (右下) -->
+    <g transform="translate(60, 90)">
+      <circle cx="0" cy="0" r="12" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="1.5"/>
+      <path d="M0,-9 L3,-3 L9,-3 L5,1 L7,8 L0,4 L-7,8 L-5,1 L-9,-3 L-3,-3 Z" fill="#8B4513"/>
+      <circle cx="0" cy="0" r="3.5" fill="none" stroke="#8B4513" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.5" fill="#8B4513"/>
+    </g>
+  </g>
+  
+  <!-- 贫困的阴影 -->
+  <g opacity="0.3">
+    <ellipse cx="80" cy="430" rx="20" ry="8" fill="#2F4F4F"/>
+    <ellipse cx="120" cy="435" rx="15" ry="6" fill="#2F4F4F"/>
+  </g>
+  
+  <!-- 希望的光芒 (从教堂窗户) -->
+  <g opacity="0.6">
+    <path d="M242 245 L70 380" stroke="#FFD700" stroke-width="2"/>
+    <path d="M248 245 L110 390" stroke="#FFD700" stroke-width="1.5"/>
+    <path d="M254 245 L90 420" stroke="#FFD700" stroke-width="1"/>
+  </g>
+  
+  <!-- 脚印 (在雪中) -->
+  <g opacity="0.4">
+    <ellipse cx="90" cy="420" rx="3" ry="1.5" fill="#696969"/>
+    <ellipse cx="95" cy="425" rx="3" ry="1.5" fill="#696969"/>
+    <ellipse cx="100" cy="430" rx="3" ry="1.5" fill="#696969"/>
+    
+    <ellipse cx="130" cy="425" rx="2.5" ry="1.2" fill="#696969"/>
+    <ellipse cx="135" cy="430" rx="2.5" ry="1.2" fill="#696969"/>
+    <ellipse cx="140" cy="435" rx="2.5" ry="1.2" fill="#696969"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">V - FIVE OF PENTACLES</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">星币五</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8B4513" stroke-width="1" fill="none">
+    <path d="M25 25 L35 25 L35 35"/>
+    <path d="M275 25 L265 25 L265 35"/>
+    <path d="M25 475 L35 475 L35 465"/>
+    <path d="M275 475 L265 475 L265 465"/>
+  </g>
+</svg>

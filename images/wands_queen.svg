@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#f0e68c"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 权杖渐变 -->
+    <linearGradient id="wandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="50%" stop-color="#a0522d"/>
+      <stop offset="100%" stop-color="#8b4513"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 宝座渐变 -->
+    <linearGradient id="throneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 服装渐变 -->
+    <linearGradient id="dressGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6347"/>
+      <stop offset="100%" stop-color="#dc143c"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="200" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,180 80,120 150,140 220,110 290,160 290,210 10,210" fill="#696969" opacity="0.6"/>
+  
+  <!-- 地面 -->
+  <rect x="10" y="350" width="280" height="140" fill="#daa520"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="20" y1="360" x2="280" y2="365" stroke="#8b4513" stroke-width="1"/>
+    <line x1="15" y1="380" x2="285" y2="385" stroke="#8b4513" stroke-width="1"/>
+    <line x1="25" y1="400" x2="275" y2="405" stroke="#8b4513" stroke-width="1"/>
+  </g>
+  
+  <!-- 宝座 -->
+  <g id="throne">
+    <!-- 宝座底座 -->
+    <rect x="100" y="320" width="100" height="80" fill="url(#throneGradient)"/>
+    
+    <!-- 宝座靠背 -->
+    <rect x="110" y="220" width="80" height="100" fill="url(#throneGradient)"/>
+    
+    <!-- 宝座扶手 -->
+    <rect x="95" y="280" width="15" height="40" fill="url(#throneGradient)"/>
+    <rect x="190" y="280" width="15" height="40" fill="url(#throneGradient)"/>
+    
+    <!-- 宝座装饰 -->
+    <circle cx="150" cy="240" r="8" fill="#ff6347"/>
+    <circle cx="130" cy="260" r="5" fill="#ff6347"/>
+    <circle cx="170" cy="260" r="5" fill="#ff6347"/>
+    
+    <!-- 宝座顶部装饰 -->
+    <polygon points="130 220 150 200 170 220" fill="#ffd700"/>
+    <circle cx="150" cy="210" r="4" fill="#ff6347"/>
+  </g>
+  
+  <!-- 王后 -->
+  <g id="queen">
+    <!-- 身体/长袍 -->
+    <ellipse cx="150" cy="300" rx="35" ry="50" fill="url(#dressGradient)"/>
+    
+    <!-- 长袍装饰 -->
+    <rect x="125" y="280" width="50" height="3" fill="#ffd700"/>
+    <rect x="125" y="300" width="50" height="2" fill="#ffd700"/>
+    <rect x="125" y="320" width="50" height="2" fill="#ffd700"/>
+    
+    <!-- 头部 -->
+    <circle cx="150" cy="240" r="18" fill="url(#personGradient)"/>
+    
+    <!-- 头发（长发） -->
+    <path d="M132 230 Q150 215 168 230 Q165 225 150 220 Q135 225 132 230" fill="#daa520"/>
+    <path d="M135 250 Q140 260 145 250 Q150 260 155 250 Q160 260 165 250" stroke="#daa520" stroke-width="4" fill="none"/>
+    
+    <!-- 王冠 -->
+    <rect x="135" y="225" width="30" height="8" fill="#ffd700"/>
+    <polygon points="140 225 145 215 150 225" fill="#ffd700"/>
+    <polygon points="145 225 150 210 155 225" fill="#ffd700"/>
+    <polygon points="150 225 155 215 160 225" fill="#ffd700"/>
+    <circle cx="150" cy="220" r="3" fill="#ff6347"/>
+    
+    <!-- 眼睛（自信的表情） -->
+    <circle cx="145" cy="238" r="2" fill="#000"/>
+    <circle cx="155" cy="238" r="2" fill="#000"/>
+    <circle cx="145" cy="237" r="1" fill="#fff"/>
+    <circle cx="155" cy="237" r="1" fill="#fff"/>
+    
+    <!-- 鼻子 -->
+    <line x1="150" y1="240" x2="150" y2="245" stroke="#000" stroke-width="1"/>
+    
+    <!-- 嘴巴（微笑） -->
+    <path d="M147 248 Q150 250 153 248" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="115" cy="280" rx="10" ry="25" fill="url(#personGradient)" transform="rotate(-20 115 280)"/>
+    <ellipse cx="185" cy="280" rx="10" ry="25" fill="url(#personGradient)" transform="rotate(20 185 280)"/>
+    
+    <!-- 手 -->
+    <circle cx="105" cy="300" r="6" fill="url(#personGradient)"/>
+    <circle cx="195" cy="300" r="6" fill="url(#personGradient)"/>
+  </g>
+  
+  <!-- 权杖（左手持） -->
+  <g id="queenWand">
+    <rect x="103" y="200" width="4" height="120" fill="url(#wandGradient)"/>
+    <!-- 顶部装饰 -->
+    <circle cx="105" cy="195" r="6" fill="#ffd700"/>
+    <circle cx="105" cy="195" r="3" fill="#ff6347"/>
+    <!-- 新芽 -->
+    <ellipse cx="100" cy="205" rx="3" ry="8" fill="#228b22" transform="rotate(-30 100 205)"/>
+    <ellipse cx="110" cy="205" rx="3" ry="8" fill="#228b22" transform="rotate(30 110 205)"/>
+  </g>
+  
+  <!-- 向日葵（右手持） -->
+  <g id="sunflower">
+    <!-- 花茎 -->
+    <rect x="193" y="280" width="4" height="40" fill="#228b22"/>
+    
+    <!-- 花瓣 -->
+    <ellipse cx="195" cy="270" rx="12" ry="4" fill="#ffd700" transform="rotate(0 195 270)"/>
+    <ellipse cx="195" cy="270" rx="12" ry="4" fill="#ffd700" transform="rotate(30 195 270)"/>
+    <ellipse cx="195" cy="270" rx="12" ry="4" fill="#ffd700" transform="rotate(60 195 270)"/>
+    <ellipse cx="195" cy="270" rx="12" ry="4" fill="#ffd700" transform="rotate(90 195 270)"/>
+    <ellipse cx="195" cy="270" rx="12" ry="4" fill="#ffd700" transform="rotate(120 195 270)"/>
+    <ellipse cx="195" cy="270" rx="12" ry="4" fill="#ffd700" transform="rotate(150 195 270)"/>
+    
+    <!-- 花心 -->
+    <circle cx="195" cy="270" r="6" fill="#8b4513"/>
+    <circle cx="195" cy="270" r="3" fill="#654321"/>
+    
+    <!-- 叶子 -->
+    <ellipse cx="190" cy="290" rx="4" ry="8" fill="#228b22" transform="rotate(-30 190 290)"/>
+    <ellipse cx="200" cy="295" rx="4" ry="8" fill="#228b22" transform="rotate(30 200 295)"/>
+  </g>
+  
+  <!-- 黑猫（王后的伙伴） -->
+  <g id="blackCat">
+    <!-- 猫身体 -->
+    <ellipse cx="220" cy="380" rx="15" ry="8" fill="#000"/>
+    
+    <!-- 猫头 -->
+    <circle cx="235" cy="375" r="8" fill="#000"/>
+    
+    <!-- 猫耳朵 -->
+    <polygon points="230 370 233 365 236 370" fill="#000"/>
+    <polygon points="234 370 237 365 240 370" fill="#000"/>
+    
+    <!-- 猫眼睛 -->
+    <circle cx="232" cy="375" r="1" fill="#ffd700"/>
+    <circle cx="238" cy="375" r="1" fill="#ffd700"/>
+    
+    <!-- 猫尾巴 -->
+    <path d="M205 380 Q200 375 205 370 Q195 365 200 360" stroke="#000" stroke-width="4" fill="none"/>
+  </g>
+  
+  <!-- 地面装饰 -->
+  <g opacity="0.6">
+    <circle cx="50" cy="390" r="3" fill="#8b4513"/>
+    <circle cx="80" cy="400" r="2" fill="#8b4513"/>
+    <circle cx="260" cy="410" r="2" fill="#8b4513"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">QUEEN OF WANDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">权杖王后</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8b4513" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

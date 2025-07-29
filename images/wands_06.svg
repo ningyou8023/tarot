@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#f0e68c"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 权杖渐变 -->
+    <linearGradient id="wandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="50%" stop-color="#a0522d"/>
+      <stop offset="100%" stop-color="#8b4513"/>
+    </linearGradient>
+    
+    <!-- 马匹渐变 -->
+    <linearGradient id="horseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#deb887"/>
+      <stop offset="100%" stop-color="#8b7355"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="200" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,180 80,120 150,140 220,110 290,160 290,210 10,210" fill="#696969" opacity="0.6"/>
+  
+  <!-- 地面 -->
+  <rect x="10" y="350" width="280" height="140" fill="#daa520"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="20" y1="360" x2="280" y2="365" stroke="#8b4513" stroke-width="1"/>
+    <line x1="15" y1="380" x2="285" y2="385" stroke="#8b4513" stroke-width="1"/>
+    <line x1="25" y1="400" x2="275" y2="405" stroke="#8b4513" stroke-width="1"/>
+  </g>
+  
+  <!-- 马匹 -->
+  <g id="horse">
+    <!-- 马身 -->
+    <ellipse cx="150" cy="320" rx="40" ry="25" fill="url(#horseGradient)"/>
+    
+    <!-- 马头 -->
+    <ellipse cx="190" cy="300" rx="15" ry="20" fill="url(#horseGradient)"/>
+    
+    <!-- 马鬃 -->
+    <path d="M175 285 Q180 280 185 285 Q190 280 195 285 Q200 280 205 285" stroke="#654321" stroke-width="3" fill="none"/>
+    
+    <!-- 马眼 -->
+    <circle cx="195" cy="295" r="2" fill="#000"/>
+    
+    <!-- 马鼻孔 -->
+    <circle cx="200" cy="305" r="1" fill="#000"/>
+    
+    <!-- 马腿 -->
+    <rect x="125" y="340" width="6" height="25" fill="url(#horseGradient)"/>
+    <rect x="140" y="340" width="6" height="25" fill="url(#horseGradient)"/>
+    <rect x="155" y="340" width="6" height="25" fill="url(#horseGradient)"/>
+    <rect x="170" y="340" width="6" height="25" fill="url(#horseGradient)"/>
+    
+    <!-- 马蹄 -->
+    <ellipse cx="128" cy="368" rx="4" ry="3" fill="#2f4f4f"/>
+    <ellipse cx="143" cy="368" rx="4" ry="3" fill="#2f4f4f"/>
+    <ellipse cx="158" cy="368" rx="4" ry="3" fill="#2f4f4f"/>
+    <ellipse cx="173" cy="368" rx="4" ry="3" fill="#2f4f4f"/>
+    
+    <!-- 马尾 -->
+    <path d="M110 315 Q100 320 105 330 Q95 335 100 345" stroke="#654321" stroke-width="4" fill="none"/>
+  </g>
+  
+  <!-- 骑手 -->
+  <g id="rider">
+    <!-- 身体 -->
+    <ellipse cx="150" cy="280" rx="20" ry="30" fill="url(#personGradient)"/>
+    
+    <!-- 头部 -->
+    <circle cx="150" cy="240" r="15" fill="url(#personGradient)"/>
+    
+    <!-- 桂冠 -->
+    <ellipse cx="150" cy="230" rx="18" ry="8" fill="none" stroke="#228b22" stroke-width="2"/>
+    <circle cx="140" cy="230" r="2" fill="#228b22"/>
+    <circle cx="150" cy="227" r="2" fill="#228b22"/>
+    <circle cx="160" cy="230" r="2" fill="#228b22"/>
+    
+    <!-- 头发 -->
+    <path d="M135 235 Q150 225 165 235 Q160 230 150 230 Q140 230 135 235" fill="#8b4513"/>
+    
+    <!-- 眼睛 -->
+    <circle cx="145" cy="238" r="2" fill="#000"/>
+    <circle cx="155" cy="238" r="2" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <line x1="150" y1="240" x2="150" y2="245" stroke="#000" stroke-width="1"/>
+    
+    <!-- 嘴巴 -->
+    <path d="M147 248 Q150 250 153 248" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="130" cy="270" rx="8" ry="20" fill="url(#personGradient)" transform="rotate(-10 130 270)"/>
+    <ellipse cx="170" cy="270" rx="8" ry="20" fill="url(#personGradient)" transform="rotate(30 170 270)"/>
+    
+    <!-- 手 -->
+    <circle cx="125" cy="285" r="5" fill="url(#personGradient)"/>
+    <circle cx="180" cy="285" r="5" fill="url(#personGradient)"/>
+    
+    <!-- 腿部 -->
+    <ellipse cx="140" cy="310" rx="8" ry="20" fill="url(#personGradient)"/>
+    <ellipse cx="160" cy="310" rx="8" ry="20" fill="url(#personGradient)"/>
+  </g>
+  
+  <!-- 主权杖（骑手手持） -->
+  <g id="mainWand">
+    <rect x="178" y="200" width="4" height="100" fill="url(#wandGradient)"/>
+    <!-- 顶部装饰 -->
+    <circle cx="180" cy="195" r="6" fill="#ffd700"/>
+    <circle cx="180" cy="195" r="3" fill="#ff6347"/>
+    <!-- 新芽 -->
+    <ellipse cx="175" cy="205" rx="3" ry="8" fill="#228b22" transform="rotate(-30 175 205)"/>
+    <ellipse cx="185" cy="205" rx="3" ry="8" fill="#228b22" transform="rotate(30 185 205)"/>
+  </g>
+  
+  <!-- 背景中的其他权杖（胜利象征） -->
+  <g id="backgroundWands" opacity="0.7">
+    <!-- 左侧权杖 -->
+    <rect x="48" y="180" width="3" height="80" fill="url(#wandGradient)"/>
+    <circle cx="50" cy="175" r="4" fill="#ffd700"/>
+    <ellipse cx="47" cy="185" rx="2" ry="6" fill="#228b22" transform="rotate(-20 47 185)"/>
+    
+    <rect x="68" y="200" width="3" height="70" fill="url(#wandGradient)"/>
+    <circle cx="70" cy="195" r="4" fill="#ffd700"/>
+    <ellipse cx="67" cy="205" rx="2" ry="6" fill="#228b22" transform="rotate(10 67 205)"/>
+    
+    <!-- 右侧权杖 -->
+    <rect x="248" y="190" width="3" height="75" fill="url(#wandGradient)"/>
+    <circle cx="250" cy="185" r="4" fill="#ffd700"/>
+    <ellipse cx="247" cy="195" rx="2" ry="6" fill="#228b22" transform="rotate(20 247 195)"/>
+    
+    <rect x="228" y="210" width="3" height="65" fill="url(#wandGradient)"/>
+    <circle cx="230" cy="205" r="4" fill="#ffd700"/>
+    <ellipse cx="227" cy="215" rx="2" ry="6" fill="#228b22" transform="rotate(-10 227 215)"/>
+    
+    <!-- 远处权杖 -->
+    <rect x="108" y="170" width="2" height="60" fill="url(#wandGradient)" opacity="0.5"/>
+    <circle cx="109" cy="167" r="3" fill="#ffd700" opacity="0.5"/>
+  </g>
+  
+  <!-- 胜利的飘带 -->
+  <path d="M160 220 Q170 215 180 220 Q175 225 170 220 Q165 225 160 220" fill="#ff6347" opacity="0.8"/>
+  
+  <!-- 地面装饰 -->
+  <g opacity="0.6">
+    <circle cx="50" cy="380" r="3" fill="#8b4513"/>
+    <circle cx="250" cy="390" r="2" fill="#8b4513"/>
+    <circle cx="100" cy="400" r="2" fill="#8b4513"/>
+    <circle cx="200" cy="410" r="3" fill="#8b4513"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">VI - SIX OF WANDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">权杖六</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8b4513" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

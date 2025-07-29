@@ -1,0 +1,169 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#deb887"/>
+      <stop offset="100%" stop-color="#d2b48c"/>
+    </linearGradient>
+    
+    <linearGradient id="pentacleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#ffed4e"/>
+      <stop offset="100%" stop-color="#ffa500"/>
+    </linearGradient>
+    
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="50%" stop-color="#a0522d"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+    
+    <linearGradient id="apronGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#daa520"/>
+      <stop offset="50%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#8b7355"/>
+    </linearGradient>
+    
+    <linearGradient id="benchGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="50%" stop-color="#a0522d"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#skyGradient)"/>
+  
+  <!-- 工作坊背景 -->
+  <rect x="15" y="300" width="270" height="170" fill="#8b7355"/>
+  
+  <!-- 工作台 -->
+  <rect x="50" y="350" width="200" height="15" fill="url(#benchGradient)"/>
+  <rect x="55" y="365" width="8" height="40" fill="url(#benchGradient)"/>
+  <rect x="237" y="365" width="8" height="40" fill="url(#benchGradient)"/>
+  <rect x="145" y="365" width="10" height="40" fill="url(#benchGradient)"/>
+  
+  <!-- 工作台装饰 -->
+  <rect x="50" y="348" width="200" height="2" fill="#654321"/>
+  
+  <!-- 工匠人物 -->
+  <!-- 身体/长袍 -->
+  <ellipse cx="150" cy="320" rx="20" ry="35" fill="#4682b4"/>
+  
+  <!-- 围裙 -->
+  <rect x="135" y="300" width="30" height="40" fill="url(#apronGradient)"/>
+  <path d="M 135 300 Q 150 295 165 300" stroke="#8b7355" stroke-width="2" fill="none"/>
+  
+  <!-- 围裙装饰 -->
+  <rect x="140" y="310" width="20" height="2" fill="#654321"/>
+  <rect x="140" y="320" width="20" height="2" fill="#654321"/>
+  <rect x="140" y="330" width="20" height="2" fill="#654321"/>
+  
+  <!-- 头部 -->
+  <circle cx="150" cy="270" r="15" fill="url(#figureGradient)"/>
+  
+  <!-- 头发 -->
+  <path d="M 135 260 Q 150 250 165 260 Q 162 265 150 265 Q 138 265 135 260" fill="#654321"/>
+  
+  <!-- 工匠帽 -->
+  <ellipse cx="150" cy="255" rx="18" ry="6" fill="#8b4513"/>
+  
+  <!-- 眼睛（专注） -->
+  <circle cx="146" cy="268" r="1.5" fill="#000"/>
+  <circle cx="154" cy="268" r="1.5" fill="#000"/>
+  
+  <!-- 眉毛（专注的表情） -->
+  <path d="M 143 265 Q 146 263 149 265" stroke="#654321" stroke-width="1" fill="none"/>
+  <path d="M 151 265 Q 154 263 157 265" stroke="#654321" stroke-width="1" fill="none"/>
+  
+  <!-- 鼻子 -->
+  <path d="M 150 270 L 148 273 L 152 273 Z" fill="#a0522d"/>
+  
+  <!-- 嘴巴（专注） -->
+  <path d="M 148 276 Q 150 275 152 276" stroke="#654321" stroke-width="1" fill="none"/>
+  
+  <!-- 手臂 -->
+  <ellipse cx="130" cy="300" rx="6" ry="18" fill="#4682b4" transform="rotate(-30 130 300)"/>
+  <ellipse cx="170" cy="300" rx="6" ry="18" fill="#4682b4" transform="rotate(30 170 300)"/>
+  
+  <!-- 手 -->
+  <circle cx="125" cy="285" r="5" fill="url(#figureGradient)"/>
+  <circle cx="175" cy="285" r="5" fill="url(#figureGradient)"/>
+  
+  <!-- 工具（锤子和凿子） -->
+  <rect x="120" y="275" width="2" height="15" fill="#8b4513"/>
+  <ellipse cx="121" cy="272" rx="3" ry="2" fill="#696969"/>
+  
+  <rect x="173" y="280" width="8" height="2" fill="#696969"/>
+  <rect x="181" y="279" width="2" height="4" fill="#8b4513"/>
+  
+  <!-- 八个星币 -->
+  <!-- 完成的星币（左侧墙上） -->
+  <circle cx="70" cy="120" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="70,107 74,115 82,115 76,120 78,128 70,123 62,128 64,120 58,115 66,115" fill="#8b4513"/>
+  <circle cx="70" cy="120" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <circle cx="70" cy="160" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="70,147 74,155 82,155 76,160 78,168 70,163 62,168 64,160 58,155 66,155" fill="#8b4513"/>
+  <circle cx="70" cy="160" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <circle cx="70" cy="200" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="70,187 74,195 82,195 76,200 78,208 70,203 62,208 64,200 58,195 66,195" fill="#8b4513"/>
+  <circle cx="70" cy="200" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <circle cx="70" cy="240" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="70,227 74,235 82,235 76,240 78,248 70,243 62,248 64,240 58,235 66,235" fill="#8b4513"/>
+  <circle cx="70" cy="240" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <circle cx="70" cy="280" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="70,267 74,275 82,275 76,280 78,288 70,283 62,288 64,280 58,275 66,275" fill="#8b4513"/>
+  <circle cx="70" cy="280" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <!-- 工作台上的星币（制作中） -->
+  <circle cx="150" cy="340" r="20" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="150,325 155,335 165,335 157,342 160,352 150,345 140,352 143,342 135,335 145,335" fill="#8b4513"/>
+  <circle cx="150" cy="340" r="8" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <!-- 未完成的星币（右侧） -->
+  <circle cx="200" cy="340" r="18" fill="#daa520" stroke="#b8860b" stroke-width="2" opacity="0.7"/>
+  <polygon points="200,330 203,337 210,337 205,341 207,348 200,344 193,348 195,341 190,337 197,337" fill="#8b4513" opacity="0.5"/>
+  
+  <circle cx="230" cy="320" r="16" fill="#daa520" stroke="#b8860b" stroke-width="1" opacity="0.5"/>
+  <polygon points="230,312 232,318 238,318 234,321 235,327 230,324 225,327 226,321 222,318 228,318" fill="#8b4513" opacity="0.3"/>
+  
+  <!-- 专注的光芒 -->
+  <circle cx="150" cy="340" r="30" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.4"/>
+  <circle cx="150" cy="340" r="40" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.3"/>
+  
+  <!-- 工作的火花 -->
+  <circle cx="145" cy="335" r="1" fill="#ff4500" opacity="0.8"/>
+  <circle cx="155" cy="345" r="1" fill="#ff4500" opacity="0.8"/>
+  <circle cx="148" cy="348" r="1" fill="#ff4500" opacity="0.8"/>
+  
+  <!-- 工具散落 -->
+  <rect x="180" y="355" width="15" height="2" fill="#696969"/>
+  <rect x="190" y="358" width="2" height="8" fill="#8b4513"/>
+  
+  <ellipse cx="210" cy="360" rx="4" ry="2" fill="#696969"/>
+  <rect x="208" y="362" width="4" height="8" fill="#8b4513"/>
+  
+  <!-- 地面装饰（技艺之花） -->
+  <circle cx="100" cy="420" r="3" fill="#ff69b4"/>
+  <circle cx="200" cy="430" r="3" fill="#ff69b4"/>
+  <circle cx="150" cy="440" r="3" fill="#ff69b4"/>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">VIII - EIGHT OF PENTACLES</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">星币八</text>
+  
+  <!-- 装饰边角 -->
+  <circle cx="30" cy="30" r="3" fill="#ffd700"/>
+  <circle cx="270" cy="30" r="3" fill="#ffd700"/>
+  <circle cx="30" cy="470" r="3" fill="#ffd700"/>
+  <circle cx="270" cy="470" r="3" fill="#ffd700"/>
+</svg>

@@ -1,0 +1,265 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f9fa" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5F5DC"/>
+      <stop offset="30%" stop-color="#FFFACD"/>
+      <stop offset="70%" stop-color="#FFF8DC"/>
+      <stop offset="100%" stop-color="#FFEFD5"/>
+    </linearGradient>
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="50%" stop-color="#D2B48C"/>
+      <stop offset="100%" stop-color="#BC9A6A"/>
+    </linearGradient>
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B4513"/>
+      <stop offset="50%" stop-color="#A0522D"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+    <linearGradient id="pentacleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+    <linearGradient id="stoneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D3D3D3"/>
+      <stop offset="50%" stop-color="#A9A9A9"/>
+      <stop offset="100%" stop-color="#808080"/>
+    </linearGradient>
+    <linearGradient id="archGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5DEB3"/>
+      <stop offset="50%" stop-color="#DEB887"/>
+      <stop offset="100%" stop-color="#D2B48C"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 教堂内部背景 -->
+  <rect x="15" y="15" width="270" height="470" fill="url(#archGradient)"/>
+  
+  <!-- 拱门结构 -->
+  <g>
+    <!-- 主拱门 -->
+    <path d="M50 15 Q150 50 250 15 L250 485 L50 485 Z" fill="url(#stoneGradient)" opacity="0.3"/>
+    
+    <!-- 侧拱门 -->
+    <path d="M15 100 Q80 120 145 100 L145 485 L15 485 Z" fill="url(#stoneGradient)" opacity="0.2"/>
+    <path d="M155 100 Q220 120 285 100 L285 485 L155 485 Z" fill="url(#stoneGradient)" opacity="0.2"/>
+    
+    <!-- 拱门装饰线条 -->
+    <path d="M50 15 Q150 50 250 15" stroke="#8B4513" stroke-width="2" fill="none"/>
+    <path d="M15 100 Q80 120 145 100" stroke="#8B4513" stroke-width="1.5" fill="none"/>
+    <path d="M155 100 Q220 120 285 100" stroke="#8B4513" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- 柱子 -->
+  <g>
+    <!-- 左柱 -->
+    <rect x="70" y="150" width="15" height="335" fill="url(#stoneGradient)"/>
+    <rect x="68" y="145" width="19" height="10" fill="#D3D3D3"/>
+    <rect x="68" y="480" width="19" height="10" fill="#D3D3D3"/>
+    
+    <!-- 右柱 -->
+    <rect x="215" y="150" width="15" height="335" fill="url(#stoneGradient)"/>
+    <rect x="213" y="145" width="19" height="10" fill="#D3D3D3"/>
+    <rect x="213" y="480" width="19" height="10" fill="#D3D3D3"/>
+    
+    <!-- 柱子装饰 -->
+    <path d="M70 200 L85 200" stroke="#696969" stroke-width="0.5"/>
+    <path d="M70 250 L85 250" stroke="#696969" stroke-width="0.5"/>
+    <path d="M70 300 L85 300" stroke="#696969" stroke-width="0.5"/>
+    <path d="M70 350 L85 350" stroke="#696969" stroke-width="0.5"/>
+    <path d="M70 400 L85 400" stroke="#696969" stroke-width="0.5"/>
+    
+    <path d="M215 200 L230 200" stroke="#696969" stroke-width="0.5"/>
+    <path d="M215 250 L230 250" stroke="#696969" stroke-width="0.5"/>
+    <path d="M215 300 L230 300" stroke="#696969" stroke-width="0.5"/>
+    <path d="M215 350 L230 350" stroke="#696969" stroke-width="0.5"/>
+    <path d="M215 400 L230 400" stroke="#696969" stroke-width="0.5"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="15" y="450" width="270" height="35" fill="#D2B48C"/>
+  
+  <!-- 地面瓷砖图案 -->
+  <g opacity="0.3">
+    <rect x="20" y="455" width="20" height="20" fill="#8B4513"/>
+    <rect x="60" y="455" width="20" height="20" fill="#8B4513"/>
+    <rect x="100" y="455" width="20" height="20" fill="#8B4513"/>
+    <rect x="140" y="455" width="20" height="20" fill="#8B4513"/>
+    <rect x="180" y="455" width="20" height="20" fill="#8B4513"/>
+    <rect x="220" y="455" width="20" height="20" fill="#8B4513"/>
+    <rect x="260" y="455" width="20" height="20" fill="#8B4513"/>
+    
+    <rect x="40" y="465" width="20" height="20" fill="#8B4513"/>
+    <rect x="80" y="465" width="20" height="20" fill="#8B4513"/>
+    <rect x="120" y="465" width="20" height="20" fill="#8B4513"/>
+    <rect x="160" y="465" width="20" height="20" fill="#8B4513"/>
+    <rect x="200" y="465" width="20" height="20" fill="#8B4513"/>
+    <rect x="240" y="465" width="20" height="20" fill="#8B4513"/>
+  </g>
+  
+  <!-- 建筑师/工匠 -->
+  <g transform="translate(150, 350)">
+    <!-- 身体/长袍 -->
+    <ellipse cx="0" cy="25" rx="18" ry="30" fill="url(#robeGradient)"/>
+    <path d="M-15 -5 Q0 -8 15 -5 Q18 30 15 55 Q0 58 -15 55 Q-18 30 -15 -5" fill="url(#robeGradient)"/>
+    
+    <!-- 长袍装饰 -->
+    <path d="M-12 15 Q0 13 12 15" stroke="#FFD700" stroke-width="1.5" fill="none"/>
+    <path d="M-10 30 Q0 28 10 30" stroke="#FFD700" stroke-width="1" fill="none"/>
+    
+    <!-- 围裙 (工匠标志) -->
+    <path d="M-12 20 Q0 18 12 20 Q15 45 12 50 Q0 52 -12 50 Q-15 45 -12 20" fill="#F5DEB3"/>
+    <path d="M-10 25 Q0 23 10 25" stroke="#D2B48C" stroke-width="0.5" fill="none"/>
+    <path d="M-8 35 Q0 33 8 35" stroke="#D2B48C" stroke-width="0.5" fill="none"/>
+    
+    <!-- 头部 -->
+    <circle cx="0" cy="-15" r="10" fill="url(#figureGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M-8 -22 Q0 -25 8 -22 Q10 -12 8 -3 Q0 -1 -8 -3 Q-10 -12 -8 -22" fill="#8B4513"/>
+    
+    <!-- 工匠帽 -->
+    <path d="M-8 -22 Q0 -27 8 -22 Q10 -18 8 -15 Q0 -13 -8 -15 Q-10 -18 -8 -22" fill="#654321"/>
+    
+    <!-- 眼睛 (专注的表情) -->
+    <circle cx="-3" cy="-16" r="1.2" fill="#000"/>
+    <circle cx="3" cy="-16" r="1.2" fill="#000"/>
+    <circle cx="-3" cy="-16.5" r="0.4" fill="#FFF"/>
+    <circle cx="3" cy="-16.5" r="0.4" fill="#FFF"/>
+    
+    <!-- 眉毛 (专注的表情) -->
+    <path d="M-5 -19 Q-3 -20 -1 -19" stroke="#654321" stroke-width="0.8" fill="none"/>
+    <path d="M1 -19 Q3 -20 5 -19" stroke="#654321" stroke-width="0.8" fill="none"/>
+    
+    <!-- 鼻子 -->
+    <path d="M0 -12 L1 -10 L0 -9" stroke="#BC9A6A" stroke-width="0.5" fill="none"/>
+    
+    <!-- 嘴巴 (专注工作) -->
+    <path d="M-2 -7 Q0 -8 2 -7" stroke="#8B4513" stroke-width="0.8" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="-15" cy="15" rx="4" ry="18" fill="url(#robeGradient)"/>
+    <ellipse cx="15" cy="15" rx="4" ry="18" fill="url(#robeGradient)"/>
+    
+    <!-- 手 -->
+    <circle cx="-18" cy="33" r="4" fill="url(#figureGradient)"/>
+    <circle cx="18" cy="33" r="4" fill="url(#figureGradient)"/>
+  </g>
+  
+  <!-- 工具 (在工匠手中) -->
+  <g transform="translate(132, 380)">
+    <!-- 锤子 -->
+    <rect x="-1" y="0" width="2" height="15" fill="#8B4513"/>
+    <rect x="-4" y="-3" width="8" height="6" fill="#696969"/>
+    <circle cx="0" cy="0" r="2" fill="#A9A9A9"/>
+  </g>
+  
+  <g transform="translate(168, 380)">
+    <!-- 凿子 -->
+    <rect x="-0.5" y="0" width="1" height="12" fill="#8B4513"/>
+    <path d="M-1 0 L1 0 L0.5 -3 L-0.5 -3 Z" fill="#C0C0C0"/>
+  </g>
+  
+  <!-- 第一个星币 (左上，在拱门中) -->
+  <g transform="translate(80, 200)">
+    <!-- 外圆 -->
+    <circle cx="0" cy="0" r="20" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="2"/>
+    
+    <!-- 五角星 -->
+    <path d="M0,-16 L5,-5 L15,-5 L8,2 L12,13 L0,6 L-12,13 L-8,2 L-15,-5 L-5,-5 Z" fill="#8B4513"/>
+    
+    <!-- 内圆 -->
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#8B4513" stroke-width="1.2"/>
+    
+    <!-- 装饰 -->
+    <circle cx="0" cy="0" r="2.5" fill="#8B4513"/>
+  </g>
+  
+  <!-- 第二个星币 (右上，在拱门中) -->
+  <g transform="translate(220, 200)">
+    <!-- 外圆 -->
+    <circle cx="0" cy="0" r="20" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="2"/>
+    
+    <!-- 五角星 -->
+    <path d="M0,-16 L5,-5 L15,-5 L8,2 L12,13 L0,6 L-12,13 L-8,2 L-15,-5 L-5,-5 Z" fill="#8B4513"/>
+    
+    <!-- 内圆 -->
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#8B4513" stroke-width="1.2"/>
+    
+    <!-- 装饰 -->
+    <circle cx="0" cy="0" r="2.5" fill="#8B4513"/>
+  </g>
+  
+  <!-- 第三个星币 (中央上方，在主拱门顶部) -->
+  <g transform="translate(150, 120)">
+    <!-- 外圆 -->
+    <circle cx="0" cy="0" r="22" fill="url(#pentacleGradient)" stroke="#8B4513" stroke-width="2"/>
+    
+    <!-- 五角星 -->
+    <path d="M0,-18 L5.5,-5.5 L16.5,-5.5 L8.8,2.2 L13.2,14.3 L0,6.6 L-13.2,14.3 L-8.8,2.2 L-16.5,-5.5 L-5.5,-5.5 Z" fill="#8B4513"/>
+    
+    <!-- 内圆 -->
+    <circle cx="0" cy="0" r="7" fill="none" stroke="#8B4513" stroke-width="1.3"/>
+    
+    <!-- 装饰 -->
+    <circle cx="0" cy="0" r="3" fill="#8B4513"/>
+  </g>
+  
+  <!-- 建筑图纸 (在地面上) -->
+  <g transform="translate(120, 420)">
+    <rect x="0" y="0" width="60" height="40" fill="#F5F5DC" stroke="#8B4513" stroke-width="1"/>
+    <path d="M5 5 L55 5" stroke="#4169E1" stroke-width="0.5" fill="none"/>
+    <path d="M5 10 L55 10" stroke="#4169E1" stroke-width="0.5" fill="none"/>
+    <path d="M5 15 L55 15" stroke="#4169E1" stroke-width="0.5" fill="none"/>
+    <path d="M5 20 L55 20" stroke="#4169E1" stroke-width="0.5" fill="none"/>
+    <path d="M5 25 L55 25" stroke="#4169E1" stroke-width="0.5" fill="none"/>
+    <path d="M5 30 L55 30" stroke="#4169E1" stroke-width="0.5" fill="none"/>
+    <path d="M5 35 L55 35" stroke="#4169E1" stroke-width="0.5" fill="none"/>
+    
+    <!-- 建筑草图 -->
+    <rect x="10" y="8" width="15" height="20" fill="none" stroke="#DC143C" stroke-width="0.8"/>
+    <path d="M10 18 L25 18" stroke="#DC143C" stroke-width="0.5" fill="none"/>
+    <path d="M17.5 8 L17.5 28" stroke="#DC143C" stroke-width="0.5" fill="none"/>
+    
+    <rect x="35" y="12" width="12" height="16" fill="none" stroke="#DC143C" stroke-width="0.8"/>
+    <path d="M35 20 L47 20" stroke="#DC143C" stroke-width="0.5" fill="none"/>
+  </g>
+  
+  <!-- 工艺的光芒 -->
+  <g opacity="0.4">
+    <circle cx="150" cy="275" r="70" fill="none" stroke="#FFD700" stroke-width="1"/>
+    <circle cx="150" cy="275" r="90" fill="none" stroke="#FFD700" stroke-width="0.8"/>
+    <circle cx="150" cy="275" r="110" fill="none" stroke="#FFD700" stroke-width="0.5"/>
+  </g>
+  
+  <!-- 石块和建筑材料 -->
+  <g>
+    <rect x="40" y="430" width="8" height="6" fill="#A9A9A9"/>
+    <rect x="50" y="435" width="6" height="8" fill="#A9A9A9"/>
+    <rect x="45" y="425" width="10" height="5" fill="#A9A9A9"/>
+    
+    <rect x="240" y="425" width="9" height="7" fill="#A9A9A9"/>
+    <rect x="250" y="430" width="7" height="9" fill="#A9A9A9"/>
+    <rect x="245" y="420" width="11" height="6" fill="#A9A9A9"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">III - THREE OF PENTACLES</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">星币三</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#8B4513" stroke-width="1" fill="none">
+    <path d="M25 25 L35 25 L35 35"/>
+    <path d="M275 25 L265 25 L265 35"/>
+    <path d="M25 475 L35 475 L35 465"/>
+    <path d="M275 475 L265 475 L265 465"/>
+  </g>
+</svg>

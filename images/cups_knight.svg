@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#4682b4" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#98fb98"/>
+      <stop offset="100%" stop-color="#90ee90"/>
+    </linearGradient>
+    
+    <!-- 圣杯渐变 -->
+    <linearGradient id="cupGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 马匹渐变 -->
+    <linearGradient id="horseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f0f0"/>
+    </linearGradient>
+    
+    <!-- 盔甲渐变 -->
+    <linearGradient id="armorGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c0c0c0"/>
+      <stop offset="100%" stop-color="#808080"/>
+    </linearGradient>
+    
+    <!-- 河流渐变 -->
+    <linearGradient id="riverGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682b4"/>
+      <stop offset="100%" stop-color="#1e90ff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="200" fill="#87ceeb" opacity="0.8"/>
+  
+  <!-- 云朵 -->
+  <ellipse cx="80" cy="80" rx="25" ry="15" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="95" cy="75" rx="20" ry="12" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="220" cy="100" rx="30" ry="18" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="240" cy="95" rx="25" ry="15" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- 远山 -->
+  <polygon points="10,150 80,100 150,120 220,90 290,140 290,210 10,210" fill="#696969" opacity="0.5"/>
+  
+  <!-- 河流 -->
+  <ellipse cx="150" cy="350" rx="140" ry="40" fill="url(#riverGradient)" opacity="0.7"/>
+  <ellipse cx="150" cy="345" rx="130" ry="35" fill="#87ceeb" opacity="0.5"/>
+  
+  <!-- 水波纹 -->
+  <g opacity="0.4">
+    <ellipse cx="120" cy="350" rx="30" ry="5" fill="#ffffff"/>
+    <ellipse cx="180" cy="355" rx="35" ry="6" fill="#ffffff"/>
+    <ellipse cx="200" cy="340" rx="25" ry="4" fill="#ffffff"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="210" width="280" height="280" fill="#90ee90"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="10" y1="220" x2="290" y2="225" stroke="#228b22" stroke-width="1"/>
+    <line x1="15" y1="240" x2="285" y2="245" stroke="#228b22" stroke-width="1"/>
+    <line x1="20" y1="260" x2="280" y2="265" stroke="#228b22" stroke-width="1"/>
+  </g>
+  
+  <!-- 白马 -->
+  <g id="horse">
+    <!-- 马身 -->
+    <ellipse cx="150" cy="350" rx="35" ry="20" fill="url(#horseGradient)"/>
+    
+    <!-- 马头 -->
+    <ellipse cx="185" cy="330" rx="15" ry="12" fill="url(#horseGradient)"/>
+    
+    <!-- 马鬃 -->
+    <path d="M170 320 Q175 315 180 320 Q185 315 190 320 Q195 315 200 320" stroke="#daa520" stroke-width="3" fill="none"/>
+    <path d="M175 325 Q180 320 185 325 Q190 320 195 325" stroke="#daa520" stroke-width="2" fill="none"/>
+    
+    <!-- 马眼 -->
+    <circle cx="190" cy="328" r="2" fill="#000"/>
+    <circle cx="191" cy="327" r="0.5" fill="#ffffff"/>
+    
+    <!-- 马鼻孔 -->
+    <ellipse cx="198" cy="332" rx="1" ry="2" fill="#000"/>
+    
+    <!-- 马腿（奔跑姿态） -->
+    <ellipse cx="130" cy="370" rx="6" ry="15" fill="url(#horseGradient)" transform="rotate(-20 130 370)"/>
+    <ellipse cx="145" cy="375" rx="6" ry="15" fill="url(#horseGradient)" transform="rotate(10 145 375)"/>
+    <ellipse cx="155" cy="375" rx="6" ry="15" fill="url(#horseGradient)" transform="rotate(-10 155 375)"/>
+    <ellipse cx="170" cy="370" rx="6" ry="15" fill="url(#horseGradient)" transform="rotate(20 170 370)"/>
+    
+    <!-- 马蹄 -->
+    <ellipse cx="125" cy="385" rx="4" ry="2" fill="#2f2f2f"/>
+    <ellipse cx="148" cy="390" rx="4" ry="2" fill="#2f2f2f"/>
+    <ellipse cx="152" cy="390" rx="4" ry="2" fill="#2f2f2f"/>
+    <ellipse cx="175" cy="385" rx="4" ry="2" fill="#2f2f2f"/>
+    
+    <!-- 马尾 -->
+    <path d="M115 345 Q105 350 110 360 Q115 355 120 365" stroke="#daa520" stroke-width="4" fill="none"/>
+    
+    <!-- 马具/缰绳 -->
+    <path d="M185 335 Q190 340 195 335" stroke="#8b4513" stroke-width="2" fill="none"/>
+    <circle cx="190" cy="337" r="1" fill="#ffd700"/>
+  </g>
+  
+  <!-- 骑士 -->
+  <g id="knight">
+    <!-- 身体/盔甲 -->
+    <ellipse cx="140" cy="320" rx="15" ry="25" fill="url(#armorGradient)"/>
+    
+    <!-- 盔甲装饰 -->
+    <rect x="130" y="310" width="20" height="3" fill="#ffd700"/>
+    <rect x="132" y="320" width="16" height="2" fill="#ffd700"/>
+    <rect x="134" y="330" width="12" height="2" fill="#ffd700"/>
+    
+    <!-- 头部 -->
+    <circle cx="140" cy="290" r="12" fill="url(#personGradient)"/>
+    
+    <!-- 头盔 -->
+    <ellipse cx="140" cy="285" rx="14" ry="10" fill="url(#armorGradient)"/>
+    <rect x="135" y="280" width="10" height="3" fill="#ffd700"/>
+    
+    <!-- 头盔装饰/羽毛 -->
+    <path d="M140 275 Q135 270 140 265 Q145 270 140 275" fill="#ff69b4"/>
+    <path d="M140 275 Q145 270 140 265 Q135 270 140 275" fill="#ff1493" opacity="0.7"/>
+    
+    <!-- 面甲开口 -->
+    <rect x="136" y="288" width="8" height="4" fill="#000" opacity="0.3"/>
+    
+    <!-- 眼睛（透过面甲） -->
+    <circle cx="138" cy="290" r="1" fill="#000"/>
+    <circle cx="142" cy="290" r="1" fill="#000"/>
+    
+    <!-- 手臂/盔甲 -->
+    <ellipse cx="120" cy="310" rx="8" ry="15" fill="url(#armorGradient)" transform="rotate(-30 120 310)"/>
+    <ellipse cx="160" cy="310" rx="8" ry="15" fill="url(#armorGradient)" transform="rotate(30 160 310)"/>
+    
+    <!-- 手套 -->
+    <circle cx="115" cy="320" r="4" fill="url(#armorGradient)"/>
+    <circle cx="165" cy="320" r="4" fill="url(#armorGradient)"/>
+    
+    <!-- 腿部盔甲 -->
+    <ellipse cx="135" cy="345" rx="8" ry="18" fill="url(#armorGradient)"/>
+    <ellipse cx="145" cy="345" rx="8" ry="18" fill="url(#armorGradient)"/>
+    
+    <!-- 斗篷 -->
+    <path d="M125 300 Q140 295 155 300 Q160 330 155 360 Q140 365 125 360 Q120 330 125 300" fill="#4169e1" opacity="0.8"/>
+    
+    <!-- 斗篷装饰 -->
+    <circle cx="140" cy="310" r="2" fill="#ffd700"/>
+    <circle cx="135" cy="320" r="1.5" fill="#ffd700"/>
+    <circle cx="145" cy="320" r="1.5" fill="#ffd700"/>
+  </g>
+  
+  <!-- 圣杯（骑士手持） -->
+  <g id="knightCup">
+    <!-- 圣杯主体 -->
+    <ellipse cx="165" cy="300" rx="6" ry="12" fill="url(#cupGradient)"/>
+    <ellipse cx="165" cy="288" rx="6" ry="2.5" fill="url(#cupGradient)"/>
+    
+    <!-- 圣杯柄 -->
+    <path d="M171 295 Q176 295 176 300 Q176 305 171 305" stroke="#daa520" stroke-width="2" fill="none"/>
+    
+    <!-- 圣杯底座 -->
+    <ellipse cx="165" cy="312" rx="4" ry="1.5" fill="#daa520"/>
+    
+    <!-- 杯中的液体 -->
+    <ellipse cx="165" cy="300" rx="4" ry="10" fill="#dc143c" opacity="0.8"/>
+    
+    <!-- 圣杯装饰 -->
+    <circle cx="161" cy="295" r="1" fill="#ff69b4"/>
+    <circle cx="169" cy="295" r="1" fill="#ff69b4"/>
+    <circle cx="165" cy="290" r="1" fill="#ff69b4"/>
+    
+    <!-- 神圣光芒 -->
+    <g opacity="0.6">
+      <circle cx="165" cy="300" r="15" stroke="#ffd700" stroke-width="2" fill="none"/>
+      <line x1="155" y1="285" x2="150" y2="280" stroke="#ffd700" stroke-width="2"/>
+      <line x1="175" y1="285" x2="180" y2="280" stroke="#ffd700" stroke-width="2"/>
+      <line x1="165" y1="275" x2="165" y2="270" stroke="#ffd700" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- 运动线条（表示前进） -->
+  <g opacity="0.4">
+    <line x1="80" y1="340" x2="60" y2="345" stroke="#ffffff" stroke-width="3"/>
+    <line x1="85" y1="350" x2="65" y2="355" stroke="#ffffff" stroke-width="2"/>
+    <line x1="90" y1="360" x2="70" y2="365" stroke="#ffffff" stroke-width="2"/>
+    <line x1="95" y1="370" x2="75" y2="375" stroke="#ffffff" stroke-width="1"/>
+  </g>
+  
+  <!-- 河岸装饰 -->
+  <g opacity="0.7">
+    <!-- 芦苇 -->
+    <line x1="40" y1="320" x2="42" y2="300" stroke="#228b22" stroke-width="3"/>
+    <line x1="45" y1="325" x2="47" y2="305" stroke="#228b22" stroke-width="3"/>
+    <ellipse cx="42" cy="295" rx="2" ry="5" fill="#8b4513"/>
+    <ellipse cx="47" cy="300" rx="2" ry="5" fill="#8b4513"/>
+    
+    <line x1="260" y1="330" x2="262" y2="310" stroke="#228b22" stroke-width="3"/>
+    <line x1="265" y1="335" x2="267" y2="315" stroke="#228b22" stroke-width="3"/>
+    <ellipse cx="262" cy="305" rx="2" ry="5" fill="#8b4513"/>
+    <ellipse cx="267" cy="310" rx="2" ry="5" fill="#8b4513"/>
+    
+    <!-- 荷花 -->
+    <circle cx="100" cy="360" r="4" fill="#ff69b4"/>
+    <circle cx="98" cy="358" r="1" fill="#ffffff"/>
+    <circle cx="102" cy="358" r="1" fill="#ffffff"/>
+    <circle cx="98" cy="362" r="1" fill="#ffffff"/>
+    <circle cx="102" cy="362" r="1" fill="#ffffff"/>
+    <circle cx="100" cy="360" r="1" fill="#ffd700"/>
+    
+    <circle cx="220" cy="370" r="4" fill="#ff1493"/>
+    <circle cx="218" cy="368" r="1" fill="#ffffff"/>
+    <circle cx="222" cy="368" r="1" fill="#ffffff"/>
+    <circle cx="218" cy="372" r="1" fill="#ffffff"/>
+    <circle cx="222" cy="372" r="1" fill="#ffffff"/>
+    <circle cx="220" cy="370" r="1" fill="#ffd700"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">KNIGHT OF CUPS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">圣杯骑士</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#4682b4" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

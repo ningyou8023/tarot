@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#4682b4" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2f2f4f"/>
+      <stop offset="50%" stop-color="#483d8b"/>
+      <stop offset="100%" stop-color="#191970"/>
+    </linearGradient>
+    
+    <!-- 剑身渐变 -->
+    <linearGradient id="swordGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c0c0c0"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c0c0c0"/>
+    </linearGradient>
+    
+    <!-- 剑柄渐变 -->
+    <linearGradient id="hiltGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 长袍渐变 -->
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f0f0"/>
+    </linearGradient>
+    
+    <!-- 座椅渐变 -->
+    <linearGradient id="chairGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+    
+    <!-- 月亮渐变 -->
+    <linearGradient id="moonGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f0f0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 夜空背景 -->
+  <rect x="10" y="10" width="280" height="250" fill="#191970" opacity="0.8"/>
+  
+  <!-- 星星 -->
+  <g opacity="0.8">
+    <circle cx="50" cy="50" r="1" fill="#ffffff"/>
+    <circle cx="80" cy="70" r="1.5" fill="#ffffff"/>
+    <circle cx="120" cy="40" r="1" fill="#ffffff"/>
+    <circle cx="180" cy="60" r="1" fill="#ffffff"/>
+    <circle cx="220" cy="80" r="1.5" fill="#ffffff"/>
+    <circle cx="250" cy="50" r="1" fill="#ffffff"/>
+    <circle cx="70" cy="120" r="1" fill="#ffffff"/>
+    <circle cx="230" cy="130" r="1" fill="#ffffff"/>
+  </g>
+  
+  <!-- 月亮 -->
+  <circle cx="80" cy="100" r="20" fill="url(#moonGradient)" opacity="0.9"/>
+  <circle cx="85" cy="95" r="3" fill="#ddd" opacity="0.5"/>
+  <circle cx="75" cy="105" r="2" fill="#ddd" opacity="0.5"/>
+  <circle cx="82" cy="108" r="1.5" fill="#ddd" opacity="0.5"/>
+  
+  <!-- 月光 -->
+  <g opacity="0.3">
+    <circle cx="80" cy="100" r="30" stroke="#ffffff" stroke-width="1" fill="none"/>
+    <circle cx="80" cy="100" r="40" stroke="#ffffff" stroke-width="0.5" fill="none"/>
+  </g>
+  
+  <!-- 远山 -->
+  <polygon points="10,200 60,150 120,170 180,140 240,160 290,190 290,260 10,260" fill="#2f2f2f" opacity="0.6"/>
+  
+  <!-- 水面 -->
+  <rect x="10" y="260" width="280" height="50" fill="#191970" opacity="0.7"/>
+  
+  <!-- 水波纹 -->
+  <g opacity="0.4">
+    <ellipse cx="80" cy="280" rx="30" ry="5" fill="#ffffff"/>
+    <ellipse cx="150" cy="290" rx="40" ry="6" fill="#ffffff"/>
+    <ellipse cx="220" cy="285" rx="25" ry="4" fill="#ffffff"/>
+  </g>
+  
+  <!-- 地面/平台 -->
+  <rect x="10" y="310" width="280" height="180" fill="#2f2f2f" opacity="0.4"/>
+  
+  <!-- 座椅 -->
+  <g id="chair">
+    <!-- 座椅底座 -->
+    <rect x="120" y="380" width="60" height="15" fill="url(#chairGradient)"/>
+    
+    <!-- 座椅靠背 -->
+    <rect x="125" y="320" width="50" height="60" fill="url(#chairGradient)"/>
+    
+    <!-- 座椅扶手 -->
+    <rect x="110" y="340" width="10" height="40" fill="url(#chairGradient)"/>
+    <rect x="180" y="340" width="10" height="40" fill="url(#chairGradient)"/>
+    
+    <!-- 座椅装饰 -->
+    <rect x="130" y="330" width="40" height="3" fill="#ffd700"/>
+    <circle cx="150" cy="340" r="2" fill="#ffd700"/>
+  </g>
+  
+  <!-- 女性人物 -->
+  <g id="woman">
+    <!-- 身体/长袍 -->
+    <ellipse cx="150" cy="360" rx="25" ry="35" fill="url(#robeGradient)"/>
+    
+    <!-- 长袍装饰 -->
+    <path d="M125 395 Q130 390 135 395 Q140 390 145 395 Q150 390 155 395 Q160 390 165 395 Q170 390 175 395" stroke="#ddd" stroke-width="2" fill="none"/>
+    
+    <!-- 头部 -->
+    <circle cx="150" cy="310" r="12" fill="url(#personGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M138 300 Q143 295 148 300 Q153 295 158 300 Q163 295 168 300" stroke="#8b4513" stroke-width="4" fill="none"/>
+    <path d="M140 305 Q145 300 150 305 Q155 300 160 305 Q165 300 170 305" stroke="#8b4513" stroke-width="3" fill="none"/>
+    <path d="M135 315 Q140 320 145 315 Q150 320 155 315 Q160 320 165 315" stroke="#8b4513" stroke-width="3" fill="none"/>
+    
+    <!-- 眼罩/蒙眼布 -->
+    <rect x="140" y="305" width="20" height="8" fill="#2f2f2f"/>
+    <path d="M135 309 Q150 307 165 309" stroke="#2f2f2f" stroke-width="3" fill="none"/>
+    
+    <!-- 鼻子 -->
+    <ellipse cx="150" cy="315" rx="1" ry="2" fill="url(#personGradient)" opacity="0.8"/>
+    
+    <!-- 嘴巴 -->
+    <path d="M147 320 Q150 318 153 320" stroke="#dc143c" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂 -->
+    <ellipse cx="125" cy="340" rx="8" ry="18" fill="url(#personGradient)" transform="rotate(-30 125 340)"/>
+    <ellipse cx="175" cy="340" rx="8" ry="18" fill="url(#personGradient)" transform="rotate(30 175 340)"/>
+    
+    <!-- 手 -->
+    <circle cx="115" cy="350" r="4" fill="url(#personGradient)"/>
+    <circle cx="185" cy="350" r="4" fill="url(#personGradient)"/>
+  </g>
+  
+  <!-- 左侧宝剑 -->
+  <g id="leftSword">
+    <!-- 剑身 -->
+    <rect x="108" y="280" width="3" height="70" fill="url(#swordGradient)" transform="rotate(-45 110 315)"/>
+    <polygon points="108,280 109.5,275 111,280" fill="url(#swordGradient)" transform="rotate(-45 110 315)"/>
+    
+    <!-- 剑身中央线 -->
+    <line x1="109.5" y1="280" x2="109.5" y2="350" stroke="#e6e6e6" stroke-width="0.5" transform="rotate(-45 110 315)"/>
+    
+    <!-- 护手 -->
+    <rect x="100" y="348" width="20" height="3" fill="url(#hiltGradient)" transform="rotate(-45 110 350)"/>
+    
+    <!-- 剑柄 -->
+    <rect x="107" y="352" width="4" height="15" fill="url(#hiltGradient)" transform="rotate(-45 110 360)"/>
+    
+    <!-- 剑柄装饰 -->
+    <circle cx="109" cy="357" r="0.8" fill="#ff69b4" transform="rotate(-45 110 360)"/>
+    <circle cx="109" cy="362" r="0.8" fill="#ff69b4" transform="rotate(-45 110 360)"/>
+    
+    <!-- 剑柄底部 -->
+    <circle cx="109" cy="367" r="2" fill="url(#hiltGradient)" transform="rotate(-45 110 370)"/>
+  </g>
+  
+  <!-- 右侧宝剑 -->
+  <g id="rightSword">
+    <!-- 剑身 -->
+    <rect x="189" y="280" width="3" height="70" fill="url(#swordGradient)" transform="rotate(45 191 315)"/>
+    <polygon points="189,280 190.5,275 192,280" fill="url(#swordGradient)" transform="rotate(45 191 315)"/>
+    
+    <!-- 剑身中央线 -->
+    <line x1="190.5" y1="280" x2="190.5" y2="350" stroke="#e6e6e6" stroke-width="0.5" transform="rotate(45 191 315)"/>
+    
+    <!-- 护手 -->
+    <rect x="180" y="348" width="20" height="3" fill="url(#hiltGradient)" transform="rotate(45 191 350)"/>
+    
+    <!-- 剑柄 -->
+    <rect x="189" y="352" width="4" height="15" fill="url(#hiltGradient)" transform="rotate(45 191 360)"/>
+    
+    <!-- 剑柄装饰 -->
+    <circle cx="191" cy="357" r="0.8" fill="#ff69b4" transform="rotate(45 191 360)"/>
+    <circle cx="191" cy="362" r="0.8" fill="#ff69b4" transform="rotate(45 191 360)"/>
+    
+    <!-- 剑柄底部 -->
+    <circle cx="191" cy="367" r="2" fill="url(#hiltGradient)" transform="rotate(45 191 370)"/>
+  </g>
+  
+  <!-- 岩石装饰 -->
+  <g opacity="0.6">
+    <ellipse cx="60" cy="400" rx="8" ry="5" fill="#696969"/>
+    <ellipse cx="240" cy="410" rx="10" ry="6" fill="#696969"/>
+    <ellipse cx="80" cy="420" rx="6" ry="4" fill="#808080"/>
+    <ellipse cx="220" cy="430" rx="7" ry="4" fill="#808080"/>
+  </g>
+  
+  <!-- 神秘符号 -->
+  <g opacity="0.4">
+    <!-- 新月符号 -->
+    <path d="M40 350 Q35 355 40 360 Q45 355 40 350" stroke="#ffffff" stroke-width="2" fill="none"/>
+    <path d="M260 370 Q255 375 260 380 Q265 375 260 370" stroke="#ffffff" stroke-width="2" fill="none"/>
+    
+    <!-- 星形符号 -->
+    <g transform="translate(70,380)">
+      <polygon points="0,-4 1,-1 4,0 1,1 0,4 -1,1 -4,0 -1,-1" fill="#ffffff" opacity="0.6"/>
+    </g>
+    
+    <g transform="translate(230,350)">
+      <polygon points="0,-3 0.8,-0.8 3,0 0.8,0.8 0,3 -0.8,0.8 -3,0 -0.8,-0.8" fill="#ffffff" opacity="0.6"/>
+    </g>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">II - TWO OF SWORDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">宝剑二</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#4682b4" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

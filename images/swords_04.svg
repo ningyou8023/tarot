@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#4682b4" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682b4"/>
+      <stop offset="50%" stop-color="#6495ed"/>
+      <stop offset="100%" stop-color="#87ceeb"/>
+    </linearGradient>
+    
+    <!-- 剑身渐变 -->
+    <linearGradient id="swordGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c0c0c0"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c0c0c0"/>
+    </linearGradient>
+    
+    <!-- 剑柄渐变 -->
+    <linearGradient id="hiltGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 人物渐变 -->
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 石棺渐变 -->
+    <linearGradient id="tombGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d3d3d3"/>
+      <stop offset="100%" stop-color="#a9a9a9"/>
+    </linearGradient>
+    
+    <!-- 长袍渐变 -->
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4169e1"/>
+      <stop offset="100%" stop-color="#191970"/>
+    </linearGradient>
+    
+    <!-- 彩色玻璃渐变 -->
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff69b4"/>
+      <stop offset="33%" stop-color="#ffd700"/>
+      <stop offset="66%" stop-color="#4169e1"/>
+      <stop offset="100%" stop-color="#ff69b4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 教堂内部背景 -->
+  <rect x="10" y="10" width="280" height="480" fill="#4682b4" opacity="0.3"/>
+  
+  <!-- 彩色玻璃窗效果 -->
+  <g opacity="0.6">
+    <!-- 左侧窗户 -->
+    <rect x="20" y="50" width="40" height="80" fill="url(#glassGradient)" opacity="0.7"/>
+    <rect x="25" y="55" width="30" height="70" fill="none" stroke="#ffd700" stroke-width="2"/>
+    <line x1="40" y1="55" x2="40" y2="125" stroke="#ffd700" stroke-width="1"/>
+    <line x1="25" y1="90" x2="55" y2="90" stroke="#ffd700" stroke-width="1"/>
+    
+    <!-- 右侧窗户 -->
+    <rect x="240" y="50" width="40" height="80" fill="url(#glassGradient)" opacity="0.7"/>
+    <rect x="245" y="55" width="30" height="70" fill="none" stroke="#ffd700" stroke-width="2"/>
+    <line x1="260" y1="55" x2="260" y2="125" stroke="#ffd700" stroke-width="1"/>
+    <line x1="245" y1="90" x2="275" y2="90" stroke="#ffd700" stroke-width="1"/>
+  </g>
+  
+  <!-- 柱子 -->
+  <g opacity="0.4">
+    <rect x="80" y="10" width="8" height="200" fill="#d3d3d3"/>
+    <rect x="212" y="10" width="8" height="200" fill="#d3d3d3"/>
+    
+    <!-- 柱头装饰 -->
+    <rect x="75" y="10" width="18" height="15" fill="#d3d3d3"/>
+    <rect x="207" y="10" width="18" height="15" fill="#d3d3d3"/>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="350" width="280" height="140" fill="#696969" opacity="0.5"/>
+  
+  <!-- 地面瓷砖图案 -->
+  <g opacity="0.3">
+    <line x1="10" y1="370" x2="290" y2="370" stroke="#d3d3d3" stroke-width="1"/>
+    <line x1="10" y1="390" x2="290" y2="390" stroke="#d3d3d3" stroke-width="1"/>
+    <line x1="10" y1="410" x2="290" y2="410" stroke="#d3d3d3" stroke-width="1"/>
+    <line x1="10" y1="430" x2="290" y2="430" stroke="#d3d3d3" stroke-width="1"/>
+    
+    <line x1="50" y1="350" x2="50" y2="490" stroke="#d3d3d3" stroke-width="1"/>
+    <line x1="100" y1="350" x2="100" y2="490" stroke="#d3d3d3" stroke-width="1"/>
+    <line x1="150" y1="350" x2="150" y2="490" stroke="#d3d3d3" stroke-width="1"/>
+    <line x1="200" y1="350" x2="200" y2="490" stroke="#d3d3d3" stroke-width="1"/>
+    <line x1="250" y1="350" x2="250" y2="490" stroke="#d3d3d3" stroke-width="1"/>
+  </g>
+  
+  <!-- 石棺 -->
+  <g id="tomb">
+    <!-- 石棺底座 -->
+    <rect x="100" y="320" width="100" height="30" fill="url(#tombGradient)"/>
+    
+    <!-- 石棺主体 -->
+    <rect x="105" y="300" width="90" height="20" fill="url(#tombGradient)"/>
+    
+    <!-- 石棺装饰边缘 -->
+    <rect x="100" y="295" width="100" height="5" fill="#ffd700"/>
+    <rect x="100" y="350" width="100" height="5" fill="#ffd700"/>
+    
+    <!-- 石棺侧面装饰 -->
+    <circle cx="120" cy="310" r="3" fill="#ffd700"/>
+    <circle cx="150" cy="310" r="3" fill="#ffd700"/>
+    <circle cx="180" cy="310" r="3" fill="#ffd700"/>
+    
+    <!-- 十字架装饰 -->
+    <g transform="translate(150,310)">
+      <rect x="-1" y="-6" width="2" height="12" fill="#ffd700"/>
+      <rect x="-4" y="-1" width="8" height="2" fill="#ffd700"/>
+    </g>
+  </g>
+  
+  <!-- 躺着的人物 -->
+  <g id="restingFigure">
+    <!-- 身体/长袍 -->
+    <ellipse cx="150" cy="280" rx="30" ry="15" fill="url(#robeGradient)"/>
+    
+    <!-- 长袍褶皱 -->
+    <path d="M120 275 Q130 270 140 275 Q150 270 160 275 Q170 270 180 275" stroke="#191970" stroke-width="2" fill="none"/>
+    <path d="M125 285 Q135 280 145 285 Q155 280 165 285 Q175 280 185 285" stroke="#191970" stroke-width="1" fill="none"/>
+    
+    <!-- 头部 -->
+    <circle cx="150" cy="260" r="10" fill="url(#personGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M140 250 Q145 245 150 250 Q155 245 160 250" stroke="#8b4513" stroke-width="3" fill="none"/>
+    <path d="M142 255 Q147 250 152 255 Q157 250 162 255" stroke="#8b4513" stroke-width="2" fill="none"/>
+    
+    <!-- 眼睛（闭着） -->
+    <path d="M145 258 Q147 260 149 258" stroke="#000" stroke-width="1" fill="none"/>
+    <path d="M151 258 Q153 260 155 258" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 鼻子 -->
+    <ellipse cx="150" cy="262" rx="1" ry="2" fill="url(#personGradient)" opacity="0.8"/>
+    
+    <!-- 嘴巴 -->
+    <path d="M148 266 Q150 267 152 266" stroke="#dc143c" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂（胸前交叉） -->
+    <ellipse cx="135" cy="275" rx="6" ry="12" fill="url(#personGradient)" transform="rotate(30 135 275)"/>
+    <ellipse cx="165" cy="275" rx="6" ry="12" fill="url(#personGradient)" transform="rotate(-30 165 275)"/>
+    
+    <!-- 手（祈祷姿势） -->
+    <ellipse cx="145" cy="270" rx="3" ry="6" fill="url(#personGradient)" transform="rotate(15 145 270)"/>
+    <ellipse cx="155" cy="270" rx="3" ry="6" fill="url(#personGradient)" transform="rotate(-15 155 270)"/>
+  </g>
+  
+  <!-- 四把宝剑 -->
+  <!-- 左侧第一把剑 -->
+  <g id="sword1">
+    <rect x="68" y="180" width="3" height="60" fill="url(#swordGradient)"/>
+    <polygon points="68,180 69.5,175 71,180" fill="url(#swordGradient)"/>
+    <line x1="69.5" y1="180" x2="69.5" y2="240" stroke="#e6e6e6" stroke-width="0.5"/>
+    <rect x="60" y="238" width="18" height="3" fill="url(#hiltGradient)"/>
+    <rect x="67" y="242" width="4" height="12" fill="url(#hiltGradient)"/>
+    <circle cx="69" cy="248" r="1" fill="#ff69b4"/>
+    <circle cx="69" cy="254" r="2" fill="url(#hiltGradient)"/>
+  </g>
+  
+  <!-- 左侧第二把剑 -->
+  <g id="sword2">
+    <rect x="98" y="170" width="3" height="70" fill="url(#swordGradient)"/>
+    <polygon points="98,170 99.5,165 101,170" fill="url(#swordGradient)"/>
+    <line x1="99.5" y1="170" x2="99.5" y2="240" stroke="#e6e6e6" stroke-width="0.5"/>
+    <rect x="90" y="238" width="18" height="3" fill="url(#hiltGradient)"/>
+    <rect x="97" y="242" width="4" height="12" fill="url(#hiltGradient)"/>
+    <circle cx="99" cy="248" r="1" fill="#ff69b4"/>
+    <circle cx="99" cy="254" r="2" fill="url(#hiltGradient)"/>
+  </g>
+  
+  <!-- 右侧第一把剑 -->
+  <g id="sword3">
+    <rect x="198" y="170" width="3" height="70" fill="url(#swordGradient)"/>
+    <polygon points="198,170 199.5,165 201,170" fill="url(#swordGradient)"/>
+    <line x1="199.5" y1="170" x2="199.5" y2="240" stroke="#e6e6e6" stroke-width="0.5"/>
+    <rect x="190" y="238" width="18" height="3" fill="url(#hiltGradient)"/>
+    <rect x="197" y="242" width="4" height="12" fill="url(#hiltGradient)"/>
+    <circle cx="199" cy="248" r="1" fill="#ff69b4"/>
+    <circle cx="199" cy="254" r="2" fill="url(#hiltGradient)"/>
+  </g>
+  
+  <!-- 右侧第二把剑 -->
+  <g id="sword4">
+    <rect x="228" y="180" width="3" height="60" fill="url(#swordGradient)"/>
+    <polygon points="228,180 229.5,175 231,180" fill="url(#swordGradient)"/>
+    <line x1="229.5" y1="180" x2="229.5" y2="240" stroke="#e6e6e6" stroke-width="0.5"/>
+    <rect x="220" y="238" width="18" height="3" fill="url(#hiltGradient)"/>
+    <rect x="227" y="242" width="4" height="12" fill="url(#hiltGradient)"/>
+    <circle cx="229" cy="248" r="1" fill="#ff69b4"/>
+    <circle cx="229" cy="254" r="2" fill="url(#hiltGradient)"/>
+  </g>
+  
+  <!-- 祈祷书/圣经 -->
+  <g id="prayerBook" opacity="0.8">
+    <rect x="130" y="290" width="15" height="10" fill="#8b4513"/>
+    <rect x="131" y="291" width="13" height="8" fill="#daa520"/>
+    <line x1="137" y1="291" x2="137" y2="299" stroke="#8b4513" stroke-width="0.5"/>
+    <circle cx="137" cy="295" r="1" fill="#ff69b4"/>
+  </g>
+  
+  <!-- 蜡烛 -->
+  <g opacity="0.7">
+    <!-- 左侧蜡烛 -->
+    <rect x="40" y="200" width="4" height="20" fill="#f5deb3"/>
+    <ellipse cx="42" cy="200" rx="2" ry="1" fill="#ffd700"/>
+    <ellipse cx="42" cy="195" rx="1" ry="3" fill="#ff4500"/>
+    
+    <!-- 右侧蜡烛 -->
+    <rect x="256" y="200" width="4" height="20" fill="#f5deb3"/>
+    <ellipse cx="258" cy="200" rx="2" ry="1" fill="#ffd700"/>
+    <ellipse cx="258" cy="195" rx="1" ry="3" fill="#ff4500"/>
+  </g>
+  
+  <!-- 和平鸽 -->
+  <g opacity="0.6">
+    <ellipse cx="150" cy="150" rx="8" ry="4" fill="#ffffff" transform="rotate(-10 150 150)"/>
+    <ellipse cx="145" cy="148" rx="3" ry="2" fill="#ffffff" transform="rotate(-10 145 148)"/>
+    <circle cx="143" cy="147" r="1" fill="#000"/>
+    <path d="M155 148 Q160 145 165 148 Q160 151 155 148" fill="#ffffff" transform="rotate(-10 160 148)"/>
+    <path d="M155 152 Q160 149 165 152 Q160 155 155 152" fill="#ffffff" transform="rotate(-10 160 152)"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">IV - FOUR OF SWORDS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">宝剑四</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#4682b4" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>

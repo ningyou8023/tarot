@@ -1,0 +1,186 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="10" y="10" width="280" height="480" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="30%" stop-color="#b0e0e6"/>
+      <stop offset="70%" stop-color="#f0e68c"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <linearGradient id="pentacleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#ffed4e"/>
+      <stop offset="100%" stop-color="#ffa500"/>
+    </linearGradient>
+    
+    <linearGradient id="figureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="50%" stop-color="#a0522d"/>
+      <stop offset="100%" stop-color="#654321"/>
+    </linearGradient>
+    
+    <linearGradient id="archGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d2b48c"/>
+      <stop offset="50%" stop-color="#daa520"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    
+    <linearGradient id="robeGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682b4"/>
+      <stop offset="50%" stop-color="#5f9ea0"/>
+      <stop offset="100%" stop-color="#2f4f4f"/>
+    </linearGradient>
+    
+    <linearGradient id="robeGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b0000"/>
+      <stop offset="50%" stop-color="#dc143c"/>
+      <stop offset="100%" stop-color="#b22222"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="15" y="15" width="270" height="470" rx="10" ry="10" fill="url(#skyGradient)"/>
+  
+  <!-- 城市背景 -->
+  <rect x="15" y="300" width="270" height="170" fill="#f5deb3"/>
+  
+  <!-- 建筑物 -->
+  <rect x="200" y="250" width="60" height="120" fill="#d2b48c"/>
+  <rect x="210" y="260" width="15" height="20" fill="#8b4513"/>
+  <rect x="235" y="260" width="15" height="20" fill="#8b4513"/>
+  <rect x="210" y="290" width="15" height="20" fill="#8b4513"/>
+  <rect x="235" y="290" width="15" height="20" fill="#8b4513"/>
+  
+  <rect x="40" y="270" width="50" height="100" fill="#d2b48c"/>
+  <rect x="50" y="280" width="12" height="18" fill="#8b4513"/>
+  <rect x="70" y="280" width="12" height="18" fill="#8b4513"/>
+  <rect x="50" y="310" width="12" height="18" fill="#8b4513"/>
+  <rect x="70" y="310" width="12" height="18" fill="#8b4513"/>
+  
+  <!-- 华丽拱门 -->
+  <path d="M 100 370 Q 150 320 200 370" stroke="url(#archGradient)" stroke-width="15" fill="none"/>
+  <path d="M 95 370 Q 150 315 205 370" stroke="#b8860b" stroke-width="8" fill="none"/>
+  
+  <!-- 拱门柱子 -->
+  <rect x="95" y="370" width="10" height="100" fill="url(#archGradient)"/>
+  <rect x="195" y="370" width="10" height="100" fill="url(#archGradient)"/>
+  
+  <!-- 拱门装饰 -->
+  <circle cx="110" cy="340" r="3" fill="#ffd700"/>
+  <circle cx="130" cy="330" r="3" fill="#ffd700"/>
+  <circle cx="150" cy="325" r="4" fill="#ffd700"/>
+  <circle cx="170" cy="330" r="3" fill="#ffd700"/>
+  <circle cx="190" cy="340" r="3" fill="#ffd700"/>
+  
+  <!-- 地面 -->
+  <rect x="15" y="370" width="270" height="100" fill="#8fbc8f"/>
+  
+  <!-- 家庭成员 -->
+  <!-- 老人（祖父） -->
+  <ellipse cx="120" cy="420" rx="12" ry="25" fill="url(#robeGradient1)"/>
+  <circle cx="120" cy="395" r="10" fill="url(#figureGradient)"/>
+  <path d="M 110 385 Q 120 380 130 385 Q 128 390 120 390 Q 112 390 110 385" fill="#d3d3d3"/>
+  <circle cx="117" cy="393" r="1.5" fill="#000"/>
+  <circle cx="123" cy="393" r="1.5" fill="#000"/>
+  <path d="M 115 398 Q 120 400 125 398" stroke="#654321" stroke-width="1" fill="none"/>
+  
+  <!-- 女人（母亲） -->
+  <ellipse cx="150" cy="425" rx="15" ry="30" fill="url(#robeGradient2)"/>
+  <circle cx="150" cy="390" r="12" fill="url(#figureGradient)"/>
+  <path d="M 138 380 Q 150 375 162 380 Q 160 385 150 385 Q 140 385 138 380" fill="#8b4513"/>
+  <circle cx="146" cy="388" r="2" fill="#000"/>
+  <circle cx="154" cy="388" r="2" fill="#000"/>
+  <path d="M 147 393 Q 150 395 153 393" stroke="#654321" stroke-width="1" fill="none"/>
+  
+  <!-- 男人（父亲） -->
+  <ellipse cx="180" cy="420" rx="12" ry="25" fill="url(#robeGradient1)"/>
+  <circle cx="180" cy="395" r="10" fill="url(#figureGradient)"/>
+  <path d="M 170 385 Q 180 380 190 385 Q 188 390 180 390 Q 172 390 170 385" fill="#654321"/>
+  <circle cx="177" cy="393" r="1.5" fill="#000"/>
+  <circle cx="183" cy="393" r="1.5" fill="#000"/>
+  <path d="M 175 398 Q 180 400 185 398" stroke="#654321" stroke-width="1" fill="none"/>
+  
+  <!-- 孩子们 -->
+  <ellipse cx="135" cy="440" rx="8" ry="15" fill="#32cd32"/>
+  <circle cx="135" cy="425" r="6" fill="url(#figureGradient)"/>
+  <circle cx="133" cy="423" r="1" fill="#000"/>
+  <circle cx="137" cy="423" r="1" fill="#000"/>
+  
+  <ellipse cx="165" cy="440" rx="8" ry="15" fill="#ff69b4"/>
+  <circle cx="165" cy="425" r="6" fill="url(#figureGradient)"/>
+  <circle cx="163" cy="423" r="1" fill="#000"/>
+  <circle cx="167" cy="423" r="1" fill="#000"/>
+  
+  <!-- 十个星币 -->
+  <!-- 拱门顶部的星币 -->
+  <circle cx="150" cy="310" r="20" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="150,295 155,305 165,305 157,312 160,322 150,315 140,322 143,312 135,305 145,305" fill="#8b4513"/>
+  <circle cx="150" cy="310" r="8" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <!-- 拱门左侧的星币 -->
+  <circle cx="80" cy="120" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="80,107 84,115 92,115 86,120 88,128 80,123 72,128 74,120 68,115 76,115" fill="#8b4513"/>
+  <circle cx="80" cy="120" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <circle cx="60" cy="160" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="60,147 64,155 72,155 66,160 68,168 60,163 52,168 54,160 48,155 56,155" fill="#8b4513"/>
+  <circle cx="60" cy="160" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <circle cx="80" cy="200" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="80,187 84,195 92,195 86,200 88,208 80,203 72,208 74,200 68,195 76,195" fill="#8b4513"/>
+  <circle cx="80" cy="200" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <!-- 拱门右侧的星币 -->
+  <circle cx="220" cy="120" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="220,107 224,115 232,115 226,120 228,128 220,123 212,128 214,120 208,115 216,115" fill="#8b4513"/>
+  <circle cx="220" cy="120" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <circle cx="240" cy="160" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="240,147 244,155 252,155 246,160 248,168 240,163 232,168 234,160 228,155 236,155" fill="#8b4513"/>
+  <circle cx="240" cy="160" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <circle cx="220" cy="200" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="220,187 224,195 232,195 226,200 228,208 220,203 212,208 214,200 208,195 216,195" fill="#8b4513"/>
+  <circle cx="220" cy="200" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <!-- 中央的星币 -->
+  <circle cx="150" cy="80" r="20" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="150,65 155,75 165,75 157,82 160,92 150,85 140,92 143,82 135,75 145,75" fill="#8b4513"/>
+  <circle cx="150" cy="80" r="8" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <circle cx="150" cy="160" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="150,147 154,155 162,155 156,160 158,168 150,163 142,168 144,160 138,155 146,155" fill="#8b4513"/>
+  <circle cx="150" cy="160" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <circle cx="150" cy="240" r="18" fill="url(#pentacleGradient)" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="150,227 154,235 162,235 156,240 158,248 150,243 142,248 144,240 138,235 146,235" fill="#8b4513"/>
+  <circle cx="150" cy="240" r="7" fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <!-- 家族徽章 -->
+  <rect x="140" y="350" width="20" height="15" fill="#8b4513"/>
+  <polygon points="150,350 145,345 155,345" fill="#ffd700"/>
+  
+  <!-- 繁荣的光芒 -->
+  <circle cx="150" cy="310" r="40" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.4"/>
+  <circle cx="150" cy="310" r="60" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.3"/>
+  <circle cx="150" cy="310" r="80" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.2"/>
+  
+  <!-- 地面装饰（家庭之花） -->
+  <circle cx="110" cy="450" r="3" fill="#ff69b4"/>
+  <circle cx="190" cy="455" r="3" fill="#ff69b4"/>
+  <circle cx="150" cy="460" r="3" fill="#ff69b4"/>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">X - TEN OF PENTACLES</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">星币十</text>
+  
+  <!-- 装饰边角 -->
+  <circle cx="30" cy="30" r="3" fill="#ffd700"/>
+  <circle cx="270" cy="30" r="3" fill="#ffd700"/>
+  <circle cx="30" cy="470" r="3" fill="#ffd700"/>
+  <circle cx="270" cy="470" r="3" fill="#ffd700"/>
+</svg>

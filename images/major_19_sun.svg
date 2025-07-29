@@ -1,0 +1,305 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#8b4513" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="50%" stop-color="#add8e6"/>
+      <stop offset="100%" stop-color="#e0f6ff"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffff00" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#ffd700" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#ffa500" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff8c00" stop-opacity="0.1"/>
+    </radialGradient>
+    <linearGradient id="wallGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#daa520"/>
+      <stop offset="50%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </linearGradient>
+    <linearGradient id="groundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#90ee90"/>
+      <stop offset="50%" stop-color="#32cd32"/>
+      <stop offset="100%" stop-color="#228b22"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 天空背景 -->
+  <rect x="10" y="10" width="280" height="300" fill="url(#skyGradient)"/>
+  
+  <!-- 太阳 -->
+  <g transform="translate(150,80)">
+    <!-- 太阳光晕 -->
+    <circle cx="0" cy="0" r="50" fill="url(#sunGlow)"/>
+    
+    <!-- 太阳射线（长） -->
+    <g stroke="#ffd700" stroke-width="4" stroke-linecap="round">
+      <line x1="0" y1="-60" x2="0" y2="-80"/>
+      <line x1="42" y1="-42" x2="57" y2="-57"/>
+      <line x1="60" y1="0" x2="80" y2="0"/>
+      <line x1="42" y1="42" x2="57" y2="57"/>
+      <line x1="0" y1="60" x2="0" y2="80"/>
+      <line x1="-42" y1="42" x2="-57" y2="57"/>
+      <line x1="-60" y1="0" x2="-80" y2="0"/>
+      <line x1="-42" y1="-42" x2="-57" y2="-57"/>
+    </g>
+    
+    <!-- 太阳射线（短） -->
+    <g stroke="#ffa500" stroke-width="3" stroke-linecap="round">
+      <line x1="21" y1="-55" x2="28" y2="-73"/>
+      <line x1="55" y1="-21" x2="73" y2="-28"/>
+      <line x1="55" y1="21" x2="73" y2="28"/>
+      <line x1="21" y1="55" x2="28" y2="73"/>
+      <line x1="-21" y1="55" x2="-28" y2="73"/>
+      <line x1="-55" y1="21" x2="-73" y2="28"/>
+      <line x1="-55" y1="-21" x2="-73" y2="-28"/>
+      <line x1="-21" y1="-55" x2="-28" y2="-73"/>
+    </g>
+    
+    <!-- 太阳主体 -->
+    <circle cx="0" cy="0" r="30" fill="#ffff00" stroke="#ffd700" stroke-width="2"/>
+    
+    <!-- 太阳面孔 -->
+    <g fill="#ff8c00">
+      <!-- 眼睛 -->
+      <circle cx="-8" cy="-5" r="3" fill="#ff8c00"/>
+      <circle cx="8" cy="-5" r="3" fill="#ff8c00"/>
+      
+      <!-- 眼珠 -->
+      <circle cx="-8" cy="-5" r="1.5" fill="#333"/>
+      <circle cx="8" cy="-5" r="1.5" fill="#333"/>
+      
+      <!-- 鼻子 -->
+      <ellipse cx="0" cy="0" rx="2" ry="3" fill="#ff8c00"/>
+      
+      <!-- 嘴巴（微笑） -->
+      <path d="M -8,8 Q 0,15 8,8" stroke="#ff8c00" stroke-width="3" fill="none"/>
+      
+      <!-- 脸颊 -->
+      <circle cx="-15" cy="5" r="4" fill="#ff6347" opacity="0.6"/>
+      <circle cx="15" cy="5" r="4" fill="#ff6347" opacity="0.6"/>
+    </g>
+  </g>
+  
+  <!-- 向日葵 -->
+  <g transform="translate(80,200)">
+    <!-- 花瓣 -->
+    <g fill="#ffd700">
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(30)"/>
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(150)"/>
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(210)"/>
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(240)"/>
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(300)"/>
+      <ellipse cx="0" cy="-12" rx="3" ry="8" transform="rotate(330)"/>
+    </g>
+    
+    <!-- 花心 -->
+    <circle cx="0" cy="0" r="6" fill="#8b4513"/>
+    
+    <!-- 花心纹理 -->
+    <g fill="#654321" opacity="0.8">
+      <circle cx="-2" cy="-2" r="1"/>
+      <circle cx="2" cy="-2" r="1"/>
+      <circle cx="0" cy="2" r="1"/>
+      <circle cx="-3" cy="1" r="0.5"/>
+      <circle cx="3" cy="1" r="0.5"/>
+    </g>
+    
+    <!-- 茎 -->
+    <rect x="-1" y="6" width="2" height="20" fill="#228b22"/>
+    
+    <!-- 叶子 -->
+    <ellipse cx="-5" cy="15" rx="4" ry="2" fill="#32cd32" transform="rotate(-30)"/>
+    <ellipse cx="5" cy="20" rx="4" ry="2" fill="#32cd32" transform="rotate(30)"/>
+  </g>
+  
+  <!-- 另一朵向日葵 -->
+  <g transform="translate(220,180)">
+    <!-- 花瓣 -->
+    <g fill="#ffd700">
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(30)"/>
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(150)"/>
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(210)"/>
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(240)"/>
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(300)"/>
+      <ellipse cx="0" cy="-10" rx="2.5" ry="6" transform="rotate(330)"/>
+    </g>
+    
+    <!-- 花心 -->
+    <circle cx="0" cy="0" r="5" fill="#8b4513"/>
+    
+    <!-- 茎 -->
+    <rect x="-1" y="5" width="2" height="25" fill="#228b22"/>
+    
+    <!-- 叶子 -->
+    <ellipse cx="-4" cy="12" rx="3" ry="1.5" fill="#32cd32" transform="rotate(-45)"/>
+    <ellipse cx="4" cy="18" rx="3" ry="1.5" fill="#32cd32" transform="rotate(45)"/>
+  </g>
+  
+  <!-- 围墙 -->
+  <rect x="10" y="250" width="280" height="60" fill="url(#wallGradient)"/>
+  
+  <!-- 围墙砖块纹理 -->
+  <g stroke="#8b6914" stroke-width="1" fill="none">
+    <!-- 水平线 -->
+    <line x1="10" y1="270" x2="290" y2="270"/>
+    <line x1="10" y1="290" x2="290" y2="290"/>
+    
+    <!-- 垂直线（交错排列） -->
+    <line x1="30" y1="250" x2="30" y2="270"/>
+    <line x1="70" y1="250" x2="70" y2="270"/>
+    <line x1="110" y1="250" x2="110" y2="270"/>
+    <line x1="150" y1="250" x2="150" y2="270"/>
+    <line x1="190" y1="250" x2="190" y2="270"/>
+    <line x1="230" y1="250" x2="230" y2="270"/>
+    <line x1="270" y1="250" x2="270" y2="270"/>
+    
+    <line x1="50" y1="270" x2="50" y2="290"/>
+    <line x1="90" y1="270" x2="90" y2="290"/>
+    <line x1="130" y1="270" x2="130" y2="290"/>
+    <line x1="170" y1="270" x2="170" y2="290"/>
+    <line x1="210" y1="270" x2="210" y2="290"/>
+    <line x1="250" y1="270" x2="250" y2="290"/>
+    
+    <line x1="30" y1="290" x2="30" y2="310"/>
+    <line x1="70" y1="290" x2="70" y2="310"/>
+    <line x1="110" y1="290" x2="110" y2="310"/>
+    <line x1="150" y1="290" x2="150" y2="310"/>
+    <line x1="190" y1="290" x2="190" y2="310"/>
+    <line x1="230" y1="290" x2="230" y2="310"/>
+    <line x1="270" y1="290" x2="270" y2="310"/>
+  </g>
+  
+  <!-- 骑马的孩子 -->
+  <g transform="translate(150,350)">
+    <!-- 马 -->
+    <g>
+      <!-- 马身 -->
+      <ellipse cx="0" cy="10" rx="20" ry="12" fill="#ffffff"/>
+      
+      <!-- 马头 -->
+      <ellipse cx="-15" cy="0" rx="8" ry="10" fill="#ffffff"/>
+      
+      <!-- 马鬃 -->
+      <path d="M -20,-8 Q -25,-5 -22,0 Q -27,3 -24,8" stroke="#ffd700" stroke-width="3" fill="none"/>
+      
+      <!-- 马眼 -->
+      <circle cx="-18" cy="-2" r="1.5" fill="#333"/>
+      
+      <!-- 马鼻孔 -->
+      <ellipse cx="-23" cy="2" rx="1" ry="0.5" fill="#333"/>
+      
+      <!-- 马腿 -->
+      <rect x="-15" y="20" width="4" height="15" fill="#ffffff"/>
+      <rect x="-8" y="20" width="4" height="15" fill="#ffffff"/>
+      <rect x="8" y="20" width="4" height="15" fill="#ffffff"/>
+      <rect x="15" y="20" width="4" height="15" fill="#ffffff"/>
+      
+      <!-- 马蹄 -->
+      <ellipse cx="-13" cy="37" rx="2" ry="1" fill="#333"/>
+      <ellipse cx="-6" cy="37" rx="2" ry="1" fill="#333"/>
+      <ellipse cx="10" cy="37" rx="2" ry="1" fill="#333"/>
+      <ellipse cx="17" cy="37" rx="2" ry="1" fill="#333"/>
+      
+      <!-- 马尾 -->
+      <path d="M 18,15 Q 25,12 28,20 Q 25,25 22,22" stroke="#ffd700" stroke-width="4" fill="none"/>
+    </g>
+    
+    <!-- 孩子 -->
+    <g transform="translate(0,-15)">
+      <!-- 身体 -->
+      <ellipse cx="0" cy="5" rx="8" ry="12" fill="#ff6347"/>
+      
+      <!-- 头部 -->
+      <circle cx="0" cy="-8" r="6" fill="#fdbcb4"/>
+      
+      <!-- 头发 -->
+      <path d="M -6,-12 Q 0,-15 6,-12 Q 4,-10 2,-11 Q 0,-12 -2,-11 Q -4,-10 -6,-12" fill="#ffd700"/>
+      
+      <!-- 眼睛 -->
+      <circle cx="-2" cy="-9" r="1" fill="#333"/>
+      <circle cx="2" cy="-9" r="1" fill="#333"/>
+      
+      <!-- 鼻子 -->
+      <circle cx="0" cy="-6" r="0.5" fill="#f4a460"/>
+      
+      <!-- 嘴巴（微笑） -->
+      <path d="M -2,-4 Q 0,-3 2,-4" stroke="#333" stroke-width="1" fill="none"/>
+      
+      <!-- 手臂 -->
+      <ellipse cx="-6" cy="0" rx="3" ry="8" fill="#fdbcb4"/>
+      <ellipse cx="6" cy="0" rx="3" ry="8" fill="#fdbcb4"/>
+      
+      <!-- 手 -->
+      <circle cx="-6" cy="8" r="2" fill="#fdbcb4"/>
+      <circle cx="6" cy="8" r="2" fill="#fdbcb4"/>
+      
+      <!-- 腿 -->
+      <ellipse cx="-3" cy="15" rx="3" ry="8" fill="#4169e1"/>
+      <ellipse cx="3" cy="15" rx="3" ry="8" fill="#4169e1"/>
+      
+      <!-- 脚 -->
+      <ellipse cx="-3" cy="25" rx="2" ry="3" fill="#8b4513"/>
+      <ellipse cx="3" cy="25" rx="2" ry="3" fill="#8b4513"/>
+    </g>
+    
+    <!-- 红色旗帜 -->
+    <g transform="translate(-8,-25)">
+      <!-- 旗杆 -->
+      <rect x="0" y="0" width="2" height="20" fill="#8b4513"/>
+      
+      <!-- 旗帜 -->
+      <polygon points="2,0 15,0 15,8 8,6 2,8" fill="#ff0000"/>
+      
+      <!-- 旗帜装饰 -->
+      <circle cx="8" cy="4" r="2" fill="#ffd700"/>
+    </g>
+  </g>
+  
+  <!-- 地面 -->
+  <rect x="10" y="390" width="280" height="30" fill="url(#groundGradient)"/>
+  
+  <!-- 草地装饰 -->
+  <g stroke="#228b22" stroke-width="2" fill="none">
+    <path d="M 20,420 Q 22,415 24,420"/>
+    <path d="M 30,420 Q 32,415 34,420"/>
+    <path d="M 50,420 Q 52,415 54,420"/>
+    <path d="M 70,420 Q 72,415 74,420"/>
+    <path d="M 90,420 Q 92,415 94,420"/>
+    <path d="M 110,420 Q 112,415 114,420"/>
+    <path d="M 130,420 Q 132,415 134,420"/>
+    <path d="M 170,420 Q 172,415 174,420"/>
+    <path d="M 190,420 Q 192,415 194,420"/>
+    <path d="M 210,420 Q 212,415 214,420"/>
+    <path d="M 230,420 Q 232,415 234,420"/>
+    <path d="M 250,420 Q 252,415 254,420"/>
+    <path d="M 270,420 Q 272,415 274,420"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="450" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">XIX - THE SUN</text>
+  <text x="150" y="465" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">太阳</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#daa520" stroke-width="2" fill="none">
+    <path d="M 15,15 L 25,15 L 25,25"/>
+    <path d="M 275,15 L 285,15 L 285,25"/>
+    <path d="M 15,485 L 25,485 L 25,475"/>
+    <path d="M 275,485 L 285,485 L 285,475"/>
+  </g>
+</svg>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卡片边框 -->
+  <rect x="5" y="5" width="290" height="490" rx="15" ry="15" fill="#f8f6f0" stroke="#4682b4" stroke-width="3"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="30%" stop-color="#ffeb3b"/>
+      <stop offset="70%" stop-color="#98fb98"/>
+      <stop offset="100%" stop-color="#90ee90"/>
+    </linearGradient>
+    
+    <!-- 圣杯渐变 -->
+    <linearGradient id="cupGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    
+    <!-- 成人渐变 -->
+    <linearGradient id="adultGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdbcb4"/>
+      <stop offset="100%" stop-color="#f4a460"/>
+    </linearGradient>
+    
+    <!-- 儿童渐变 -->
+    <linearGradient id="childGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb6c1"/>
+      <stop offset="100%" stop-color="#ffa07a"/>
+    </linearGradient>
+    
+    <!-- 建筑渐变 -->
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#daa520"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="10" y="10" width="280" height="480" rx="10" ry="10" fill="url(#bgGradient)"/>
+  
+  <!-- 温暖的天空 -->
+  <rect x="10" y="10" width="280" height="180" fill="#ffd700" opacity="0.6"/>
+  
+  <!-- 远处的建筑/城堡 -->
+  <g id="buildings" opacity="0.7">
+    <!-- 主建筑 -->
+    <rect x="200" y="120" width="60" height="80" fill="url(#buildingGradient)"/>
+    <polygon points="200,120 230,100 260,120" fill="#cd853f"/>
+    
+    <!-- 塔楼 -->
+    <rect x="210" y="100" width="15" height="40" fill="url(#buildingGradient)"/>
+    <polygon points="210,100 217.5,90 225,100" fill="#cd853f"/>
+    
+    <rect x="235" y="110" width="12" height="30" fill="url(#buildingGradient)"/>
+    <polygon points="235,110 241,100 247,110" fill="#cd853f"/>
+    
+    <!-- 窗户 -->
+    <rect x="215" y="140" width="6" height="8" fill="#4682b4"/>
+    <rect x="225" y="140" width="6" height="8" fill="#4682b4"/>
+    <rect x="240" y="150" width="6" height="8" fill="#4682b4"/>
+    
+    <!-- 门 -->
+    <rect x="220" y="180" width="10" height="20" fill="#8b4513"/>
+  </g>
+  
+  <!-- 庭院地面 -->
+  <rect x="10" y="200" width="280" height="290" fill="#f0e68c"/>
+  
+  <!-- 地面纹理 -->
+  <g opacity="0.3">
+    <line x1="10" y1="210" x2="290" y2="215" stroke="#daa520" stroke-width="1"/>
+    <line x1="15" y1="230" x2="285" y2="235" stroke="#daa520" stroke-width="1"/>
+    <line x1="20" y1="250" x2="280" y2="255" stroke="#daa520" stroke-width="1"/>
+  </g>
+  
+  <!-- 成年人（给予者） -->
+  <g id="adult">
+    <!-- 身体 -->
+    <ellipse cx="100" cy="320" rx="18" ry="30" fill="#4169e1"/>
+    
+    <!-- 头部 -->
+    <circle cx="100" cy="280" r="12" fill="url(#adultGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M88 275 Q100 265 112 275 Q107 270 100 270 Q93 270 88 275" fill="#8b4513"/>
+    
+    <!-- 眼睛（慈祥） -->
+    <circle cx="96" cy="278" r="1.5" fill="#000"/>
+    <circle cx="104" cy="278" r="1.5" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <line x1="100" y1="280" x2="100" y2="283" stroke="#000" stroke-width="1"/>
+    
+    <!-- 嘴巴（微笑） -->
+    <path d="M98 286 Q100 288 102 286" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂（伸出给予） -->
+    <ellipse cx="80" cy="300" rx="8" ry="15" fill="url(#adultGradient)" transform="rotate(-30 80 300)"/>
+    <ellipse cx="120" cy="310" rx="8" ry="15" fill="url(#adultGradient)" transform="rotate(20 120 310)"/>
+    
+    <!-- 手 -->
+    <circle cx="75" cy="310" r="4" fill="url(#adultGradient)"/>
+    <circle cx="125" cy="320" r="4" fill="url(#adultGradient)"/>
+    
+    <!-- 腿部 -->
+    <ellipse cx="90" cy="350" rx="8" ry="20" fill="#4169e1"/>
+    <ellipse cx="110" cy="350" rx="8" ry="20" fill="#4169e1"/>
+    
+    <!-- 脚 -->
+    <ellipse cx="90" cy="370" rx="6" ry="3" fill="#8b4513"/>
+    <ellipse cx="110" cy="370" rx="6" ry="3" fill="#8b4513"/>
+  </g>
+  
+  <!-- 儿童（接受者） -->
+  <g id="child">
+    <!-- 身体 -->
+    <ellipse cx="160" cy="350" rx="12" ry="20" fill="#ff69b4"/>
+    
+    <!-- 头部 -->
+    <circle cx="160" cy="320" r="10" fill="url(#childGradient)"/>
+    
+    <!-- 头发 -->
+    <path d="M150 315 Q160 308 170 315 Q166 312 160 312 Q154 312 150 315" fill="#ffd700"/>
+    
+    <!-- 眼睛（天真） -->
+    <circle cx="157" cy="318" r="1.5" fill="#000"/>
+    <circle cx="163" cy="318" r="1.5" fill="#000"/>
+    
+    <!-- 鼻子 -->
+    <circle cx="160" cy="320" r="0.5" fill="#000"/>
+    
+    <!-- 嘴巴（微笑） -->
+    <path d="M158 323 Q160 325 162 323" stroke="#000" stroke-width="1" fill="none"/>
+    
+    <!-- 手臂（接受姿态） -->
+    <ellipse cx="145" cy="340" rx="6" ry="12" fill="url(#childGradient)" transform="rotate(-20 145 340)"/>
+    <ellipse cx="175" cy="340" rx="6" ry="12" fill="url(#childGradient)" transform="rotate(20 175 340)"/>
+    
+    <!-- 手 -->
+    <circle cx="140" cy="350" r="3" fill="url(#childGradient)"/>
+    <circle cx="180" cy="350" r="3" fill="url(#childGradient)"/>
+    
+    <!-- 腿部 -->
+    <ellipse cx="155" cy="370" rx="6" ry="15" fill="#ff69b4"/>
+    <ellipse cx="165" cy="370" rx="6" ry="15" fill="#ff69b4"/>
+    
+    <!-- 脚 -->
+    <ellipse cx="155" cy="385" rx="4" ry="2" fill="#8b4513"/>
+    <ellipse cx="165" cy="385" rx="4" ry="2" fill="#8b4513"/>
+  </g>
+  
+  <!-- 传递的圣杯 -->
+  <g id="givingCup">
+    <ellipse cx="120" cy="330" rx="5" ry="10" fill="url(#cupGradient)"/>
+    <ellipse cx="120" cy="320" rx="5" ry="2" fill="url(#cupGradient)"/>
+    <path d="M115 325 Q110 325 110 330 Q110 335 115 335" stroke="#daa520" stroke-width="1.5" fill="none"/>
+    <ellipse cx="120" cy="340" rx="3" ry="1" fill="#daa520"/>
+    <ellipse cx="120" cy="330" rx="3" ry="8" fill="#dc143c" opacity="0.7"/>
+    
+    <!-- 花朵装饰 -->
+    <circle cx="118" cy="325" r="1" fill="#ff69b4"/>
+    <circle cx="122" cy="325" r="1" fill="#ff69b4"/>
+  </g>
+  
+  <!-- 背景中的五个圣杯 -->
+  <!-- 左上圣杯 -->
+  <g id="bgCup1">
+    <ellipse cx="50" cy="240" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="50" cy="232" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M46 236 Q42 236 42 240 Q42 244 46 244" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="50" cy="248" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="50" cy="240" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+    <circle cx="48" cy="236" r="0.5" fill="#ff69b4"/>
+  </g>
+  
+  <!-- 右上圣杯 -->
+  <g id="bgCup2">
+    <ellipse cx="250" cy="250" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="250" cy="242" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M254 246 Q258 246 258 250 Q258 254 254 254" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="250" cy="258" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="250" cy="250" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+    <circle cx="252" cy="246" r="0.5" fill="#ff69b4"/>
+  </g>
+  
+  <!-- 左中圣杯 -->
+  <g id="bgCup3">
+    <ellipse cx="40" cy="300" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="40" cy="292" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M36 296 Q32 296 32 300 Q32 304 36 304" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="40" cy="308" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="40" cy="300" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+    <circle cx="38" cy="296" r="0.5" fill="#ff69b4"/>
+  </g>
+  
+  <!-- 右中圣杯 -->
+  <g id="bgCup4">
+    <ellipse cx="260" cy="310" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="260" cy="302" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M264 306 Q268 306 268 310 Q268 314 264 314" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="260" cy="318" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="260" cy="310" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+    <circle cx="262" cy="306" r="0.5" fill="#ff69b4"/>
+  </g>
+  
+  <!-- 底部圣杯 -->
+  <g id="bgCup5">
+    <ellipse cx="150" cy="420" rx="4" ry="8" fill="url(#cupGradient)"/>
+    <ellipse cx="150" cy="412" rx="4" ry="1.5" fill="url(#cupGradient)"/>
+    <path d="M146 416 Q142 416 142 420 Q142 424 146 424" stroke="#daa520" stroke-width="1" fill="none"/>
+    <ellipse cx="150" cy="428" rx="2.5" ry="1" fill="#daa520"/>
+    <ellipse cx="150" cy="420" rx="2.5" ry="6" fill="#dc143c" opacity="0.7"/>
+    <circle cx="148" cy="416" r="0.5" fill="#ff69b4"/>
+  </g>
+  
+  <!-- 花园装饰 -->
+  <g opacity="0.7">
+    <!-- 花朵 -->
+    <circle cx="80" cy="400" r="3" fill="#ff69b4"/>
+    <circle cx="78" cy="398" r="1" fill="#ffffff"/>
+    <circle cx="82" cy="398" r="1" fill="#ffffff"/>
+    <circle cx="78" cy="402" r="1" fill="#ffffff"/>
+    <circle cx="82" cy="402" r="1" fill="#ffffff"/>
+    
+    <circle cx="220" cy="390" r="3" fill="#ff1493"/>
+    <circle cx="218" cy="388" r="1" fill="#ffffff"/>
+    <circle cx="222" cy="388" r="1" fill="#ffffff"/>
+    <circle cx="218" cy="392" r="1" fill="#ffffff"/>
+    <circle cx="222" cy="392" r="1" fill="#ffffff"/>
+    
+    <!-- 蝴蝶 -->
+    <ellipse cx="200" cy="280" rx="3" ry="1" fill="#ff69b4" transform="rotate(30 200 280)"/>
+    <ellipse cx="200" cy="280" rx="3" ry="1" fill="#ff69b4" transform="rotate(-30 200 280)"/>
+    <line x1="200" y1="275" x2="200" y2="285" stroke="#000" stroke-width="1"/>
+  </g>
+  
+  <!-- 卡片标题 -->
+  <text x="150" y="30" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8b4513">VI - SIX OF CUPS</text>
+  <text x="150" y="48" text-anchor="middle" font-family="serif" font-size="10" fill="#8b4513">圣杯六</text>
+  
+  <!-- 装饰边角 -->
+  <g stroke="#4682b4" stroke-width="2" fill="none">
+    <path d="M15 15 L25 15 L25 25"/>
+    <path d="M275 15 L285 15 L285 25"/>
+    <path d="M15 485 L15 475 L25 475"/>
+    <path d="M285 485 L285 475 L275 475"/>
+  </g>
+</svg>
