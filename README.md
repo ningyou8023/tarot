@@ -72,6 +72,8 @@
 
 1. **下载项目**
    ```
+   https://github.com/ningyou8023/tarot.git
+   ```
 
 2. **配置数据库**
    ```bash
